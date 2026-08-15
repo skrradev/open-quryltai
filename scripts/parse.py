@@ -19,15 +19,15 @@ from xml.etree import ElementTree as ET
 
 W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
 
-# filename (basename, stripped) -> (party label, official count)
+# filename (basename, stripped) -> (stable party ID, official count)
 PARTY = {
-    "Әділет": ("Әділет", 186),
-    "Respublica": ("Respublica", 75),
-    "Народная партия Казахстана": ("НПК", 72),
-    "Ауыл": ("Ауыл", 69),
-    "Ак жол": ("Ақ жол", 63),
-    "Байтақ": ("Байтақ", 47),
-    "ОСДП": ("ОСДП", 33),
+    "Әділет": ("adilet", 186),
+    "Respublica": ("respublica", 75),
+    "Народная партия Казахстана": ("npk", 72),
+    "Ауыл": ("auyl", 69),
+    "Ак жол": ("ak_zhol", 63),
+    "Байтақ": ("baitaq", 47),
+    "ОСДП": ("osdp", 33),
 }
 
 # --- place gazetteer (nominative, reference data — not invented per-row) ---
@@ -197,8 +197,27 @@ def party_for(path):
     raise SystemExit(f"unknown party file: {base!r}")
 
 
-FIELDS = ["party", "order", "surname", "given_names", "birth_year", "age_2026",
-          "gender_guess", "position_raw", "residence_raw", "place_type", "place"]
+# `place` preserves the parser's normalized source-language value.  The UI must
+# use place_id to obtain the reviewed Kazakh/Russian display names from
+# data/places.csv.
+PLACE_TYPE_CODES = {
+    "город": "CITY", "область": "REGION", "район": "DISTRICT",
+    "село": "VILLAGE", "поселок": "SETTLEMENT",
+}
+
+
+def load_place_ids(path):
+    """Map (English place-type enum, source canonical name) to stable ID."""
+    result = {}
+    with open(path, newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            result[(row["place_type"], row["name_source"])] = row["place_id"]
+    return result
+
+
+FIELDS = ["party_id", "order", "surname", "given_names", "birth_year", "age_2026",
+          "gender_guess", "position_raw", "residence_raw", "place_type", "place",
+          "place_id"]
 
 
 def main():
@@ -206,31 +225,34 @@ def main():
     out_dir = os.path.join(root, "data")
     os.makedirs(out_dir, exist_ok=True)
     out_path = os.path.join(out_dir, "candidates.csv")
+    place_ids = load_place_ids(os.path.join(out_dir, "places.csv"))
 
     all_rows = []
     per_party = {}   # label -> list of row dicts
     empties = []     # rows with any empty field, for reporting
 
     for path in sorted(glob.glob(os.path.join(root, "list", "*.docx"))):
-        label, _ = party_for(path)
-        per_party.setdefault(label, [])
+        party_id, _ = party_for(path)
+        per_party.setdefault(party_id, [])
         for i, cells in enumerate(iter_rows(path), start=1):
             num = squash(cells[0])
             order = num if num.isdigit() else str(i)
             surname, given = parse_name(cells[1])
             byear, pos, res = parse_freetext(cells[2])
-            ptype, place = parse_place(res) if res else ("", "")
+            ptype_source, place = parse_place(res) if res else ("", "")
+            ptype = PLACE_TYPE_CODES.get(ptype_source, "")
+            place_id = place_ids.get((ptype, place), "") if place else ""
             age = str(2026 - int(byear)) if byear else ""
             row = {
-                "party": label, "order": order,
+                "party_id": party_id, "order": order,
                 "surname": surname, "given_names": given,
                 "birth_year": byear, "age_2026": age,
                 "gender_guess": guess_gender(surname, given),
                 "position_raw": pos, "residence_raw": res,
-                "place_type": ptype, "place": place,
+                "place_type": ptype, "place": place, "place_id": place_id,
             }
             all_rows.append(row)
-            per_party[label].append(row)
+            per_party[party_id].append(row)
 
     with open(out_path, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=FIELDS)
@@ -242,12 +264,12 @@ def main():
     print(f"\nWrote {len(all_rows)} rows -> {out_path}\n", file=log)
     print(f"{'party':<12} {'rows':>5} {'no_year':>8} {'no_place':>9} {'no_gender':>10}",
           file=log)
-    for label in sorted(per_party):
-        rows = per_party[label]
+    for party_id in sorted(per_party):
+        rows = per_party[party_id]
         no_year = sum(1 for r in rows if not r["birth_year"])
         no_place = sum(1 for r in rows if not r["place"])
         no_gender = sum(1 for r in rows if r["gender_guess"] == "?")
-        print(f"{label:<12} {len(rows):>5} {no_year:>8} {no_place:>9} {no_gender:>10}",
+        print(f"{party_id:<12} {len(rows):>5} {no_year:>8} {no_place:>9} {no_gender:>10}",
               file=log)
 
     # ---- rows with any empty field ----
@@ -257,18 +279,18 @@ def main():
             empties.append((r, empty_fields))
     print(f"\n{len(empties)} rows have at least one empty field:", file=log)
     for r, ef in empties:
-        print(f"  [{r['party']}] #{r['order']} {r['surname']} {r['given_names']} "
+        print(f"  [{r['party_id']}] #{r['order']} {r['surname']} {r['given_names']} "
               f"-> empty: {','.join(ef)} | res={r['residence_raw']!r}", file=log)
 
     # ---- reconcile against official counts ----
     print("\nCount reconciliation vs official:", file=log)
     ok = True
-    for label, (_, expected) in {v[0]: (None, v[1]) for v in PARTY.values()}.items():
-        got = len(per_party.get(label, []))
+    for party_id, (_, expected) in {v[0]: (None, v[1]) for v in PARTY.values()}.items():
+        got = len(per_party.get(party_id, []))
         mark = "OK" if got == expected else "MISMATCH"
         if got != expected:
             ok = False
-        print(f"  {label:<12} parsed={got:>4} official={expected:>4}  {mark}", file=log)
+        print(f"  {party_id:<12} parsed={got:>4} official={expected:>4}  {mark}", file=log)
     print(("\nAll parties match official counts."
            if ok else "\nMISMATCH found — data left as-is (not patched)."), file=log)
 

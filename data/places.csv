@@ -1,0 +1,58 @@
+place_id,place_type,name_source,name_kk,name_ru,parent_region_id
+aktau,CITY,Актау,Ақтау,Актау,mangystau
+aktobe,CITY,Актобе,Ақтөбе,Актобе,aktobe_region
+almaty,CITY,Алматы,Алматы,Алматы,
+arkalyk,CITY,Аркалык,Арқалық,Аркалык,kostanay_region
+arys,CITY,Арыс,Арыс,Арыс,turkistan_region
+astana,CITY,Астана,Астана,Астана,
+atyrau,CITY,Атырау,Атырау,Атырау,atyrau_region
+zhezkazgan,CITY,Жезказган,Жезқазған,Жезказган,ulytau
+karagandy,CITY,Караганда,Қарағанды,Караганда,karagandy_region
+kaskelen,CITY,Каскелен,Қаскелең,Каскелен,almaty_region
+kentau,CITY,Кентау,Кентау,Кентау,turkistan_region
+kokshetau,CITY,Кокшетау,Көкшетау,Кокшетау,aqmola
+qonaev,CITY,Конаев,Қонаев,Конаев,almaty_region
+kostanay,CITY,Костанай,Қостанай,Костанай,kostanay_region
+qosshy,CITY,Косшы,Қосшы,Косшы,aqmola
+kurchatov,CITY,Курчатов,Курчатов,Курчатов,abai_region
+kyzylorda,CITY,Кызылорда,Қызылорда,Кызылорда,kyzylorda_region
+pavlodar,CITY,Павлодар,Павлодар,Павлодар,pavlodar_region
+petropavl,CITY,Петропавловск,Петропавл,Петропавловск,north_kazakhstan
+saryagash,CITY,Сарыагаш,Сарыағаш,Сарыагаш,turkistan_region
+satbayev,CITY,Сатпаев,Сәтбаев,Сатпаев,ulytau
+semey,CITY,Семей,Семей,Семей,abai_region
+talgar,CITY,Талгар,Талғар,Талгар,almaty_region
+taldykorgan,CITY,Талдыкорган,Талдықорған,Талдыкорган,zhetysu
+taraz,CITY,Тараз,Тараз,Тараз,zhambyl
+tekeli,CITY,Текели,Текелі,Текели,zhetysu
+temirtau,CITY,Темиртау,Теміртау,Темиртау,karagandy_region
+turkistan,CITY,Туркестан,Түркістан,Туркестан,turkistan_region
+oral,CITY,Уральск,Орал,Уральск,west_kazakhstan
+oskemen,CITY,Усть-Каменогорск,Өскемен,Усть-Каменогорск,east_kazakhstan
+shu,CITY,Шу,Шу,Шу,zhambyl
+shymkent,CITY,Шымкент,Шымкент,Шымкент,
+ekibastuz,CITY,Экибастуз,Екібастұз,Экибастуз,pavlodar_region
+almaty_region,REGION,Алматинская область,Алматы облысы,Алматинская область,
+west_kazakhstan,REGION,Западно-Казахстанская область,Батыс Қазақстан облысы,Западно-Казахстанская область,
+kyzylorda_region,REGION,Кызылординская область,Қызылорда облысы,Кызылординская область,
+mangystau,REGION,Мангистауская область,Маңғыстау облысы,Мангистауская область,
+pavlodar_region,REGION,Павлодарская область,Павлодар облысы,Павлодарская область,
+north_kazakhstan,REGION,Северо-Казахстанская область,Солтүстік Қазақстан облысы,Северо-Казахстанская область,
+turkistan_region,REGION,Туркестанская область,Түркістан облысы,Туркестанская область,
+zhetysu,REGION,область Жетісу,Жетісу облысы,область Жетысу,
+tasboget,SETTLEMENT,Тасбогет,Тасбөгет,Тасбогет,kyzylorda_region
+karasai,DISTRICT,Карасайский район,Қарасай ауданы,Карасайский район,almaty_region
+sairam,DISTRICT,Сайрамский район,Сайрам ауданы,Сайрамский район,turkistan_region
+abai_village,VILLAGE,Абай,Абай,Абай,karagandy_region
+qyrgauyldy,VILLAGE,Кыргаулды,Қырғауылды,Кыргаулды,almaty_region
+pavlodarskoye,VILLAGE,Павлодарское,Павлодарское,Павлодарское,pavlodar_region
+chernoretsk,VILLAGE,Чернорецк,Чернорецк,Чернорецк,pavlodar_region
+abai_region,REGION,Абайская область,Абай облысы,Абайская область,
+aqmola,REGION,Акмолинская область,Ақмола облысы,Акмолинская область,
+aktobe_region,REGION,Актюбинская область,Ақтөбе облысы,Актюбинская область,
+atyrau_region,REGION,Атырауская область,Атырау облысы,Атырауская область,
+east_kazakhstan,REGION,Восточно-Казахстанская область,Шығыс Қазақстан облысы,Восточно-Казахстанская область,
+karagandy_region,REGION,Карагандинская область,Қарағанды облысы,Карагандинская область,
+kostanay_region,REGION,Костанайская область,Қостанай облысы,Костанайская область,
+ulytau,REGION,область Ұлытау,Ұлытау облысы,область Ұлытау,
+zhambyl,REGION,Жамбылская область,Жамбыл облысы,Жамбылская область,

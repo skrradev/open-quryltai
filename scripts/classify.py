@@ -3,10 +3,11 @@
 
 The labels themselves are produced by Claude (me) reading each unique
 `position_raw` and recording a judgment in data/work/labels.tsv, keyed by the
-same id as data/work/positions_unique.tsv. This script only expands the short
-codes to English values and joins them onto every candidate row — so the
-classification is auditable (open labels.tsv) and reproducible (re-running this
-never changes a label; only editing labels.tsv does).
+same id as data/work/positions_unique.tsv. This script expands the short audit
+codes to stable, frontend-localizable English enum codes and joins them onto
+every candidate row — so the classification is auditable (open labels.tsv) and
+reproducible (re-running this never changes a label; only editing labels.tsv
+does).
 
 Output: data/candidates_classified.csv = original columns + sector,
 employer_type, is_party_insider, seniority, is_incumbent.
@@ -20,24 +21,23 @@ UNIQ = os.path.join(ROOT, "data", "work", "positions_unique.tsv")
 LABELS = os.path.join(ROOT, "data", "work", "labels.tsv")
 OUT_CSV = os.path.join(ROOT, "data", "candidates_classified.csv")
 
-# short code -> full English value (the closed value sets we agreed on)
+# Short audit code -> stable output enum. Display translations belong in the UI.
 SECTOR = {
-    "GOV": "Government", "BUS": "Business", "PARTY": "Party apparatus",
-    "LEG": "Legislator", "EDU": "Education & science", "HLTH": "Healthcare",
-    "CULT": "Culture", "SPORT": "Sport", "CIV": "Civil society", "LAW": "Law",
-    "MEDIA": "Media", "AGRI": "Agriculture", "OTH": "Other / unclear",
+    "GOV": "GOVERNMENT", "BUS": "BUSINESS", "PARTY": "PARTY_APPARATUS",
+    "LEG": "LEGISLATOR", "EDU": "EDUCATION_AND_SCIENCE", "HLTH": "HEALTHCARE",
+    "CULT": "CULTURE", "SPORT": "SPORT", "CIV": "CIVIL_SOCIETY", "LAW": "LAW",
+    "MEDIA": "MEDIA", "AGRI": "AGRICULTURE", "OTH": "OTHER_OR_UNCLEAR",
 }
 EMPLOYER = {
-    "PRIV": "Private company", "STATE": "State body",
-    "QUASI": "Quasi-governmental", "POL": "Political party", "NGO": "NGO",
-    "SELF": "Self-employed", "UNCL": "Unclear",
+    "PRIV": "PRIVATE_COMPANY", "STATE": "STATE_BODY",
+    "QUASI": "QUASI_GOVERNMENTAL", "POL": "POLITICAL_PARTY", "NGO": "NGO",
+    "SELF": "SELF_EMPLOYED", "UNCL": "UNCLEAR",
 }
-INSIDER = {"Y": "yes", "N": "no", "U": "unclear"}
 SENIORITY = {
-    "TOP": "Top executive", "SEN": "Senior management", "SPEC": "Specialist",
-    "LEG": "Legislator", "ENT": "Entrepreneur", "UNCL": "Unclear",
+    "TOP": "TOP_EXECUTIVE", "SEN": "SENIOR_MANAGEMENT", "SPEC": "SPECIALIST",
+    "LEG": "LEGISLATOR", "ENT": "ENTREPRENEUR", "UNCL": "UNCLEAR",
 }
-INCUMBENT = {"Y": "yes", "N": "no"}
+BOOLEAN = {"Y": "true", "N": "false"}
 
 NEW_COLS = ["sector", "employer_type", "is_party_insider", "seniority", "is_incumbent"]
 
@@ -61,9 +61,9 @@ def load_labels():
             out[row["id"]] = {
                 "sector": SECTOR[row["sector"]],
                 "employer_type": EMPLOYER[row["employer"]],
-                "is_party_insider": INSIDER[row["insider"]],
+                "is_party_insider": BOOLEAN[row["insider"]],
                 "seniority": SENIORITY[row["seniority"]],
-                "is_incumbent": INCUMBENT[row["incumbent"]],
+                "is_incumbent": BOOLEAN[row["incumbent"]],
             }
     return out
 
@@ -112,14 +112,14 @@ def main():
             print(f"  {v:4}  {k}")
 
     # sector x party cross-tab
-    parties = sorted({r["party"] for r in rows})
+    parties = sorted({r["party_id"] for r in rows})
     sectors = list(SECTOR.values())
     print("\n== sector x party (row counts) ==")
     print("sector".ljust(20) + "".join(p[:9].rjust(10) for p in parties))
     for s in sectors:
         line = s.ljust(20)
         for p in parties:
-            n = sum(1 for r in rows if r["party"] == p and r["sector"] == s)
+            n = sum(1 for r in rows if r["party_id"] == p and r["sector"] == s)
             line += (str(n) if n else "·").rjust(10)
         print(line)
 

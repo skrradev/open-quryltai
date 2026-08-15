@@ -139,9 +139,9 @@ def guess_gender(surname, given_names):
     Kazakh -ұлы/-қызы is often written in the surname slot; both are checked."""
     toks = [t.lower() for t in (surname + " " + given_names).split()]
     if any(t.endswith(PATRO_M) for t in toks):
-        return "м"
+        return "M"
     if any(t.endswith(PATRO_F) for t in toks):
-        return "ж"
+        return "F"
     return "?"  # undetermined — marked so it can be found and filled by hand
 
 

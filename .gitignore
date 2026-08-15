@@ -15,6 +15,11 @@ venv/
 *.log
 hs_err_pid*
 
+# Node.js / pnpm
+node_modules/
+dist/
+.pnpm-store/
+
 # IDEs
 .idea/
 *.iml

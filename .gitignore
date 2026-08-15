@@ -1,0 +1,37 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Java / Gradle
+.gradle/
+**/build/
+*.class
+*.log
+hs_err_pid*
+
+# IDEs
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+.vscode/
+
+# Spring Boot local configuration and secrets
+application-local.yml
+application-local.yaml
+application-*.local.yml
+application-*.local.yaml
+.env
+.env.*
+!.env.example
+
+# Local databases
+*.mv.db
+*.trace.db

@@ -21,6 +21,8 @@ def main():
 
     for row in rows:
         row["status"] = "APPROVED"
+        if row["source_url"].startswith("machine:") and not row["review_notes"]:
+            row["review_notes"] = "Approved by user"
 
     with NamedTemporaryFile("w", newline="", encoding="utf-8", delete=False, dir=os.path.dirname(PATH)) as f:
         writer = csv.DictWriter(f, fieldnames=FIELDS, delimiter="\t")

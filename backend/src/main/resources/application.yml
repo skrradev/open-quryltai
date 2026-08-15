@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: quryltai-backend
+  datasource:
+    # Defaults to an in-memory database for local development and tests.
+    # Set DATABASE_URL, DATABASE_USERNAME, and DATABASE_PASSWORD for PostgreSQL.
+    url: ${DATABASE_URL:jdbc:h2:mem:quryltai;MODE=PostgreSQL;DB_CLOSE_DELAY=-1}
+    username: ${DATABASE_USERNAME:sa}
+    password: ${DATABASE_PASSWORD:}
+  flyway:
+    enabled: true
+
+server:
+  port: ${PORT:8080}

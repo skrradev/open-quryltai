@@ -215,8 +215,29 @@ def load_place_ids(path):
     return result
 
 
+def load_title_translations(positions_path, translations_path):
+    """Map source title text to its approved stable ID and bilingual content."""
+    with open(translations_path, newline="", encoding="utf-8") as f:
+        translations = {row["id"]: row for row in csv.DictReader(f, delimiter="\t")}
+    result = {}
+    with open(positions_path, newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f, delimiter="\t"):
+            translation = translations.get(row["id"])
+            if not translation or translation["status"] != "APPROVED":
+                raise SystemExit(f"position {row['id']} is not approved for publication")
+            if not translation["position_kk"] or not translation["position_ru"]:
+                raise SystemExit(f"position {row['id']} has an incomplete translation")
+            result[row["position_raw"]] = {
+                "position_id": row["id"],
+                "position_kk": translation["position_kk"],
+                "position_ru": translation["position_ru"],
+            }
+    return result
+
+
 FIELDS = ["party_id", "order", "surname", "given_names", "birth_year", "age_2026",
-          "gender_guess", "position_raw", "residence_raw", "place_type", "place",
+          "gender_guess", "position_id", "position_raw", "position_kk", "position_ru",
+          "residence_raw", "place_type", "place",
           "place_id"]
 
 
@@ -226,6 +247,10 @@ def main():
     os.makedirs(out_dir, exist_ok=True)
     out_path = os.path.join(out_dir, "candidates.csv")
     place_ids = load_place_ids(os.path.join(out_dir, "places.csv"))
+    title_translations = load_title_translations(
+        os.path.join(out_dir, "work", "positions_unique.tsv"),
+        os.path.join(out_dir, "work", "position_translations.tsv"),
+    )
 
     all_rows = []
     per_party = {}   # label -> list of row dicts
@@ -242,13 +267,18 @@ def main():
             ptype_source, place = parse_place(res) if res else ("", "")
             ptype = PLACE_TYPE_CODES.get(ptype_source, "")
             place_id = place_ids.get((ptype, place), "") if place else ""
+            title = title_translations.get(pos)
+            if title is None:
+                raise SystemExit(f"unmapped position title: {pos!r}")
             age = str(2026 - int(byear)) if byear else ""
             row = {
                 "party_id": party_id, "order": order,
                 "surname": surname, "given_names": given,
                 "birth_year": byear, "age_2026": age,
                 "gender_guess": guess_gender(surname, given),
-                "position_raw": pos, "residence_raw": res,
+                "position_id": title["position_id"], "position_raw": pos,
+                "position_kk": title["position_kk"], "position_ru": title["position_ru"],
+                "residence_raw": res,
                 "place_type": ptype, "place": place, "place_id": place_id,
             }
             all_rows.append(row)

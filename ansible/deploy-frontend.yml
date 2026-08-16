@@ -1,0 +1,60 @@
+---
+# Deploy the built React SPA to nginx's web root.
+# Build locally first (same-origin /api, no build-time env needed):
+#     (cd ../frontend && pnpm install && pnpm build)   # -> frontend/dist
+# Then:
+#     ansible-playbook -i inventories/prod/inventory-server-bootstrap.ini \
+#       deploy-frontend.yml -u "$ANSIBLE_USERNAME" --become --ask-become-pass
+- name: Deploy frontend
+  hosts: all
+  vars:
+    app_dir: /var/www/quryltai-frontend
+    build_dir: "{{ playbook_dir }}/../frontend/dist"
+    staging_dir: /tmp/quryltai-frontend
+
+  tasks:
+    - name: Assert the local build exists
+      delegate_to: localhost
+      become: no
+      stat:
+        path: "{{ build_dir }}/index.html"
+      register: build_index
+
+    - name: Fail if the build is missing
+      fail:
+        msg: "No build at {{ build_dir }} — run 'pnpm build' in frontend/ first."
+      when: not build_index.stat.exists
+
+    # rsync to a user-writable staging dir (runs as the connection user).
+    - name: Sync build to staging on the server
+      ansible.posix.synchronize:
+        src: "{{ build_dir }}/"
+        dest: "{{ staging_dir }}/"
+        delete: yes
+        recursive: yes
+
+    # Move into the web root and set ownership (nginx runs as www-data).
+    - name: Publish to web root
+      become: yes
+      ansible.builtin.command:
+        cmd: "rsync -a --delete {{ staging_dir }}/ {{ app_dir }}/"
+
+    - name: Set web root ownership
+      become: yes
+      ansible.builtin.file:
+        path: "{{ app_dir }}"
+        state: directory
+        recurse: yes
+        owner: www-data
+        group: www-data
+
+    - name: Remove staging dir
+      ansible.builtin.file:
+        path: "{{ staging_dir }}"
+        state: absent
+
+    - name: Reload nginx
+      become: yes
+      ansible.builtin.service:
+        name: nginx
+        state: reloaded

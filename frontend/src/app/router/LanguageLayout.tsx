@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Navigate, Outlet, useParams } from 'react-router'
+import { Navigate, NavLink, Outlet, useParams } from 'react-router'
 
 import { LanguageSwitcher } from '@/features/language-switcher/LanguageSwitcher'
 import {
@@ -25,13 +25,41 @@ export function LanguageLayout() {
   }, [i18n, language])
 
   if (!isSupportedLanguage(language)) {
-    return <Navigate to={`/${DEFAULT_LANGUAGE}/candidates`} replace />
+    return <Navigate to={`/${DEFAULT_LANGUAGE}`} replace />
   }
 
   return (
     <div className="min-h-svh">
-      <header className="fixed top-0 right-0 z-10 p-4 sm:p-6">
-        <LanguageSwitcher language={language} />
+      <header className="fixed inset-x-0 top-0 z-10 border-b bg-background/90 backdrop-blur-md">
+        <div className="mx-auto flex h-16 max-w-7xl items-center gap-3 px-4 sm:px-6 lg:px-8">
+          <NavLink className="mr-auto hidden text-base font-semibold tracking-tight sm:block" end to={`/${language}`}>
+            Quryltai
+          </NavLink>
+          <nav aria-label={i18n.t('navigation.label')} className="flex items-center gap-1">
+            <NavLink
+              className={({ isActive }) =>
+                `rounded-lg px-2.5 py-2 text-sm font-medium transition-colors ${
+                  isActive ? 'bg-secondary text-secondary-foreground' : 'text-muted-foreground hover:text-foreground'
+                }`
+              }
+              end
+              to={`/${language}`}
+            >
+              {i18n.t('navigation.overview')}
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                `rounded-lg px-2.5 py-2 text-sm font-medium transition-colors ${
+                  isActive ? 'bg-secondary text-secondary-foreground' : 'text-muted-foreground hover:text-foreground'
+                }`
+              }
+              to={`/${language}/candidates`}
+            >
+              {i18n.t('navigation.candidates')}
+            </NavLink>
+          </nav>
+          <LanguageSwitcher language={language} />
+        </div>
       </header>
       <Outlet />
     </div>

@@ -78,4 +78,23 @@ class QuryltaiBackendApplicationTests {
                 .contains("\"name\":\"Уральск\"")
                 .contains("\"label\":\"Город\"");
     }
+
+    @Test
+    void statisticsAreAggregatedAndLocalized() {
+        HttpHeaders headers = new HttpHeaders();
+        headers.set(HttpHeaders.ACCEPT_LANGUAGE, "ru");
+        ResponseEntity<String> response = restTemplate.exchange(
+                "http://localhost:" + port + "/api/statistics",
+                HttpMethod.GET,
+                new HttpEntity<>(headers),
+                String.class);
+
+        assertThat(response.getStatusCode().is2xxSuccessful()).isTrue();
+        assertThat(response.getBody())
+                .contains("\"totalCandidates\":545")
+                .contains("\"totalParties\":7")
+                .contains("\"incumbentCount\":41")
+                .contains("\"label\":\"30–39 лет\"")
+                .contains("\"label\":\"Бизнес\"");
+    }
 }

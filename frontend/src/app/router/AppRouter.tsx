@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router'
 
 import { LanguageLayout } from '@/app/router/LanguageLayout'
@@ -6,16 +7,28 @@ import { CandidateListPage } from '@/pages/candidate-list/CandidateListPage'
 import { NotFoundPage } from '@/pages/not-found/NotFoundPage'
 import { DEFAULT_LANGUAGE } from '@/shared/config/language'
 
-const defaultCandidatesPath = `/${DEFAULT_LANGUAGE}/candidates`
+const defaultPath = `/${DEFAULT_LANGUAGE}`
+const StatisticsPage = lazy(async () => {
+  const page = await import('@/pages/statistics/StatisticsPage')
+
+  return { default: page.StatisticsPage }
+})
 
 export function AppRouter() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navigate to={defaultCandidatesPath} replace />} />
+        <Route path="/" element={<Navigate to={defaultPath} replace />} />
 
         <Route path="/:language" element={<LanguageLayout />}>
-          <Route index element={<Navigate to="candidates" replace />} />
+          <Route
+            index
+            element={
+              <Suspense fallback={null}>
+                <StatisticsPage />
+              </Suspense>
+            }
+          />
           <Route path="candidates" element={<CandidateListPage />} />
           <Route path="candidates/:candidateId" element={<CandidateDetailsPage />} />
           <Route path="*" element={<NotFoundPage />} />

@@ -25,10 +25,33 @@ export const kk = {
       total: 'Барлығы: {{count}}',
     },
     details: {
+      fields: {
+        birthYear: 'Туған жылы',
+        gender: 'Жынысы',
+        incumbent: 'Қазіргі депутат',
+        party: 'Партия',
+        partyInsider: 'Партия аппаратының өкілі',
+        place: 'Тұрғылықты жері',
+        position: 'Лауазымы',
+      },
+      listOrder: 'Тізімдегі №{{order}}',
+      notFound: {
+        title: 'Үміткер табылмады',
+        description: 'Мұндай нөмірі бар үміткер жоқ.',
+      },
+      sections: {
+        basic: 'Негізгі мәліметтер',
+        political: 'Саяси мәліметтер',
+        professional: 'Кәсіби мәліметтер',
+      },
       title: 'Үміткер',
     },
   },
   errors: {
+    candidate: {
+      title: 'Үміткер туралы деректерді жүктеу мүмкін болмады',
+      description: 'Байланысты тексеріп, әрекетті қайталап көріңіз.',
+    },
     candidates: {
       title: 'Деректерді жүктеу мүмкін болмады',
       description: 'Байланысты тексеріп, әрекетті қайталап көріңіз.',

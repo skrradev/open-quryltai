@@ -1,6 +1,6 @@
 import { BriefcaseBusiness, MapPin } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
-import { Link } from 'react-router'
+import { Link, useLocation } from 'react-router'
 
 import type { Candidate } from '@/entities/candidate/model/candidate'
 import type { Language } from '@/shared/config/language'
@@ -20,17 +20,19 @@ interface CandidateCardProps {
 
 export function CandidateCard({ candidate, language }: CandidateCardProps) {
   const { t } = useTranslation()
+  const location = useLocation()
 
   return (
     <Link
       className="group rounded-xl outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+      state={{ from: `${location.pathname}${location.search}` }}
       to={`/${language}/candidates/${candidate.candidateId}`}
     >
       <Card className="h-full transition-colors group-hover:bg-muted/40">
         <CardHeader>
           <Badge variant="secondary">{candidate.party.name}</Badge>
           <CardTitle className="mt-2 text-lg group-hover:underline">
-            {candidate.fullName}
+            <h2>{candidate.fullName}</h2>
           </CardTitle>
           <CardDescription>
             {t('candidate.card.birthYear', { year: candidate.birthYear })}

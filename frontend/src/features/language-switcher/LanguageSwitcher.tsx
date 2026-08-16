@@ -41,6 +41,7 @@ export function LanguageSwitcher({ language }: LanguageSwitcherProps) {
               aria-label={t('language.switchTo', {
                 language: t(`language.names.${targetLanguage}`),
               })}
+              state={location.state}
               to={{ pathname, search: location.search, hash: location.hash }}
             >
               {languageLabels[targetLanguage]}

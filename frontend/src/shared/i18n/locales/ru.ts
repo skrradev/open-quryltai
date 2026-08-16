@@ -25,10 +25,33 @@ export const ru = {
       total: 'Всего: {{count}}',
     },
     details: {
+      fields: {
+        birthYear: 'Год рождения',
+        gender: 'Пол',
+        incumbent: 'Действующий депутат',
+        party: 'Партия',
+        partyInsider: 'Представитель партийного аппарата',
+        place: 'Место проживания',
+        position: 'Должность',
+      },
+      listOrder: '№{{order}} в списке',
+      notFound: {
+        title: 'Кандидат не найден',
+        description: 'Кандидата с таким номером не существует.',
+      },
+      sections: {
+        basic: 'Основные сведения',
+        political: 'Политические сведения',
+        professional: 'Профессиональные сведения',
+      },
       title: 'Кандидат',
     },
   },
   errors: {
+    candidate: {
+      title: 'Не удалось загрузить сведения о кандидате',
+      description: 'Проверьте подключение и повторите попытку.',
+    },
     candidates: {
       title: 'Не удалось загрузить данные',
       description: 'Проверьте подключение и повторите попытку.',

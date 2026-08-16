@@ -31,8 +31,8 @@ dependencies {
 
     jooqCodegen 'org.jooq:jooq-meta-extensions:3.19.35'
 
+    runtimeOnly 'org.flywaydb:flyway-database-postgresql'
     runtimeOnly 'org.postgresql:postgresql'
-    runtimeOnly 'com.h2database:h2'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

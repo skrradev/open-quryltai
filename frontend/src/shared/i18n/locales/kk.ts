@@ -49,6 +49,17 @@ export const kk = {
       },
       title: 'Үміткер',
     },
+    table: {
+      columns: {
+        order: '№',
+        candidate: 'Үміткер',
+        party: 'Партия',
+        birthYear: 'Туған жылы',
+        place: 'Тұрғылықты жері',
+        position: 'Лауазымы',
+        incumbent: 'Қазіргі депутат',
+      },
+    },
   },
   errors: {
     candidate: {

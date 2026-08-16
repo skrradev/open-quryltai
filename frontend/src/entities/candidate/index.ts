@@ -19,4 +19,4 @@ export {
   placeTypes,
   sectors,
 } from '@/entities/candidate/model/candidate'
-export { CandidateCard } from '@/entities/candidate/ui/CandidateCard'
+export { CandidateTable } from '@/entities/candidate/ui/CandidateTable'

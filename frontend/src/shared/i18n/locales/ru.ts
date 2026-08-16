@@ -49,6 +49,17 @@ export const ru = {
       },
       title: 'Кандидат',
     },
+    table: {
+      columns: {
+        order: '№',
+        candidate: 'Кандидат',
+        party: 'Партия',
+        birthYear: 'Год рождения',
+        place: 'Место проживания',
+        position: 'Должность',
+        incumbent: 'Действующий депутат',
+      },
+    },
   },
   errors: {
     candidate: {

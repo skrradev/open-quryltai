@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 import { useTranslation } from 'react-i18next'
 
-import { CandidateCard, candidateQueries } from '@/entities/candidate'
+import { CandidateTable, candidateQueries } from '@/entities/candidate'
 import {
   CandidateFilters,
   useCandidateListParams,
@@ -9,30 +9,26 @@ import {
 import { CandidatePagination } from '@/features/candidate-pagination'
 import { useRouteLanguage } from '@/shared/lib/use-route-language'
 import { Button } from '@/shared/ui/button'
-import { Card } from '@/shared/ui/card'
 import { Skeleton } from '@/shared/ui/skeleton'
 
 const skeletons = Array.from({ length: 12 }, (_, index) => index)
 
 function CandidateListSkeleton() {
   return (
-    <div
-      aria-hidden="true"
-      className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
-    >
+    <div aria-hidden="true" className="overflow-hidden rounded-xl border">
+      <div className="flex gap-6 bg-muted/50 p-4">
+        {[0, 1, 2, 3, 4].map((item) => (
+          <Skeleton className="h-4 w-28" key={item} />
+        ))}
+      </div>
       {skeletons.map((index) => (
-        <Card className="gap-4 p-4" key={index}>
+        <div className="grid grid-cols-[3rem_14rem_10rem_7rem_1fr] gap-6 border-t p-4" key={index}>
+          <Skeleton className="h-4 w-8" />
+          <Skeleton className="h-4 w-48" />
           <Skeleton className="h-5 w-28 rounded-full" />
-          <div className="grid gap-2">
-            <Skeleton className="h-6 w-4/5" />
-            <Skeleton className="h-4 w-32" />
-          </div>
-          <div className="grid gap-2 pt-2">
-            <Skeleton className="h-4 w-full" />
-            <Skeleton className="h-4 w-11/12" />
-            <Skeleton className="h-4 w-2/3" />
-          </div>
-        </Card>
+          <Skeleton className="h-4 w-16" />
+          <Skeleton className="h-4 w-full" />
+        </div>
       ))}
     </div>
   )
@@ -107,15 +103,10 @@ export function CandidateListPage() {
 
       {candidatesQuery.data && candidatesQuery.data.items.length > 0 && (
         <>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {candidatesQuery.data.items.map((candidate) => (
-              <CandidateCard
-                candidate={candidate}
-                key={candidate.candidateId}
-                language={language}
-              />
-            ))}
-          </div>
+          <CandidateTable
+            candidates={candidatesQuery.data.items}
+            language={language}
+          />
           <CandidatePagination
             disabled={candidatesQuery.isFetching}
             onPageChange={(page) => updateParams({ page }, { resetPage: false })}

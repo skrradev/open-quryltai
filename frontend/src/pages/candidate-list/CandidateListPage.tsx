@@ -2,6 +2,11 @@ import { useQuery } from '@tanstack/react-query'
 import { useTranslation } from 'react-i18next'
 
 import { CandidateCard, candidateQueries } from '@/entities/candidate'
+import {
+  CandidateFilters,
+  useCandidateListParams,
+} from '@/features/candidate-filters'
+import { CandidatePagination } from '@/features/candidate-pagination'
 import { useRouteLanguage } from '@/shared/lib/use-route-language'
 import { Button } from '@/shared/ui/button'
 import { Card } from '@/shared/ui/card'
@@ -36,7 +41,9 @@ function CandidateListSkeleton() {
 export function CandidateListPage() {
   const { t } = useTranslation()
   const language = useRouteLanguage()
-  const candidatesQuery = useQuery(candidateQueries.list(language))
+  const { hasCustomParams, params, resetParams, updateParams } =
+    useCandidateListParams()
+  const candidatesQuery = useQuery(candidateQueries.list(language, params))
 
   return (
     <main className="mx-auto min-h-svh w-full max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
@@ -58,6 +65,14 @@ export function CandidateListPage() {
           </p>
         )}
       </header>
+
+      <CandidateFilters
+        hasCustomParams={hasCustomParams}
+        language={language}
+        onReset={resetParams}
+        onUpdate={updateParams}
+        params={params}
+      />
 
       {candidatesQuery.isPending && <CandidateListSkeleton />}
 
@@ -91,15 +106,25 @@ export function CandidateListPage() {
       )}
 
       {candidatesQuery.data && candidatesQuery.data.items.length > 0 && (
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {candidatesQuery.data.items.map((candidate) => (
-            <CandidateCard
-              candidate={candidate}
-              key={candidate.candidateId}
-              language={language}
-            />
-          ))}
-        </div>
+        <>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {candidatesQuery.data.items.map((candidate) => (
+              <CandidateCard
+                candidate={candidate}
+                key={candidate.candidateId}
+                language={language}
+              />
+            ))}
+          </div>
+          <CandidatePagination
+            disabled={candidatesQuery.isFetching}
+            onPageChange={(page) => updateParams({ page }, { resetPage: false })}
+            onPageSizeChange={(size) => updateParams({ page: 0, size })}
+            page={candidatesQuery.data.page}
+            size={candidatesQuery.data.size}
+            totalPages={candidatesQuery.data.totalPages}
+          />
+        </>
       )}
     </main>
   )

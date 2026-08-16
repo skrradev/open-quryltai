@@ -1,0 +1,78 @@
+---
+# Deploy a new backend jar (build artifact) to the already-provisioned service.
+# Provision first with java-service.yml. Build the jar locally, e.g.:
+#     (cd ../backend && ./gradlew bootJar)
+# Then:
+#     ansible-playbook -i inventories/prod/inventory-server-bootstrap.ini \
+#       deploy-backend.yml -u "$ANSIBLE_USERNAME" --become --ask-become-pass
+#
+# Override the jar path with -e backend_jar_src=/path/to/app.jar if needed.
+- name: Deploy backend jar
+  hosts: all
+  become: yes
+  vars:
+    java_service_name: quryltai-backend
+    java_service_base_dir: "/opt/{{ java_service_name }}"
+    java_service_user: "{{ java_service_name }}"
+    java_service_group: "{{ java_service_name }}"
+    java_service_jar_name: app.jar
+    backend_jar_src: "{{ lookup('env', 'BACKEND_JAR') | default(playbook_dir + '/../backend/build/libs/quryltai-backend-0.0.1-SNAPSHOT.jar', true) }}"
+
+  tasks:
+    - name: Assert the built jar exists locally
+      delegate_to: localhost
+      become: no
+      stat:
+        path: "{{ backend_jar_src }}"
+      register: local_jar
+
+    - name: Fail if the jar is missing
+      fail:
+        msg: "Jar not found at {{ backend_jar_src }} — run './gradlew bootJar' in backend/ first (or pass -e backend_jar_src=...)."
+      when: not local_jar.stat.exists
+
+    - name: Check for a currently deployed jar
+      stat:
+        path: "{{ java_service_base_dir }}/{{ java_service_jar_name }}"
+      register: current_jar
+
+    - name: Back up the current jar
+      copy:
+        src: "{{ java_service_base_dir }}/{{ java_service_jar_name }}"
+        dest: "{{ java_service_base_dir }}/bak/app-{{ ansible_date_time.iso8601_basic_short }}.jar"
+        remote_src: yes
+        owner: "{{ java_service_user }}"
+        group: "{{ java_service_group }}"
+        mode: "0644"
+      when: current_jar.stat.exists
+
+    - name: Upload the new jar
+      copy:
+        src: "{{ backend_jar_src }}"
+        dest: "{{ java_service_base_dir }}/{{ java_service_jar_name }}"
+        owner: "{{ java_service_user }}"
+        group: "{{ java_service_group }}"
+        mode: "0644"
+
+    - name: Restart the backend service
+      systemd:
+        name: "{{ java_service_name }}"
+        state: restarted
+        enabled: yes
+
+    - name: Wait for the backend to listen on its port
+      wait_for:
+        host: 127.0.0.1
+        port: 8080
+        state: started
+        timeout: 60
+        delay: 3
+
+    - name: Health check the API
+      uri:
+        url: "http://127.0.0.1:8080/api/candidates?size=1"
+        status_code: 200
+      register: health
+      retries: 10
+      delay: 3
+      until: health.status == 200

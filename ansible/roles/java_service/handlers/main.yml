@@ -1,0 +1,9 @@
+---
+- name: reload systemd
+  systemd:
+    daemon_reload: yes
+
+- name: restart java service
+  systemd:
+    name: "{{ java_service_name }}"
+    state: "{{ 'restarted' if java_service_state == 'started' else java_service_state }}"

@@ -1,0 +1,50 @@
+---
+- name: Check required environment variables
+  assert:
+    that:
+      - item is defined and item != ''
+    fail_msg: "Required environment variable {{ item }} must be set"
+  loop:
+    - "{{ hetzner_api_token }}"
+    - "{{ hetzner_firewall_id }}"
+  no_log: true
+
+- name: Install script dependencies
+  apt:
+    name:
+      - python3
+      - python3-requests
+    state: present
+    update_cache: yes
+
+- name: Create script directory
+  file:
+    path: "{{ hetzner_script_path }}"
+    state: directory
+    mode: "0755"
+    owner: root
+    group: root
+
+- name: Deploy Hetzner firewall update script
+  template:
+    src: update_firewall.py.j2
+    dest: "{{ hetzner_script_path }}/update_firewall.py"
+    mode: "0700"
+    owner: root
+    group: root
+
+- name: Refresh Cloudflare IPs daily via cron
+  cron:
+    name: "Update Hetzner firewall Cloudflare IPs"
+    minute: "0"
+    hour: "6"
+    job: "{{ hetzner_script_path }}/update_firewall.py >> {{ hetzner_script_path }}/update_firewall.log 2>&1"
+    user: root
+
+- name: Apply firewall rules now
+  command: "{{ hetzner_script_path }}/update_firewall.py"
+  register: script_output
+  changed_when: "'whitelisted successfully' in script_output.stdout"
+  failed_when:
+    - script_output.rc != 0
+    - "'whitelisted successfully' not in script_output.stdout"

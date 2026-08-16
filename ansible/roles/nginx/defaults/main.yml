@@ -1,0 +1,7 @@
+---
+# Domain Cloudflare points at this origin (override via env DOMAIN).
+nginx_server_name: "{{ lookup('env', 'DOMAIN') | default('open-quryltai.org', true) }}"
+# Where the React build is deployed.
+nginx_frontend_root: /var/www/quryltai-frontend
+# Local port the Spring backend listens on.
+backend_port: 8080

@@ -1,0 +1,3 @@
+---
+# Default timezone if SERVER_TIMEZONE environment variable is not set
+default_timezone: "Asia/Almaty"

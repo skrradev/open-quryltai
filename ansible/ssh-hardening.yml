@@ -1,0 +1,14 @@
+---
+# Run this ONLY after server-bootstrap.yml has succeeded AND you have confirmed
+# you can log in as the deploy user:
+#     ssh -i .secrets/hetzner_deploy deploy@quryltai-server
+#
+# This playbook disables root login and password auth, so run it as the deploy
+# user (not root):
+#     ansible-playbook -i inventories/prod/inventory-server-bootstrap.ini \
+#       ssh-hardening.yml -u "$ANSIBLE_USERNAME" --become
+- name: Harden SSH configuration
+  hosts: all
+  become: yes
+  roles:
+    - ssh_hardening

@@ -1,0 +1,23 @@
+---
+# Java runtime version (matches the backend's toolchain).
+java_version: "25"
+
+# Service identity
+java_service_name: "quryltai-backend"
+java_service_base_dir: "/opt/{{ java_service_name }}"
+java_service_user: "{{ java_service_name }}"
+java_service_group: "{{ java_service_name }}"
+java_service_jar_name: "app.jar"
+
+# JVM options — small app, static dataset; modest heap.
+java_opts: "-Xms256m -Xmx1g -XX:+UseStringDeduplication"
+
+# Backend runtime settings (env file)
+backend_port: 8080
+pg_app_db_name: "quryltai_db"
+pg_app_user: "quryltai_app"
+
+# Retention / boot behaviour. Left stopped: the jar is deployed separately.
+java_service_retention_days: 7
+java_service_enabled: yes
+java_service_state: stopped

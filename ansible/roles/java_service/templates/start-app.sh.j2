@@ -1,0 +1,7 @@
+#!/bin/bash
+# {{ ansible_managed }}
+
+APP_JAR="{{ java_service_base_dir }}/{{ java_service_jar_name }}"
+
+# JAVA_OPTS is provided by the systemd EnvironmentFile.
+exec /usr/bin/java ${JAVA_OPTS} -jar "$APP_JAR"

@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# {{ ansible_managed }}
+
+# Set error handling
+set -e
+
+# Function to safely clean directory
+clean_directory() {
+    local dir=$1
+    local days=$2
+    
+    echo "Cleaning files older than $days days in $dir"
+    
+    # First find and check files before deleting
+    local files_to_delete=$(find "$dir" -type f -mtime +"$days" -print)
+    
+    if [ -n "$files_to_delete" ]; then
+        echo "Found files to delete in $dir:"
+        echo "$files_to_delete"
+        
+        # Delete the files
+        find "$dir" -type f -mtime +"$days" -delete
+        echo "Cleanup completed for $dir"
+    else
+        echo "No files older than $days days found in $dir"
+    fi
+}
+
+# Number of days to keep files
+DAYS_TO_KEEP={{ java_service_retention_days }}
+
+# Clean backup directory
+clean_directory "{{ java_service_base_dir }}/bak" "$DAYS_TO_KEEP"
+
+echo "Cleanup process completed successfully" 

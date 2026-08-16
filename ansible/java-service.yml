@@ -1,0 +1,13 @@
+---
+# Provision the systemd service scaffold for the Spring Boot backend
+# (installs the JRE, service user, scripts, unit, and env file).
+# The jar itself is deployed separately (see deploy-backend.yml, next step).
+# Requires PG_APP_USER_PASSWORD in the environment (written to the env file).
+# Run as the deploy user:
+#     ansible-playbook -i inventories/prod/inventory-server-bootstrap.ini \
+#       java-service.yml -u "$ANSIBLE_USERNAME" --become --ask-become-pass
+- name: Set up the backend Java service
+  hosts: all
+  become: yes
+  roles:
+    - java_service

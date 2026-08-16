@@ -1,0 +1,28 @@
+[Unit]
+Description={{ java_service_name }} Spring Boot Application
+After=network.target postgresql.service
+Wants=postgresql.service
+
+[Service]
+Type=simple
+User={{ java_service_user }}
+Group={{ java_service_group }}
+EnvironmentFile=/etc/default/{{ java_service_name }}
+ExecStart={{ java_service_base_dir }}/scripts/start-app.sh
+ExecStop={{ java_service_base_dir }}/scripts/stop-app.sh
+Restart=always
+RestartSec=5
+
+# Security hardening
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+NoNewPrivileges=true
+ReadWritePaths={{ java_service_base_dir }}/bak
+CapabilityBoundingSet=
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+
+[Install]
+WantedBy=multi-user.target

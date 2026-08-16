@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# {{ ansible_managed }}
+
+# Function to check if process is running
+is_running() {
+    local pid=$1
+    [ -n "$pid" ] && ps -p "$pid" > /dev/null 2>&1
+}
+
+# Find the process ID of the Java application
+PID=$(pgrep -f "java.*-jar {{ java_service_base_dir }}/{{ java_service_jar_name }}")
+
+if [ -z "$PID" ]; then
+    echo "Application is not running"
+    exit 0
+fi
+
+echo "Stopping {{ java_service_name }} application (PID: $PID) with SIGTERM..."
+kill -15 "$PID"  # SIGTERM for graceful shutdown
+
+# Wait for up to 30 seconds for graceful shutdown
+for i in {1..30}; do
+    if ! is_running "$PID"; then
+        echo "Application stopped successfully"
+        exit 0
+    fi
+    sleep 1
+done
+
+# Force kill if still running
+echo "Application did not stop gracefully after 30 seconds. Using SIGKILL..."
+kill -9 "$PID"
+sleep 2
+if ! is_running "$PID"; then
+    echo "Application forcefully terminated"
+else
+    echo "Failed to stop application"
+    exit 1
+fi

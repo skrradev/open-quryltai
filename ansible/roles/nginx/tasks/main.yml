@@ -1,0 +1,84 @@
+---
+- name: Install Nginx
+  apt:
+    name: nginx
+    state: present
+    update_cache: yes
+
+- name: Assert Cloudflare origin certificate env vars are set
+  assert:
+    that:
+      - lookup('env', 'CF_SSL_CERT_FILE') | length > 0
+      - lookup('env', 'CF_SSL_KEY_FILE') | length > 0
+    fail_msg: "Set CF_SSL_CERT_FILE and CF_SSL_KEY_FILE to the Cloudflare origin cert/key paths"
+
+- name: Create SSL directory
+  file:
+    path: /etc/nginx/ssl
+    state: directory
+    mode: "0755"
+    owner: root
+    group: root
+
+- name: Copy Cloudflare origin certificate
+  copy:
+    src: "{{ lookup('env', 'CF_SSL_CERT_FILE') }}"
+    dest: /etc/nginx/ssl/quryltai.crt
+    mode: "0644"
+    owner: root
+    group: root
+  notify: Restart Nginx
+
+- name: Copy Cloudflare origin key
+  copy:
+    src: "{{ lookup('env', 'CF_SSL_KEY_FILE') }}"
+    dest: /etc/nginx/ssl/quryltai.key
+    mode: "0600"
+    owner: root
+    group: root
+  notify: Restart Nginx
+
+- name: Ensure frontend web root exists
+  file:
+    path: "{{ nginx_frontend_root }}"
+    state: directory
+    mode: "0755"
+    owner: www-data
+    group: www-data
+
+- name: Configure Nginx (global)
+  template:
+    src: nginx.conf.j2
+    dest: /etc/nginx/nginx.conf
+    mode: "0644"
+    owner: root
+    group: root
+  notify: Restart Nginx
+
+- name: Configure Quryltai site
+  template:
+    src: quryltai.conf.j2
+    dest: /etc/nginx/sites-available/quryltai.conf
+    mode: "0644"
+    owner: root
+    group: root
+  notify: Restart Nginx
+
+- name: Enable Quryltai site
+  file:
+    src: /etc/nginx/sites-available/quryltai.conf
+    dest: /etc/nginx/sites-enabled/quryltai.conf
+    state: link
+  notify: Restart Nginx
+
+- name: Remove default Nginx site
+  file:
+    path: /etc/nginx/sites-enabled/default
+    state: absent
+  notify: Restart Nginx
+
+- name: Ensure Nginx is running and enabled
+  systemd:
+    name: nginx
+    state: started
+    enabled: yes

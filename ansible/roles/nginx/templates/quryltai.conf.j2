@@ -1,0 +1,62 @@
+# Quryltai origin server. Cloudflare fronts this over HTTPS; the origin only
+# listens on 443 (port 80 is closed at the firewall).
+server {
+    listen 443 ssl;
+    http2 on;
+    server_name {{ nginx_server_name }};
+
+    ssl_certificate /etc/nginx/ssl/quryltai.crt;
+    ssl_certificate_key /etc/nginx/ssl/quryltai.key;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers HIGH:!aNULL:!MD5;
+    ssl_prefer_server_ciphers on;
+
+    # Security headers
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+    add_header X-Frame-Options "SAMEORIGIN";
+    add_header X-Content-Type-Options "nosniff";
+    add_header X-XSS-Protection "1; mode=block";
+
+    # Serve the React build (SPA)
+    root {{ nginx_frontend_root }};
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ /index.html;
+        add_header Cache-Control "no-cache";
+    }
+
+    # Hashed static assets — cache aggressively
+    location /assets/ {
+        expires 1y;
+        add_header Cache-Control "public, no-transform";
+    }
+
+    # API -> Spring backend
+    location /api/ {
+        proxy_pass http://127.0.0.1:{{ backend_port }};
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_cache_bypass $http_upgrade;
+    }
+
+    # Never expose Spring actuator publicly
+    location /actuator/ {
+        return 403;
+    }
+
+    error_page 403 404 = @error_json;
+
+    location @error_json {
+        default_type application/json;
+        if ($status = 403) {
+            return 403 '{"status": 403 }';
+        }
+        return 404 '{"status": 404 }';
+    }
+}

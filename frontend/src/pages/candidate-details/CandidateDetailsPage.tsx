@@ -1,17 +1,27 @@
+import { useTranslation } from 'react-i18next'
 import { Link, useParams } from 'react-router'
 
+import { DEFAULT_LANGUAGE, isSupportedLanguage } from '@/shared/config/language'
 import { Button } from '@/shared/ui/button'
 
 export function CandidateDetailsPage() {
   const { candidateId, language } = useParams()
+  const { t } = useTranslation()
+  const destinationLanguage = isSupportedLanguage(language)
+    ? language
+    : DEFAULT_LANGUAGE
 
   return (
     <main className="grid min-h-svh place-items-center p-6">
       <div className="flex max-w-lg flex-col items-center gap-4 text-center">
         <p className="text-sm text-muted-foreground">{candidateId}</p>
-        <h1 className="text-4xl font-semibold tracking-tight">Quryltai</h1>
+        <h1 className="text-4xl font-semibold tracking-tight">
+          {t('candidate.details.title')}
+        </h1>
         <Button asChild variant="outline">
-          <Link to={`/${language}/candidates`}>Candidates</Link>
+          <Link to={`/${destinationLanguage}/candidates`}>
+            {t('actions.backToCandidates')}
+          </Link>
         </Button>
       </div>
     </main>

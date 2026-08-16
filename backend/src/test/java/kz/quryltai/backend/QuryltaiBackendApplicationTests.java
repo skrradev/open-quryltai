@@ -55,6 +55,14 @@ class QuryltaiBackendApplicationTests {
     }
 
     @Test
+    void candidateQueryIsValidated() {
+        ResponseEntity<String> response = restTemplate.getForEntity(
+                "http://localhost:" + port + "/api/candidates?size=101", String.class);
+
+        assertThat(response.getStatusCode().is4xxClientError()).isTrue();
+    }
+
+    @Test
     void referenceEndpointsSupportRussian() {
         HttpHeaders headers = new HttpHeaders();
         headers.set(HttpHeaders.ACCEPT_LANGUAGE, "ru");

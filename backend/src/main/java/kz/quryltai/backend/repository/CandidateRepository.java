@@ -1,4 +1,4 @@
-package kz.quryltai.backend.candidate;
+package kz.quryltai.backend.repository;
 
 import static kz.quryltai.backend.jooq.tables.Candidate.CANDIDATE;
 import static kz.quryltai.backend.jooq.tables.Place.PLACE;
@@ -18,16 +18,19 @@ import org.jooq.Record;
 import org.jooq.SortField;
 import org.springframework.stereotype.Repository;
 
+import kz.quryltai.backend.model.CandidateData;
+import kz.quryltai.backend.model.CandidateFilter;
+import kz.quryltai.backend.model.CandidatePage;
+import kz.quryltai.backend.model.Language;
+import lombok.RequiredArgsConstructor;
+
 @Repository
+@RequiredArgsConstructor
 public class CandidateRepository {
 
     private final DSLContext dsl;
 
-    public CandidateRepository(DSLContext dsl) {
-        this.dsl = dsl;
-    }
-
-    public CandidatePage findAll(CandidateFilter filter, boolean russian) {
+    public CandidatePage findAll(CandidateFilter filter, Language language) {
         Condition condition = filters(filter);
         int total = dsl.fetchCount(
                 dsl.selectOne()
@@ -36,25 +39,25 @@ public class CandidateRepository {
                         .join(PLACE).on(PLACE.PLACE_ID.eq(CANDIDATE.PLACE_ID))
                         .where(condition));
 
-        List<CandidateRow> items = select(russian)
+        List<CandidateData> items = select(language)
                 .where(condition)
                 .orderBy(orderBy(filter))
                 .limit(filter.size())
                 .offset((long) filter.page() * filter.size())
-                .fetch(record -> mapRow(record, russian));
+                .fetch(record -> map(record, language));
         return new CandidatePage(items, total);
     }
 
-    public Optional<CandidateRow> findById(short candidateId, boolean russian) {
-        return select(russian)
+    public Optional<CandidateData> findById(short candidateId, Language language) {
+        return select(language)
                 .where(CANDIDATE.CANDIDATE_ID.eq(candidateId))
-                .fetchOptional(record -> mapRow(record, russian));
+                .fetchOptional(record -> map(record, language));
     }
 
-    private org.jooq.SelectJoinStep<? extends Record> select(boolean russian) {
-        Field<String> position = russian ? CANDIDATE.POSITION_RU : CANDIDATE.POSITION_KK;
-        Field<String> partyName = russian ? POLITICAL_PARTY.NAME_RU : POLITICAL_PARTY.NAME_KK;
-        Field<String> placeName = russian ? PLACE.NAME_RU : PLACE.NAME_KK;
+    private org.jooq.SelectJoinStep<? extends Record> select(Language language) {
+        Field<String> position = language.isRussian() ? CANDIDATE.POSITION_RU : CANDIDATE.POSITION_KK;
+        Field<String> partyName = language.isRussian() ? POLITICAL_PARTY.NAME_RU : POLITICAL_PARTY.NAME_KK;
+        Field<String> placeName = language.isRussian() ? PLACE.NAME_RU : PLACE.NAME_KK;
         return dsl.select(
                         CANDIDATE.CANDIDATE_ID,
                         CANDIDATE.LIST_ORDER,
@@ -131,65 +134,25 @@ public class CandidateRepository {
         };
     }
 
-    private static CandidateRow mapRow(Record record, boolean russian) {
-        return new CandidateRow(
+    private static CandidateData map(Record record, Language language) {
+        return new CandidateData(
                 record.get(CANDIDATE.CANDIDATE_ID),
                 record.get(CANDIDATE.LIST_ORDER),
                 record.get(CANDIDATE.SURNAME),
                 record.get(CANDIDATE.GIVEN_NAMES),
                 record.get(CANDIDATE.BIRTH_YEAR),
                 record.get(CANDIDATE.GENDER),
-                record.get(russian ? CANDIDATE.POSITION_RU : CANDIDATE.POSITION_KK),
+                record.get(language.isRussian() ? CANDIDATE.POSITION_RU : CANDIDATE.POSITION_KK),
                 record.get(CANDIDATE.RESIDENCE_RAW),
                 record.get(CANDIDATE.PARTY_ID),
-                record.get(russian ? POLITICAL_PARTY.NAME_RU : POLITICAL_PARTY.NAME_KK),
+                record.get(language.isRussian() ? POLITICAL_PARTY.NAME_RU : POLITICAL_PARTY.NAME_KK),
                 record.get(CANDIDATE.PLACE_ID),
                 record.get(PLACE.PLACE_TYPE),
-                record.get(russian ? PLACE.NAME_RU : PLACE.NAME_KK),
+                record.get(language.isRussian() ? PLACE.NAME_RU : PLACE.NAME_KK),
                 record.get(CANDIDATE.SECTOR),
                 record.get(CANDIDATE.EMPLOYER_TYPE),
                 record.get(CANDIDATE.IS_PARTY_INSIDER),
                 record.get(CANDIDATE.SENIORITY),
                 record.get(CANDIDATE.IS_INCUMBENT));
-    }
-
-    public record CandidateFilter(
-            String partyId,
-            String placeId,
-            String placeType,
-            String sector,
-            String employerType,
-            String gender,
-            Boolean partyInsider,
-            Boolean incumbent,
-            String search,
-            int page,
-            int size,
-            String sort,
-            String direction) {
-    }
-
-    public record CandidatePage(List<CandidateRow> items, long total) {
-    }
-
-    public record CandidateRow(
-            short candidateId,
-            short listOrder,
-            String surname,
-            String givenNames,
-            short birthYear,
-            String gender,
-            String position,
-            String residenceRaw,
-            String partyId,
-            String partyName,
-            String placeId,
-            String placeType,
-            String placeName,
-            String sector,
-            String employerType,
-            boolean partyInsider,
-            String seniority,
-            boolean incumbent) {
     }
 }

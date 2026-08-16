@@ -34,9 +34,9 @@ application-local.yml
 application-local.yaml
 application-*.local.yml
 application-*.local.yaml
-.env
-.env.*
-!.env.example
+**/.env
+**/.env.*
+!**/.env.example
 
 # Local databases
 *.mv.db

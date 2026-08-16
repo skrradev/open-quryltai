@@ -1,0 +1,22 @@
+---
+# PostgreSQL superuser password
+pg_root_user_pass: "{{ lookup('env', 'PG_ROOT_USER_PASSWORD') }}"
+
+# Application database + user (single user: runs Flyway migrations and app DML)
+pg_app_db_name: "quryltai_db"
+pg_app_user: "quryltai_app"
+pg_app_user_pass: "{{ lookup('env', 'PG_APP_USER_PASSWORD') }}"
+
+# Performance settings — tuned for ~8 GB RAM / 4 vCPU (this server).
+pg_shared_buffers: "2GB"          # ~25% RAM
+pg_effective_cache_size: "6GB"    # ~75% RAM
+pg_work_mem: "16MB"
+pg_maintenance_work_mem: "512MB"
+pg_max_connections: "100"
+pg_random_page_cost: "1.1"        # SSD
+pg_checkpoint_completion_target: "0.9"
+pg_wal_buffers: "16MB"
+pg_max_parallel_workers_per_gather: "2"
+pg_max_worker_processes: "4"
+pg_autovacuum_vacuum_scale_factor: "0.1"
+pg_autovacuum_analyze_scale_factor: "0.05"

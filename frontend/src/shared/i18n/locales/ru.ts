@@ -8,8 +8,11 @@ export const ru = {
   },
   actions: {
     backToCandidates: 'Вернуться к кандидатам',
+    backToParties: 'Вернуться к партиям',
     goToCandidates: 'Перейти к кандидатам',
     retry: 'Повторить',
+    viewCandidates: 'Посмотреть кандидатов',
+    viewParty: 'Открыть страницу партии',
   },
   candidate: {
     card: {
@@ -54,6 +57,14 @@ export const ru = {
     },
     candidates: {
       title: 'Не удалось загрузить данные',
+      description: 'Проверьте подключение и повторите попытку.',
+    },
+    parties: {
+      title: 'Не удалось загрузить сведения о партиях',
+      description: 'Проверьте подключение и повторите попытку.',
+    },
+    party: {
+      title: 'Не удалось загрузить сведения о партии',
       description: 'Проверьте подключение и повторите попытку.',
     },
     statistics: {
@@ -145,6 +156,7 @@ export const ru = {
     candidates: 'Кандидаты',
     label: 'Основная навигация',
     overview: 'Обзор',
+    parties: 'Партии',
   },
   pagination: {
     label: 'Страницы списка кандидатов',
@@ -152,6 +164,41 @@ export const ru = {
     pageSize: 'На странице',
     previous: 'Предыдущая страница',
     status: 'Страница {{current}} из {{total}}',
+  },
+  party: {
+    list: {
+      candidateCount: '{{count}} кандидатов',
+      description: 'Политические партии, выдвинувшие кандидатов на выборах в Мажилис 2026 года.',
+      title: 'Партии',
+    },
+    details: {
+      eyebrow: 'Статистика партии',
+      notFound: {
+        title: 'Партия не найдена',
+        description: 'Партии с таким идентификатором не существует.',
+      },
+      summary: {
+        title: 'Ключевые показатели',
+        candidates: 'Всего кандидатов',
+        averageAge: 'Средний возраст (2026)',
+        incumbents: 'Действующие депутаты',
+        insiders: 'Представители партийного аппарата',
+      },
+      charts: {
+        gender: {
+          title: 'Гендерный состав',
+          description: 'Распределение кандидатов партии по полу',
+        },
+        age: {
+          title: 'Возрастные группы',
+          description: 'Распределение по возрасту в 2026 году',
+        },
+        sectors: {
+          title: 'Сферы деятельности',
+          description: 'Основные профессиональные сферы кандидатов партии',
+        },
+      },
+    },
   },
   statistics: {
     title: 'Обзор данных о выборах',

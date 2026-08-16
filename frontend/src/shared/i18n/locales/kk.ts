@@ -8,8 +8,11 @@ export const kk = {
   },
   actions: {
     backToCandidates: 'Үміткерлерге оралу',
+    backToParties: 'Партияларға оралу',
     goToCandidates: 'Үміткерлерге өту',
     retry: 'Қайталап көру',
+    viewCandidates: 'Үміткерлерді көру',
+    viewParty: 'Партияны көру',
   },
   candidate: {
     card: {
@@ -54,6 +57,14 @@ export const kk = {
     },
     candidates: {
       title: 'Деректерді жүктеу мүмкін болмады',
+      description: 'Байланысты тексеріп, әрекетті қайталап көріңіз.',
+    },
+    parties: {
+      title: 'Партиялар туралы деректерді жүктеу мүмкін болмады',
+      description: 'Байланысты тексеріп, әрекетті қайталап көріңіз.',
+    },
+    party: {
+      title: 'Партия туралы деректерді жүктеу мүмкін болмады',
       description: 'Байланысты тексеріп, әрекетті қайталап көріңіз.',
     },
     statistics: {
@@ -145,6 +156,7 @@ export const kk = {
     candidates: 'Үміткерлер',
     label: 'Негізгі навигация',
     overview: 'Шолу',
+    parties: 'Партиялар',
   },
   pagination: {
     label: 'Үміткерлер тізімінің беттері',
@@ -152,6 +164,41 @@ export const kk = {
     pageSize: 'Бір бетте',
     previous: 'Алдыңғы бет',
     status: '{{current}} / {{total}} бет',
+  },
+  party: {
+    list: {
+      candidateCount: '{{count}} үміткер',
+      description: '2026 жылғы Мәжіліс сайлауына үміткер ұсынған саяси партиялар.',
+      title: 'Партиялар',
+    },
+    details: {
+      eyebrow: 'Партия статистикасы',
+      notFound: {
+        title: 'Партия табылмады',
+        description: 'Мұндай идентификаторы бар партия жоқ.',
+      },
+      summary: {
+        title: 'Негізгі көрсеткіштер',
+        candidates: 'Үміткерлер саны',
+        averageAge: 'Орташа жас (2026)',
+        incumbents: 'Қазіргі депутаттар',
+        insiders: 'Партия аппаратының өкілдері',
+      },
+      charts: {
+        gender: {
+          title: 'Гендерлік құрам',
+          description: 'Партия үміткерлерінің жынысы бойынша бөлінісі',
+        },
+        age: {
+          title: 'Жас топтары',
+          description: '2026 жылғы жас шамасы бойынша бөлініс',
+        },
+        sectors: {
+          title: 'Қызмет салалары',
+          description: 'Партия үміткерлерінің негізгі кәсіби салалары',
+        },
+      },
+    },
   },
   statistics: {
     title: 'Сайлау деректеріне шолу',

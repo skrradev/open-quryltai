@@ -7,6 +7,7 @@ import {
   type LucideIcon,
 } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
+import { Link, useNavigate } from 'react-router'
 import {
   Bar,
   BarChart,
@@ -18,6 +19,7 @@ import {
   Tooltip,
   XAxis,
   YAxis,
+  type BarRectangleItem,
 } from 'recharts'
 
 import {
@@ -122,6 +124,7 @@ function CountTooltip({
 export function StatisticsPage() {
   const { t } = useTranslation()
   const language = useRouteLanguage()
+  const navigate = useNavigate()
   const statisticsQuery = useQuery(statisticsQueries.detail(language))
   const numberFormatter = new Intl.NumberFormat(language === 'kk' ? 'kk-KZ' : 'ru-RU', {
     maximumFractionDigits: 1,
@@ -203,6 +206,7 @@ export function StatisticsPage() {
                     accessibilityLayer
                     data={statisticsQuery.data.parties.map(({ party, count }) => ({
                       label: party.name,
+                      partyId: party.id,
                       value: count,
                     }))}
                     layout="vertical"
@@ -219,12 +223,28 @@ export function StatisticsPage() {
                       width={145}
                     />
                     <Tooltip content={<CountTooltip />} cursor={{ fill: 'var(--color-muted)' }} />
-                    <Bar dataKey="value" fill="var(--color-chart-1)" radius={[0, 5, 5, 0]} />
+                    <Bar
+                      className="cursor-pointer"
+                      dataKey="value"
+                      fill="var(--color-chart-1)"
+                      onClick={(entry: BarRectangleItem) => {
+                        const partyId = entry.payload?.partyId
+
+                        if (typeof partyId === 'string') {
+                          void navigate(`/${language}/parties/${partyId}`)
+                        }
+                      }}
+                      radius={[0, 5, 5, 0]}
+                    />
                   </BarChart>
                 </ResponsiveContainer>
                 <ul className="sr-only">
                   {statisticsQuery.data.parties.map(({ party, count }) => (
-                    <li key={party.id}>{party.name}: {count}</li>
+                    <li key={party.id}>
+                      <Link to={`/${language}/parties/${party.id}`}>
+                        {party.name}: {count}
+                      </Link>
+                    </li>
                   ))}
                 </ul>
               </CardContent>

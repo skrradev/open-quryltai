@@ -97,4 +97,22 @@ class QuryltaiBackendApplicationTests {
                 .contains("\"label\":\"30–39 лет\"")
                 .contains("\"label\":\"Бизнес\"");
     }
+
+    @Test
+    void partyStatisticsAreAggregatedAndLocalized() {
+        HttpHeaders headers = new HttpHeaders();
+        headers.set(HttpHeaders.ACCEPT_LANGUAGE, "ru");
+        ResponseEntity<String> response = restTemplate.exchange(
+                "http://localhost:" + port + "/api/parties/respublica",
+                HttpMethod.GET,
+                new HttpEntity<>(headers),
+                String.class);
+
+        assertThat(response.getStatusCode().is2xxSuccessful()).isTrue();
+        assertThat(response.getBody())
+                .contains("\"party\":{\"id\":\"respublica\",\"name\":\"Respublica\"}")
+                .contains("\"candidateCount\":75")
+                .contains("\"label\":\"Мужчина\"")
+                .contains("\"label\":\"30–39 лет\"");
+    }
 }

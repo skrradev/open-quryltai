@@ -49,6 +49,16 @@ export function LanguageLayout() {
             </NavLink>
             <NavLink
               className={({ isActive }) =>
+                `rounded-lg px-2 py-2 text-sm font-medium transition-colors ${
+                  isActive ? 'bg-secondary text-secondary-foreground' : 'text-muted-foreground hover:text-foreground'
+                }`
+              }
+              to={`/${language}/parties`}
+            >
+              {i18n.t('navigation.parties')}
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
                 `rounded-lg px-2.5 py-2 text-sm font-medium transition-colors ${
                   isActive ? 'bg-secondary text-secondary-foreground' : 'text-muted-foreground hover:text-foreground'
                 }`

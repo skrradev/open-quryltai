@@ -1,0 +1,69 @@
+---
+- name: Ensure sudo package is installed
+  apt:
+    name: sudo
+    state: present
+    update_cache: yes
+
+- name: Create system groups
+  group:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - sshusers
+
+- name: Create user groups
+  group:
+    name: "{{ item.username }}"
+    state: present
+  loop: "{{ admin_users }}"
+
+- name: Create users
+  user:
+    name: "{{ item.username }}"
+    groups:
+      - sudo
+      - sshusers
+      - "{{ item.username }}"
+    shell: /bin/bash
+    password: "{{ item.password }}"
+    create_home: yes
+    state: present
+  loop: "{{ admin_users }}"
+
+- name: Set up authorized keys for Ansible user
+  authorized_key:
+    user: "{{ item.username }}"
+    state: present
+    key: "{{ item.ssh_public_key }}"
+    exclusive: yes
+  loop: "{{ admin_users }}"
+  when: item.is_ansible_user | bool
+
+- name: Configure sudoers file
+  lineinfile:
+    dest: /etc/sudoers
+    regexp: "^{{ item.username }}.*ALL=.*"
+    line: "{{ item.username }} ALL=(ALL) PASSWD: ALL"
+    validate: "/usr/sbin/visudo -cf %s"
+    state: present
+  loop: "{{ admin_users }}"
+
+- name: Ensure SSH directory exists with correct permissions
+  file:
+    path: "/home/{{ item.username }}/.ssh"
+    state: directory
+    mode: "0700"
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
+  loop: "{{ admin_users }}"
+  when: item.is_ansible_user | bool
+
+- name: Set secure permissions for user home directories
+  file:
+    path: "/home/{{ item.username }}"
+    mode: "0750"
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
+    state: directory
+  loop: "{{ admin_users }}"

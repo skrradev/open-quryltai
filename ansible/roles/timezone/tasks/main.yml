@@ -1,0 +1,66 @@
+---
+- name: Get timezone from environment or use default
+  set_fact:
+    target_timezone: "{{ lookup('env', 'SERVER_TIMEZONE') | default(default_timezone, true) }}"
+
+- name: Show current timezone
+  shell: |
+    date
+    cat /etc/timezone || true
+  register: timezone_before
+  changed_when: false
+
+- name: Ensure tzdata is installed
+  apt:
+    name: tzdata
+    state: present
+    update_cache: yes
+
+# Set timezone first using the timezone module
+- name: Set timezone using timezone module
+  timezone:
+    name: "{{ target_timezone }}"
+  register: timezone_change
+
+# Then update the timezone file to match
+- name: Update timezone file
+  copy:
+    content: "{{ target_timezone }}\n"
+    dest: /etc/timezone
+    owner: root
+    group: root
+    mode: "0644"
+  register: timezone_file
+
+# Reconfigure only if either operation changed the timezone
+- name: Update tzdata
+  command: dpkg-reconfigure -f noninteractive tzdata
+  when: timezone_file.changed or timezone_change.changed
+
+# Add a small delay to ensure changes are applied
+- name: Wait for timezone changes to take effect
+  pause:
+    seconds: 20
+  when: timezone_file.changed or timezone_change.changed
+
+- name: Show timezone change result
+  shell: |
+    echo "Current date and timezone:"
+    date
+    echo -e "\nConfigured timezone:"
+    cat /etc/timezone
+    echo -e "\nTimezone symlink:"
+    ls -l /etc/localtime
+  register: timezone_after
+  changed_when: false
+
+- name: Display timezone changes
+  debug:
+    msg: |
+      Timezone has been updated:
+
+      Before:
+      {{ timezone_before.stdout }}
+
+      After:
+      {{ timezone_after.stdout }}

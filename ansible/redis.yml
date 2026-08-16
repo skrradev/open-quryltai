@@ -1,0 +1,11 @@
+---
+# Install and configure Redis (localhost-only, password-protected) for future
+# rate limiting. Requires REDIS_PASSWORD in the environment.
+# Run as the deploy user:
+#     ansible-playbook -i inventories/prod/inventory-server-bootstrap.ini \
+#       redis.yml -u "$ANSIBLE_USERNAME" --become --ask-become-pass
+- name: Install and configure Redis
+  hosts: all
+  become: yes
+  roles:
+    - redis

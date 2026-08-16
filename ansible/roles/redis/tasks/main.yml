@@ -1,0 +1,55 @@
+---
+- name: Check Redis password is set
+  assert:
+    that:
+      - lookup('env', 'REDIS_PASSWORD') | length > 0
+    fail_msg: "Environment variable REDIS_PASSWORD must be set"
+
+- name: Install Redis
+  apt:
+    name: redis-server
+    state: present
+    update_cache: yes
+    cache_valid_time: 3600
+
+- name: Configure Redis
+  lineinfile:
+    path: /etc/redis/redis.conf
+    regexp: "{{ item.regexp }}"
+    line: "{{ item.line }}"
+  loop:
+    - { regexp: "^bind ", line: "bind {{ redis_bind_addresses | join(' ') }}" }
+    - { regexp: '^#?\s*protected-mode\s', line: "protected-mode {{ redis_protected_mode }}" }
+    - { regexp: '^#?\s*supervised\s', line: "supervised {{ redis_supervised_mode }}" }
+    - { regexp: '^#?\s*maxmemory\s', line: "maxmemory {{ redis_max_memory }}" }
+    - { regexp: '^#?\s*maxmemory-policy\s', line: "maxmemory-policy {{ redis_max_memory_policy }}" }
+  notify: restart redis
+
+- name: Set Redis password
+  lineinfile:
+    path: /etc/redis/redis.conf
+    regexp: '^#?\s*requirepass\s'
+    line: 'requirepass {{ lookup("env", "REDIS_PASSWORD") }}'
+  no_log: true
+  notify: restart redis
+
+# Rate-limit counters are ephemeral — disable persistence to avoid disk I/O.
+- name: Disable RDB snapshots
+  lineinfile:
+    path: /etc/redis/redis.conf
+    regexp: '^save '
+    line: 'save ""'
+  notify: restart redis
+
+- name: Disable AOF
+  lineinfile:
+    path: /etc/redis/redis.conf
+    regexp: '^#?\s*appendonly\s'
+    line: "appendonly no"
+  notify: restart redis
+
+- name: Ensure Redis is running and enabled
+  service:
+    name: redis-server
+    state: started
+    enabled: yes

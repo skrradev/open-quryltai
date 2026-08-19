@@ -1,0 +1,1347 @@
+unit_id	unit_kind_check	topic_primary	topic_secondary	statement_type	unclear	notes
+adilet-0001	structural				0	титул
+adilet-0002	structural				0	титул
+adilet-0003	structural				0	титул
+adilet-0004	structural				0	титул
+adilet-0005	structural				0	навигация
+adilet-0006	structural				0	оглавление
+adilet-0007	structural				0	оглавление
+adilet-0008	structural				0	оглавление
+adilet-0009	structural				0	оглавление
+adilet-0010	structural				0	оглавление
+adilet-0011	structural				0	оглавление
+adilet-0012	structural				0	оглавление
+adilet-0013	structural				0	оглавление
+adilet-0014	structural				0	оглавление
+adilet-0015	structural				0	оглавление
+adilet-0016	structural				0	оглавление
+adilet-0017	structural				0	оглавление
+adilet-0018	structural				0	оглавление
+adilet-0019	structural				0	оглавление
+adilet-0020	structural				0	оглавление
+adilet-0021	structural				0	колонтитул
+adilet-0022	structural				0	заголовок преамбулы
+adilet-0023	substantive	T01		description	0	
+adilet-0024	substantive	T01		description	0	Конституция 15 марта 2026
+adilet-0025	substantive	T00		goal	0	
+adilet-0026	substantive	T00		description	0	
+adilet-0027	substantive	T00		goal	0	
+adilet-0028	substantive	T00		goal	0	реформаторский центризм
+adilet-0029	substantive	T00	T01	description	0	опора курса Президента
+adilet-0030	substantive	T00		description	0	ценности партии
+adilet-0031	substantive	T12		description	0	
+adilet-0032	substantive	T00		goal	0	
+adilet-0033	substantive	T00		description	0	
+adilet-0034	substantive	T00	T01	description	0	
+adilet-0035	lead_in				0	
+adilet-0036	substantive	T00	T14	achievement	0	сбор запросов через QR-коды
+adilet-0037	substantive	T00		achievement	0	продолжение в 0038
+adilet-0038	fragment				0	продолжение 0037
+adilet-0039	substantive	T00		achievement	0	
+adilet-0040	substantive	T00		achievement	0	
+adilet-0041	substantive	T00		description	0	стратегические сессии
+adilet-0042	substantive	T00		achievement	0	
+adilet-0043	substantive	T00		description	0	
+adilet-0044	substantive	T00		description	0	
+adilet-0045	substantive	T00		description	0	
+adilet-0046	substantive	T00		description	0	
+adilet-0047	substantive	T00		achievement	0	социологические исследования
+adilet-0048	substantive	T00		achievement	0	
+adilet-0049	substantive	T00	T09	goal	0	
+adilet-0050	substantive	T03		goal	0	экономика возможностей
+adilet-0051	substantive	T03	T09	goal	0	
+adilet-0052	substantive	T05	T03	commitment	0	перечень флагманских направлений
+adilet-0053	lead_in				0	
+adilet-0054	structural				0	маркер цели 1
+adilet-0055	substantive	T08		goal	0	
+adilet-0056	substantive	T08		commitment	0	30 кв. м на человека
+adilet-0057	substantive	T08		commitment	0	переселение из аварийного жилья
+adilet-0058	substantive	T10		goal	0	ДЕФЕКТ: маркер «77лет ЦЕЛЬ 2» слился с текстом
+adilet-0059	substantive	T10		goal	0	продолжительность жизни 77 лет
+adilet-0060	lead_in				0	
+adilet-0061	substantive	T10		instrument	0	профилактика, −5% смертности от ССЗ
+adilet-0062	structural				0	маркер цели 3
+adilet-0063	substantive	T04		goal	0	ДЕФЕКТ: маркер «1млн» слился с текстом
+adilet-0064	substantive	T04		commitment	0	1 млн рабочих мест
+adilet-0065	substantive	T04		goal	0	
+adilet-0066	substantive	T04	T14	commitment	0	цифровой мониторинг трудовых отношений
+adilet-0067	structural				0	маркер цели 4
+adilet-0068	substantive	T04		goal	0	
+adilet-0069	substantive	T04		commitment	0	доля среднего бизнеса до 20%
+adilet-0070	substantive	T04		commitment	0	
+adilet-0071	substantive	T04		description	0	
+adilet-0072	structural				0	маркер цели 5
+adilet-0073	substantive	T07		goal	0	
+adilet-0074	substantive	T07		commitment	0	доходы 1 млн сельских жителей
+adilet-0075	lead_in				0	
+adilet-0076	substantive	T07	T09	instrument	0	«Ауыл аманаты», микрокредиты 2,5%
+adilet-0077	structural				0	маркер цели 6
+adilet-0078	substantive	T07	T05	goal	0	
+adilet-0079	substantive	T07	T05	commitment	0	100% продовольственной и энергетической безопасности
+adilet-0080	substantive	T07		commitment	0	переработка в АПК
+adilet-0081	substantive	T05		commitment	0	нефть, ВИЭ, атомная энергетика, энергосистема
+adilet-0082	substantive	T05	T04	commitment	0	обрабатывающая промышленность
+adilet-0083	substantive	T14	T11	goal	0	ДЕФЕКТ: маркер «5млн ЦЕЛЬ 7» слился с текстом
+adilet-0084	substantive	T14	T11	commitment	0	обучение ИИ 5 млн человек
+adilet-0085	substantive	T11	T14	commitment	0	основы ИИ в школе
+adilet-0086	substantive	T11	T14	commitment	0	AI-Sana
+adilet-0087	substantive	T11	T04	commitment	0	переобучение взрослых
+adilet-0088	substantive	T14	T11	commitment	0	равный доступ к обучению ИИ
+adilet-0089	substantive	T00		description	0	
+adilet-0090	substantive	T00		description	0	
+adilet-0091	structural				0	заголовок раздела
+adilet-0092	substantive	T00		description	0	
+adilet-0093	substantive	T00		description	0	
+adilet-0094	substantive	T00		goal	0	
+adilet-0095	structural				0	повтор заголовка
+adilet-0096	substantive	T00		description	0	
+adilet-0097	substantive	T00		description	0	
+adilet-0098	substantive	T00		goal	0	
+adilet-0099	substantive	T00		description	0	
+adilet-0100	substantive	T01		goal	0	продолжение в 0101–0105
+adilet-0101	fragment				0	продолжение 0100
+adilet-0102	fragment				0	продолжение 0100
+adilet-0103	fragment				0	продолжение 0100
+adilet-0104	fragment				0	продолжение 0100
+adilet-0105	fragment				0	продолжение 0100
+adilet-0106	substantive	T00	T01	goal	0	поддержка курса Президента
+adilet-0107	substantive	T00		goal	0	
+adilet-0108	substantive	T00		goal	0	
+adilet-0109	substantive	T01		goal	0	
+adilet-0110	substantive	T01		goal	0	
+adilet-0111	substantive	T00	T01	goal	0	
+adilet-0112	substantive	T02	T09	goal	0	
+adilet-0113	substantive	T02		goal	0	
+adilet-0114	substantive	T00		description	0	
+adilet-0115	substantive	T01		goal	0	
+adilet-0116	substantive	T02	T01	goal	0	против клановости, коррупции, непотизма
+adilet-0117	substantive	T01	T02	instrument	0	
+adilet-0118	substantive	T01		goal	0	
+adilet-0119	substantive	T01		goal	0	Слышащее государство
+adilet-0120	substantive	T01		goal	0	
+adilet-0121	substantive	T01		goal	0	
+adilet-0122	substantive	T01		goal	0	
+adilet-0123	substantive	T01		goal	0	работа депутатов
+adilet-0124	substantive	T01		goal	0	маслихаты
+adilet-0125	substantive	T04		goal	0	
+adilet-0126	substantive	T04		goal	0	
+adilet-0127	substantive	T04		goal	0	
+adilet-0128	substantive	T08		goal	0	
+adilet-0129	substantive	T08		goal	0	
+adilet-0130	substantive	T08	T09	goal	0	
+adilet-0131	substantive	T09		goal	0	
+adilet-0132	substantive	T09		goal	0	
+adilet-0133	substantive	T09		goal	0	
+adilet-0134	substantive	T11	T14	goal	0	
+adilet-0135	substantive	T11	T10	goal	0	
+adilet-0136	substantive	T12		goal	0	
+adilet-0137	substantive	T12	T02	goal	0	
+adilet-0138	substantive	T00		description	0	
+adilet-0139	substantive	T00		commitment	0	
+adilet-0140	substantive	T00		commitment	0	
+adilet-0141	substantive	T00		description	0	
+adilet-0142	substantive	T01	T00	goal	0	
+adilet-0143	substantive	T00		description	0	
+adilet-0144	structural				0	заголовок «10 приоритетов»
+adilet-0145	substantive	T01		goal	0	
+adilet-0146	substantive	T02		problem	0	избирательное применение закона
+adilet-0147	substantive	T01		goal	0	
+adilet-0148	substantive	T02	T01	commitment	0	
+adilet-0149	structural				0	заголовок раздела 1
+adilet-0150	structural				0	заголовок «Закон и порядок»
+adilet-0151	structural				0	заголовок 1.1
+adilet-0152	substantive	T02		goal	0	
+adilet-0153	substantive	T02		description	0	
+adilet-0154	substantive	T02		goal	0	
+adilet-0155	substantive	T02	T08	description	0	благоустройство и освещение
+adilet-0156	substantive	T02		commitment	0	
+adilet-0157	substantive	T02		instrument	0	общественные работы как альтернативное наказание
+adilet-0158	substantive	T02		goal	0	
+adilet-0159	substantive	T02		description	0	
+adilet-0160	substantive	T02	T14	commitment	0	
+adilet-0161	substantive	T02	T14	commitment	0	прогнозно-аналитический центр
+adilet-0162	fragment				0	продолжение 0161
+adilet-0163	substantive	T02		commitment	0	
+adilet-0164	substantive	T02	T09	commitment	0	социальная защита сотрудников
+adilet-0165	substantive	T02		description	0	
+adilet-0166	substantive	T02		goal	0	
+adilet-0167	substantive	T02		goal	0	
+adilet-0168	substantive	T02	T12	description	0	
+adilet-0169	substantive	T02	T12	commitment	0	
+adilet-0170	structural				0	заголовок 1.2
+adilet-0171	substantive	T02		goal	0	
+adilet-0172	substantive	T02		description	0	
+adilet-0173	substantive	T02		problem	0	перегруженность судов
+adilet-0174	substantive	T02		commitment	0	
+adilet-0175	substantive	T02		instrument	0	альтернативное разрешение споров
+adilet-0176	substantive	T02		instrument	0	единообразие практики
+adilet-0177	substantive	T02	T14	commitment	0	онлайн-правосудие
+adilet-0178	substantive	T02		goal	0	
+adilet-0179	substantive	T02		goal	0	
+adilet-0180	substantive	T02		commitment	0	
+adilet-0181	substantive	T02		commitment	0	
+adilet-0182	substantive	T02		commitment	0	сервисная модель
+adilet-0183	substantive	T02		instrument	0	адвокатура и омбудсмены
+adilet-0184	substantive	T02		commitment	0	
+adilet-0185	substantive	T02		instrument	0	суд присяжных
+adilet-0186	substantive	T02		instrument	0	случайный отбор коллегии
+adilet-0187	structural				0	заголовок раздела 2
+adilet-0188	structural				0	заголовок «Эффективные институты»
+adilet-0189	substantive	T01		commitment	0	
+adilet-0190	substantive	T01		goal	0	
+adilet-0191	substantive	T01		goal	0	
+adilet-0192	substantive	T01	T02	commitment	0	против непотизма и клановости
+adilet-0193	substantive	T01		description	0	
+adilet-0194	substantive	T02		goal	0	ДЕФЕКТ: заголовок слился с текстом
+adilet-0195	substantive	T02	T09	problem	0	
+adilet-0196	substantive	T02		goal	0	
+adilet-0197	substantive	T02		goal	0	
+adilet-0198	substantive	T02	T14	commitment	0	превенция и цифровая прозрачность
+adilet-0199	substantive	T02	T14	instrument	0	
+adilet-0200	substantive	T02	T01	instrument	0	
+adilet-0201	substantive	T02		commitment	0	
+adilet-0202	substantive	T02	T12	goal	0	
+adilet-0203	structural				0	заголовок 2.2
+adilet-0204	substantive	T01		goal	0	
+adilet-0205	substantive	T01		commitment	0	парламентаризм
+adilet-0206	substantive	T01		goal	0	Курултай и маслихаты
+adilet-0207	substantive	T01		goal	0	
+adilet-0208	substantive	T01		commitment	0	Халық кеңесі
+adilet-0209	substantive	T01		goal	0	
+adilet-0210	structural				0	заголовок 2.3
+adilet-0211	substantive	T01		goal	0	меритократия
+adilet-0212	substantive	T01		commitment	0	
+adilet-0213	substantive	T01		commitment	0	
+adilet-0214	substantive	T01		instrument	0	наставничество на госслужбе
+adilet-0215	substantive	T01	T11	instrument	0	
+adilet-0216	structural				0	заголовок 2.4
+adilet-0217	substantive	T01		description	0	Слышащее государство
+adilet-0218	substantive	T01		description	0	
+adilet-0219	substantive	T01		commitment	0	
+adilet-0220	substantive	T00		commitment	0	стандарт политической ответственности
+adilet-0221	substantive	T00	T14	instrument	0	цифровая панель мониторинга обещаний
+adilet-0222	substantive	T01		commitment	0	
+adilet-0223	substantive	T01		instrument	0	слушания, экспертизы, мониторинговые группы
+adilet-0224	substantive	T14	T01	commitment	0	
+adilet-0225	substantive	T00	T14	commitment	0	
+adilet-0226	substantive	T14	T01	commitment	0	ДЕФЕКТ: маркер «30%» слился с текстом
+adilet-0227	substantive	T14	T01	commitment	0	автоматизация 30% процессов
+adilet-0228	substantive	T14	T01	goal	0	
+adilet-0229	substantive	T01	T14	commitment	0	e-Өтініш
+adilet-0230	substantive	T01	T14	goal	0	
+adilet-0231	substantive	T01		goal	0	
+adilet-0232	substantive	T14		commitment	0	eGov
+adilet-0233	substantive	T14		goal	0	
+adilet-0234	substantive	T14	T01	goal	0	однократное обращение
+adilet-0235	substantive	T01	T14	commitment	0	e-Parliament
+adilet-0236	substantive	T14	T01	commitment	0	ИИ в госуправлении
+adilet-0237	substantive	T14	T01	instrument	0	
+adilet-0238	substantive	T01	T14	commitment	0	
+adilet-0239	substantive	T01	T14	instrument	0	инициативное бюджетирование
+adilet-0240	substantive	T01		commitment	0	
+adilet-0241	substantive	T01		commitment	0	
+adilet-0242	substantive	T01	T02	commitment	0	человекоцентричное администрирование
+adilet-0243	substantive	T02		goal	0	
+adilet-0244	structural				0	заголовок раздела 3
+adilet-0245	structural				0	заголовок «Сильные регионы»
+adilet-0246	structural				0	заголовок 3.1
+adilet-0247	substantive	T08		goal	0	
+adilet-0248	substantive	T08		problem	0	концентрация в двух агломерациях
+adilet-0249	substantive	T08	T01	goal	0	
+adilet-0250	substantive	T08		commitment	0	пять макрорегионов
+adilet-0251	substantive	T08		description	0	
+adilet-0252	substantive	T01	T03	commitment	0	полномочия маслихатов
+adilet-0253	substantive	T01		goal	0	
+adilet-0254	substantive	T08		commitment	0	«областной центр — районный центр — село»
+adilet-0255	substantive	T08		instrument	0	
+adilet-0256	substantive	T08		commitment	0	
+adilet-0257	substantive	T08	T04	goal	0	
+adilet-0258	substantive	T08		commitment	0	
+adilet-0259	substantive	T08		instrument	0	комплексная застройка
+adilet-0260	substantive	T08		commitment	0	
+adilet-0261	substantive	T08		instrument	0	метро и BRT в Алматы
+adilet-0262	substantive	T08		instrument	0	
+adilet-0263	substantive	T08	T14	commitment	0	город Алатау
+adilet-0264	substantive	T14	T08	instrument	0	экспериментальный правовой режим
+adilet-0265	substantive	T08		commitment	0	районные центры
+adilet-0266	substantive	T08	T07	instrument	0	
+adilet-0267	substantive	T08		commitment	0	малые города и моногорода
+adilet-0268	substantive	T08	T04	instrument	0	
+adilet-0269	substantive	T07	T08	commitment	0	сельская инфраструктура
+adilet-0270	substantive	T07	T09	goal	0	
+adilet-0271	substantive	T08		commitment	0	закон о приграничных территориях
+adilet-0272	substantive	T08		instrument	0	
+adilet-0273	substantive	T06	T08	commitment	0	
+adilet-0274	substantive	T06		instrument	0	
+adilet-0275	structural				0	заголовок 3.2
+adilet-0276	substantive	T08		goal	0	
+adilet-0277	substantive	T08		goal	0	
+adilet-0278	substantive	T08		commitment	0	
+adilet-0279	substantive	T08	T04	description	0	
+adilet-0280	structural				0	маркер «30 кв. м»
+adilet-0281	substantive	T08		commitment	0	с 25 до 30 кв. м
+adilet-0282	substantive	T08		instrument	0	
+adilet-0283	substantive	T08	T03	commitment	0	доступность ипотеки
+adilet-0284	substantive	T08		instrument	0	аренда с выкупом
+adilet-0285	substantive	T08	T02	commitment	0	рынок аренды и риелторов
+adilet-0286	substantive	T08	T09	commitment	0	аренда для многодетных
+adilet-0287	substantive	T08		commitment	0	
+adilet-0288	substantive	T08	T11	instrument	0	стандарты комплексной застройки
+adilet-0289	structural				0	маркер «30 тыс.»
+adilet-0290	substantive	T08		commitment	0	переселение из аварийного жилья
+adilet-0291	substantive	T08		goal	0	30 тысяч собственников
+adilet-0292	substantive	T08		commitment	0	37 проблемных объектов
+adilet-0293	substantive	T08	T14	instrument	0	цифровой тенге в долевом строительстве
+adilet-0294	substantive	T08	T09	instrument	0	льготная ипотека
+adilet-0295	substantive	T08	T07	goal	0	
+adilet-0296	substantive	T08	T07	instrument	0	
+adilet-0297	substantive	T09	T08	commitment	0	адресность поддержки
+adilet-0298	substantive	T09	T08	instrument	0	
+adilet-0299	substantive	T08	T03	instrument	0	жилищные программы работодателей
+adilet-0300	structural				0	заголовок 3.3
+adilet-0301	substantive	T08		problem	0	износ сетей
+adilet-0302	substantive	T08		problem	0	
+adilet-0303	substantive	T08		commitment	0	
+adilet-0304	structural				0	маркер «86 тыс.»
+adilet-0305	substantive	T08	T05	commitment	0	нацпроект модернизации
+adilet-0306	substantive	T08		commitment	0	86 тыс. км сетей, 13 трлн тенге
+adilet-0307	substantive	T08		commitment	0	износ до 40% к 2030
+adilet-0308	substantive	T08		goal	0	
+adilet-0309	substantive	T08	T04	commitment	0	приоритет казахстанских производителей
+adilet-0310	substantive	T04		goal	0	
+adilet-0311	substantive	T08		commitment	0	приборы учёта
+adilet-0312	substantive	T08		goal	0	
+adilet-0313	substantive	T08		commitment	0	единый платёжный документ
+adilet-0314	substantive	T08		goal	0	
+adilet-0315	substantive	T08	T14	commitment	0	
+adilet-0316	substantive	T08	T14	instrument	0	SMART TURMYS
+adilet-0317	substantive	T08	T14	commitment	0	платформа для ОСИ и КСК
+adilet-0318	substantive	T08		goal	0	
+adilet-0319	structural				0	заголовок 3.4
+adilet-0320	substantive	T08		goal	0	
+adilet-0321	structural				0	маркер «10 тыс.»
+adilet-0322	substantive	T08		commitment	0	10 тыс. км дорог
+adilet-0323	substantive	T08		commitment	0	Актобе — Кызылорда, Бейнеу — Саксаульский
+adilet-0324	substantive	T08	T14	instrument	0	контроль качества дорог
+adilet-0325	substantive	T08	T13	commitment	0	Трансказахстанский коридор
+adilet-0326	substantive	T08		commitment	0	
+adilet-0327	substantive	T08		commitment	0	
+adilet-0328	substantive	T08		commitment	0	автобусные парки
+adilet-0329	substantive	T08	T04	instrument	0	
+adilet-0330	substantive	T08	T13	commitment	0	пункты пропуска на границе
+adilet-0331	substantive	T08	T13	commitment	0	
+adilet-0332	substantive	T08	T04	description	0	
+adilet-0333	substantive	T08	T05	goal	0	
+adilet-0334	substantive	T08		commitment	0	план развития автоперевозок
+adilet-0335	substantive	T08	T04	instrument	0	бланки разрешений
+adilet-0336	substantive	T08	T13	commitment	0	приграничные логистические центры
+adilet-0337	substantive	T08	T13	commitment	0	«Евразия», Хоргос, Калжат, «Алатау»
+adilet-0338	structural				0	заголовок 3.5
+adilet-0339	substantive	T07	T09	goal	0	
+adilet-0340	substantive	T07		goal	0	
+adilet-0341	substantive	T07		commitment	0	3,5 тыс. опорных и спутниковых сёл
+adilet-0342	substantive	T07	T08	goal	0	
+adilet-0343	substantive	T07	T09	commitment	0	Система региональных стандартов
+adilet-0344	substantive	T07		commitment	0	с 65,8% до 71,7%
+adilet-0345	substantive	T07		commitment	0	сельские кластеры
+adilet-0346	substantive	T07	T08	goal	0	
+adilet-0347	substantive	T07	T08	commitment	0	мобильные сервисы для малых сёл
+adilet-0348	substantive	T07	T04	commitment	0	агротуризм, ремёсла
+adilet-0349	substantive	T01	T07	commitment	0	оценка акимов сельских округов
+adilet-0350	substantive	T01		commitment	0	
+adilet-0351	substantive	T07	T04	commitment	0	инфраструктура для МСБ и ЛПХ
+adilet-0352	substantive	T01	T03	commitment	0	межбюджетные лимиты
+adilet-0353	substantive	T07	T08	commitment	0	сельское водоснабжение
+adilet-0354	substantive	T07	T08	instrument	0	
+adilet-0355	substantive	T05	T07	commitment	0	
+adilet-0356	substantive	T05	T07	description	0	
+adilet-0357	substantive	T14	T07	commitment	0	интернет для 97% села
+adilet-0358	substantive	T14	T07	goal	0	телемедицина, дистанционное образование
+adilet-0359	substantive	T14	T07	commitment	0	
+adilet-0360	substantive	T08	T07	commitment	0	отделения почтовой связи
+adilet-0361	substantive	T08		commitment	0	дороги с 86% до 95%
+adilet-0362	substantive	T08		goal	0	
+adilet-0363	substantive	T07	T04	commitment	0	
+adilet-0364	substantive	T07	T04	instrument	0	
+adilet-0365	substantive	T07	T09	commitment	0	
+adilet-0366	substantive	T07	T08	instrument	0	жильё для сельских специалистов
+adilet-0367	substantive	T01	T03	commitment	0	
+adilet-0368	substantive	T01	T03	instrument	0	четвёртый уровень бюджета
+adilet-0369	substantive	T01		commitment	0	
+adilet-0370	substantive	T01		goal	0	
+adilet-0371	substantive	T08		commitment	0	
+adilet-0372	substantive	T08		instrument	0	
+adilet-0373	structural				0	заголовок раздела 4
+adilet-0374	structural				0	заголовок, разорван вёрсткой
+adilet-0375	structural				0	продолжение заголовка
+adilet-0376	lead_in				0	
+adilet-0377	substantive	T03	T04	problem	0	сырьевая модель, монополии
+adilet-0378	substantive	T04		problem	0	
+adilet-0379	substantive	T04	T03	goal	0	доходы должны опережать цены
+adilet-0380	substantive	T03	T09	goal	0	покупательная способность
+adilet-0381	structural				0	заголовок 4.1
+adilet-0382	substantive	T05		problem	0	добывающая против обрабатывающей
+adilet-0383	substantive	T05	T04	problem	0	
+adilet-0384	substantive	T05		goal	0	
+adilet-0385	substantive	T05		commitment	0	
+adilet-0386	substantive	T05	T03	instrument	0	
+adilet-0387	substantive	T05		commitment	0	
+adilet-0388	substantive	T05		instrument	0	сырьё отечественным переработчикам
+adilet-0389	substantive	T03	T05	instrument	0	возврат НДС
+adilet-0390	substantive	T05		commitment	0	производственные цепочки
+adilet-0391	substantive	T05	T04	instrument	0	кооперация бизнеса
+adilet-0392	substantive	T05		commitment	0	
+adilet-0393	substantive	T05	T04	instrument	0	
+adilet-0394	substantive	T05	T10	instrument	0	малотоннажная химия
+adilet-0395	substantive	T05	T04	instrument	0	офтейк-контракты
+adilet-0396	substantive	T05		instrument	0	
+adilet-0397	substantive	T05		goal	0	
+adilet-0398	substantive	T05	T04	commitment	0	локализация
+adilet-0399	substantive	T05	T13	instrument	0	
+adilet-0400	substantive	T04	T03	commitment	0	статус отечественного инвестора
+adilet-0401	substantive	T04	T03	instrument	0	
+adilet-0402	substantive	T04		commitment	0	поддержка под результат
+adilet-0403	substantive	T04	T03	instrument	0	
+adilet-0404	substantive	T04	T03	instrument	0	возврат льгот при невыполнении
+adilet-0405	substantive	T04		commitment	0	Реестр товаропроизводителей
+adilet-0406	substantive	T04	T05	instrument	0	
+adilet-0407	substantive	T04		goal	0	
+adilet-0408	structural				0	заголовок 4.2
+adilet-0409	substantive	T13	T04	description	0	
+adilet-0410	substantive	T13	T04	description	0	
+adilet-0411	substantive	T04	T13	goal	0	
+adilet-0412	substantive	T04	T13	commitment	0	
+adilet-0413	substantive	T04	T14	goal	0	электронная торговля как канал экспорта
+adilet-0414	substantive	T04		commitment	0	
+adilet-0415	substantive	T04		instrument	0	
+adilet-0416	substantive	T04		instrument	0	бренд «Сделано в Казахстане»
+adilet-0417	substantive	T04		commitment	0	
+adilet-0418	substantive	T04	T03	instrument	0	
+adilet-0419	substantive	T04		goal	0	
+adilet-0420	substantive	T04	T13	commitment	0	несырьевой экспорт
+adilet-0421	substantive	T04	T13	instrument	0	
+adilet-0422	substantive	T04	T14	commitment	0	прослеживаемость товаров
+adilet-0423	substantive	T04		goal	0	
+adilet-0424	substantive	T04		commitment	0	маркировка
+adilet-0425	substantive	T04	T03	instrument	0	
+adilet-0426	substantive	T04	T02	commitment	0	контрафакт
+adilet-0427	substantive	T04	T10	instrument	0	продукты, лекарства, бытовая химия
+adilet-0428	substantive	T04		goal	0	
+adilet-0429	substantive	T04		commitment	0	Таможенный реестр ИС
+adilet-0430	substantive	T04		goal	0	
+adilet-0431	substantive	T04	T02	commitment	0	
+adilet-0432	substantive	T04		instrument	0	
+adilet-0433	substantive	T04		commitment	0	межведомственная координация
+adilet-0434	substantive	T04	T02	instrument	0	
+adilet-0435	structural				0	заголовок 4.3
+adilet-0436	substantive	T03		goal	0	
+adilet-0437	substantive	T03		goal	0	
+adilet-0438	substantive	T03	T02	goal	0	
+adilet-0439	substantive	T02		commitment	0	защита права собственности
+adilet-0440	substantive	T02	T03	commitment	0	против рейдерства
+adilet-0441	substantive	T03		commitment	0	фондовый рынок
+adilet-0442	substantive	T03	T04	instrument	0	
+adilet-0443	substantive	T02		commitment	0	незыблемость собственности
+adilet-0444	substantive	T02		instrument	0	
+adilet-0445	substantive	T02		instrument	0	возмещение ущерба от госорганов
+adilet-0446	substantive	T03	T14	commitment	0	
+adilet-0447	substantive	T03	T13	instrument	0	«Алтын виза»
+adilet-0448	substantive	T03		commitment	0	
+adilet-0449	substantive	T03	T08	instrument	0	возмещение затрат на инфраструктуру
+adilet-0450	substantive	T05		goal	0	
+adilet-0451	substantive	T03		commitment	0	
+adilet-0452	substantive	T03	T04	instrument	0	
+adilet-0453	substantive	T08	T03	commitment	0	ГЧП
+adilet-0454	substantive	T03	T04	goal	0	
+adilet-0455	substantive	T03		commitment	0	конкуренция на финрынке
+adilet-0456	substantive	T03		instrument	0	выход новых банков
+adilet-0457	substantive	T03	T02	commitment	0	защита заёмщиков
+adilet-0458	substantive	T03		goal	0	
+adilet-0459	substantive	T03	T02	commitment	0	мошенническое оформление кредитов
+adilet-0460	substantive	T03	T02	goal	0	
+adilet-0461	substantive	T02		commitment	0	
+adilet-0462	substantive	T02	T04	commitment	0	декриминализация экономических правонарушений
+adilet-0463	substantive	T02		instrument	0	отклонён из переписи T15
+adilet-0464	substantive	T03		commitment	0	проблемная задолженность
+adilet-0465	substantive	T00	T03	commitment	0	«Қарызсыз қоғам»
+adilet-0466	substantive	T03	T09	commitment	0	
+adilet-0467	substantive	T03	T09	goal	0	
+adilet-0468	structural				0	заголовок 4.4
+adilet-0469	substantive	T03		description	0	
+adilet-0470	substantive	T03		problem	0	доходы отстают от расходов
+adilet-0471	substantive	T03		problem	0	изъятия из Нацфонда, госдолг
+adilet-0472	substantive	T03		problem	0	
+adilet-0473	substantive	T03		problem	0	сокращение бюджета развития
+adilet-0474	substantive	T03		problem	0	замкнутый круг
+adilet-0475	substantive	T03		description	0	
+adilet-0476	substantive	T03		commitment	0	бюджетные правила
+adilet-0477	substantive	T03		goal	0	
+adilet-0478	substantive	T03		description	0	
+adilet-0479	substantive	T03	T14	commitment	0	мониторинг бюджетных расходов
+adilet-0480	substantive	T03		commitment	0	защита бюджета развития
+adilet-0481	substantive	T03		description	0	
+adilet-0482	substantive	T03		commitment	0	ревизия налоговых льгот
+adilet-0483	substantive	T03		problem	0	льготы как накопленные привилегии
+adilet-0484	substantive	T03		goal	0	
+adilet-0485	substantive	T03		instrument	0	отмена льгот без обязательств
+adilet-0486	substantive	T03		instrument	0	
+adilet-0487	substantive	T03		description	0	
+adilet-0488	substantive	T03	T04	instrument	0	
+adilet-0489	substantive	T04	T02	instrument	0	
+adilet-0490	substantive	T03	T08	commitment	0	вычет по ипотечным займам
+adilet-0491	substantive	T08	T03	goal	0	
+adilet-0492	substantive	T03	T14	commitment	0	цифровое налоговое администрирование
+adilet-0493	substantive	T03	T14	goal	0	«фабрика фискальных данных»
+adilet-0494	substantive	T03	T05	instrument	0	
+adilet-0495	substantive	T03	T04	instrument	0	нагрузка на ФОТ
+adilet-0496	structural				0	заголовок 4.5
+adilet-0497	substantive	T03	T05	description	0	межпоколенческая справедливость
+adilet-0498	substantive	T03		commitment	0	
+adilet-0499	substantive	T03		commitment	0	
+adilet-0500	substantive	T03	T08	instrument	0	целевые трансферты
+adilet-0501	structural				0	заголовок 4.6
+adilet-0502	substantive	T04		goal	0	
+adilet-0503	substantive	T04		problem	0	избыточные требования и давление
+adilet-0504	substantive	T04	T08	problem	0	
+adilet-0505	substantive	T04		goal	0	
+adilet-0506	substantive	T04		goal	0	
+adilet-0507	substantive	T04		commitment	0	средний бизнес с 7 до 20%
+adilet-0508	substantive	T04	T14	commitment	0	
+adilet-0509	substantive	T04	T14	commitment	0	регистрация за один день
+adilet-0510	substantive	T04		goal	0	
+adilet-0511	substantive	T01	T14	commitment	0	ревизия законодательства с ИИ
+adilet-0512	substantive	T01		goal	0	
+adilet-0513	substantive	T04		commitment	0	регуляторная стабильность
+adilet-0514	substantive	T04		instrument	0	
+adilet-0515	substantive	T04		commitment	0	риск-ориентированный контроль
+adilet-0516	substantive	T04		instrument	0	проверки МСБ только по рискам
+adilet-0517	substantive	T04	T14	instrument	0	дистанционный контроль
+adilet-0518	substantive	T04	T02	commitment	0	
+adilet-0519	substantive	T02	T04	goal	0	
+adilet-0520	substantive	T02	T04	goal	0	возмещение вместо лишения свободы
+adilet-0521	substantive	T04	T02	commitment	0	
+adilet-0522	substantive	T04	T02	instrument	0	арест счетов только по закону
+adilet-0523	substantive	T04	T03	commitment	0	
+adilet-0524	substantive	T04	T03	instrument	0	гарантийные инструменты
+adilet-0525	substantive	T03	T04	instrument	0	венчур и краудфандинг
+adilet-0526	substantive	T03	T04	commitment	0	факторинг
+adilet-0527	substantive	T04		goal	0	
+adilet-0528	substantive	T04		commitment	0	
+adilet-0529	substantive	T04		instrument	0	
+adilet-0530	substantive	T04	T09	instrument	0	
+adilet-0531	substantive	T04		instrument	0	медианная, а не средняя зарплата
+adilet-0532	substantive	T04		commitment	0	
+adilet-0533	substantive	T03	T04	instrument	0	против дробления бизнеса
+adilet-0534	substantive	T04		goal	0	
+adilet-0535	substantive	T04		commitment	0	против картельных сговоров
+adilet-0536	substantive	T04		instrument	0	
+adilet-0537	substantive	T04	T14	commitment	0	мониторинг конкуренции и цен
+adilet-0538	substantive	T04		goal	0	
+adilet-0539	substantive	T04		commitment	0	интеллектуальная собственность
+adilet-0540	substantive	T04		goal	0	
+adilet-0541	substantive	T11	T04	goal	0	
+adilet-0542	substantive	T11	T04	instrument	0	
+adilet-0543	substantive	T04	T08	commitment	0	
+adilet-0544	substantive	T04	T08	instrument	0	
+adilet-0545	substantive	T04	T08	goal	0	
+adilet-0546	substantive	T04		commitment	0	франчайзинг
+adilet-0547	substantive	T04		instrument	0	
+adilet-0548	substantive	T04	T13	goal	0	
+adilet-0549	substantive	T04		goal	0	
+adilet-0550	substantive	T04		commitment	0	принцип «жёлтых страниц»
+adilet-0551	substantive	T04		instrument	0	приватизация
+adilet-0552	substantive	T04		instrument	0	
+adilet-0553	substantive	T04	T03	commitment	0	доступ к госзаказу
+adilet-0554	substantive	T04	T14	goal	0	единое окно поддержки
+adilet-0555	substantive	T08	T03	commitment	0	отказ от перекрёстного субсидирования
+adilet-0556	substantive	T08	T03	goal	0	
+adilet-0557	substantive	T04		commitment	0	программа «Орлеу»
+adilet-0558	substantive	T09	T04	commitment	0	социальное предпринимательство
+adilet-0559	substantive	T09	T04	instrument	0	
+adilet-0560	substantive	T04		description	0	
+adilet-0561	substantive	T00	T04	commitment	0	Деловой совет при партии
+adilet-0562	structural				0	заголовок 4.7
+adilet-0563	substantive	T04	T12	description	0	
+adilet-0564	substantive	T04		goal	0	
+adilet-0565	substantive	T04		goal	0	
+adilet-0566	substantive	T12	T04	goal	0	
+adilet-0567	substantive	T04		goal	0	
+adilet-0568	substantive	T04		commitment	0	
+adilet-0569	substantive	T04		commitment	0	
+adilet-0570	structural				0	маркер «1 млн»
+adilet-0571	substantive	T04		commitment	0	
+adilet-0572	substantive	T04		commitment	0	1 млн качественных рабочих мест к 2031
+adilet-0573	substantive	T04	T01	commitment	0	100 рабочих мест на 10 тыс. жителей
+adilet-0574	substantive	T04	T09	instrument	0	контроль по пенсионным взносам
+adilet-0575	fragment				0	продолжение 0574
+adilet-0576	substantive	T04	T11	commitment	0	
+adilet-0577	substantive	T04	T14	commitment	0	Цифровая служба занятости
+adilet-0578	substantive	T04	T14	instrument	0	
+adilet-0579	substantive	T09	T04	commitment	0	квоты для лиц с инвалидностью
+adilet-0580	substantive	T09	T04	goal	0	
+adilet-0581	substantive	T09	T14	instrument	0	
+adilet-0582	substantive	T04	T13	instrument	0	реестр агентств занятости
+adilet-0583	substantive	T04	T13	commitment	0	иностранная рабочая сила
+adilet-0584	substantive	T04		commitment	0	
+adilet-0585	substantive	T04		goal	0	
+adilet-0586	substantive	T04		goal	0	
+adilet-0587	substantive	T04		commitment	0	
+adilet-0588	substantive	T04	T14	commitment	0	учёт трудовых договоров
+adilet-0589	substantive	T04	T14	commitment	0	95% электронных договоров к 2031
+adilet-0590	substantive	T04		instrument	0	
+adilet-0591	substantive	T04	T02	commitment	0	приоритет зарплаты при банкротстве
+adilet-0592	substantive	T04		goal	0	
+adilet-0593	substantive	T04	T14	commitment	0	цифровой мониторинг трудовых отношений
+adilet-0594	substantive	T04	T09	goal	0	
+adilet-0595	substantive	T04	T14	instrument	0	
+adilet-0596	substantive	T04	T14	commitment	0	«Расчёт в один клик»
+adilet-0597	substantive	T04		goal	0	
+adilet-0598	substantive	T04	T14	commitment	0	платформенная занятость
+adilet-0599	substantive	T04	T09	commitment	0	гарантии платформенным работникам
+adilet-0600	substantive	T04	T09	instrument	0	
+adilet-0601	substantive	T04	T11	commitment	0	гранты молодёжным стартапам
+adilet-0602	substantive	T04		instrument	0	
+adilet-0603	substantive	T12	T04	commitment	0	креативные индустрии
+adilet-0604	substantive	T12	T04	commitment	0	вклад креативных индустрий до 3%
+adilet-0605	substantive	T04		goal	0	
+adilet-0606	substantive	T04		commitment	0	
+adilet-0607	substantive	T04		commitment	0	профсоюзы и коллективные договоры
+adilet-0608	substantive	T04	T09	goal	0	средний класс
+adilet-0609	substantive	T09	T03	commitment	0	долговая нагрузка семей
+adilet-0610	substantive	T04		goal	0	безопасность на рабочем месте
+adilet-0611	substantive	T04		instrument	0	оценка профессиональных рисков
+adilet-0612	substantive	T04		goal	0	
+adilet-0613	substantive	T04	T09	commitment	0	страхование от несчастных случаев 90%
+adilet-0614	substantive	T09	T04	goal	0	отклонён из переписи T15
+adilet-0615	substantive	T04		commitment	0	
+adilet-0616	substantive	T04		instrument	0	бонусы за снижение травматизма
+adilet-0617	substantive	T04	T09	commitment	0	гибкий график для родителей
+adilet-0618	substantive	T04		instrument	0	почасовая минимальная оплата
+adilet-0619	structural				0	заголовок 4.8
+adilet-0620	substantive	T07		description	0	
+adilet-0621	substantive	T07		problem	0	нестабильность цен, потери воды
+adilet-0622	substantive	T07		goal	0	
+adilet-0623	substantive	T07	T04	commitment	0	стабилизация цен на продукты
+adilet-0624	substantive	T07	T01	instrument	0	
+adilet-0625	substantive	T07		instrument	0	
+adilet-0626	substantive	T07	T14	instrument	0	мониторинг цен и запасов
+adilet-0627	substantive	T07		goal	0	
+adilet-0628	substantive	T07	T04	goal	0	
+adilet-0629	substantive	T07		commitment	0	самообеспеченность продовольствием
+adilet-0630	substantive	T07		instrument	0	
+adilet-0631	substantive	T07	T13	commitment	0	структура аграрного экспорта
+adilet-0632	substantive	T07	T13	goal	0	
+adilet-0633	substantive	T07	T13	commitment	0	экспорт АПК ×3,5, переработка 70%
+adilet-0634	substantive	T07		commitment	0	отклонён из переписи T16 — животноводство
+adilet-0635	substantive	T07	T03	instrument	0	
+adilet-0636	substantive	T07		goal	0	
+adilet-0637	substantive	T07		commitment	0	молочнотоварные фермы
+adilet-0638	substantive	T07		goal	0	
+adilet-0639	substantive	T07		commitment	0	переработка молока и мяса 70%
+adilet-0640	substantive	T07		description	0	
+adilet-0641	substantive	T07	T03	instrument	0	
+adilet-0642	structural				0	маркер «2,5 млн»
+adilet-0643	substantive	T07	T06	commitment	0	
+adilet-0644	substantive	T07	T06	commitment	0	орошение 2,5 млн га
+adilet-0645	substantive	T07		commitment	0	ирригация и мелиорация
+adilet-0646	substantive	T07		commitment	0	уход от монокультуры пшеницы
+adilet-0647	substantive	T07		goal	0	отклонён из переписи T16 — кормовая база
+adilet-0648	structural				0	маркер «2,6 млрд»
+adilet-0649	substantive	T07	T06	commitment	0	42 водохранилища
+adilet-0650	substantive	T07	T06	goal	0	
+adilet-0651	substantive	T07		commitment	0	14,5 тыс. км оросительных каналов
+adilet-0652	substantive	T07	T14	commitment	0	оцифровка каналов
+adilet-0653	substantive	T07	T06	goal	0	
+adilet-0654	substantive	T07		commitment	0	Закон об ирригации и дренаже
+adilet-0655	substantive	T07	T06	instrument	0	
+adilet-0656	substantive	T07	T01	instrument	0	объединения водопользователей
+adilet-0657	substantive	T06		commitment	0	Арал, Балхаш, Каспий
+adilet-0658	substantive	T06		goal	0	Северный Арал
+adilet-0659	substantive	T07		commitment	0	сельхозкооперация
+adilet-0660	substantive	T07	T04	goal	0	
+adilet-0661	substantive	T07		instrument	0	
+adilet-0662	substantive	T07		instrument	0	
+adilet-0663	substantive	T07	T04	description	0	«Ауыл аманаты»: 26,5 тыс. микрокредитов
+adilet-0664	substantive	T07		commitment	0	
+adilet-0665	substantive	T07	T13	commitment	0	предсказуемая экспортная политика
+adilet-0666	substantive	T07	T13	instrument	0	
+adilet-0667	substantive	T07	T14	commitment	0	платформа Е-АПК
+adilet-0668	substantive	T07	T14	instrument	0	
+adilet-0669	substantive	T07	T14	instrument	0	личный кабинет фермера
+adilet-0670	substantive	T07	T14	instrument	0	
+adilet-0671	substantive	T07		commitment	0	агрострахование
+adilet-0672	substantive	T07	T03	instrument	0	субсидирование премии до 80%
+adilet-0673	substantive	T07	T03	instrument	0	
+adilet-0674	substantive	T05		goal	0	ДЕФЕКТ: заголовок слился с текстом
+adilet-0675	substantive	T05		description	0	
+adilet-0676	substantive	T05		goal	0	
+adilet-0677	structural				0	маркер «100 млн»
+adilet-0678	substantive	T05		commitment	0	добыча нефти 100 млн тонн
+adilet-0679	substantive	T05		description	0	
+adilet-0680	substantive	T05		commitment	0	добыча/переработка 5:1 → 2,8:1
+adilet-0681	substantive	T05		commitment	0	НПЗ с 18 до 30 млн тонн
+adilet-0682	substantive	T05		commitment	0	глубина переработки 89 → 94%
+adilet-0683	substantive	T05	T06	commitment	0	топливо класса К5
+adilet-0684	substantive	T05		goal	0	
+adilet-0685	substantive	T05		commitment	0	бутадиен, полиэтилен
+adilet-0686	substantive	T05		goal	0	
+adilet-0687	substantive	T05		description	0	
+adilet-0688	substantive	T05		commitment	0	ресурсная база газа +10%
+adilet-0689	substantive	T05	T08	commitment	0	газотранспортная инфраструктура
+adilet-0690	substantive	T05	T08	commitment	0	газификация
+adilet-0691	substantive	T05		commitment	0	газовая генерация 27% к 2029
+adilet-0692	substantive	T05		commitment	0	Карачаганак, Кашаган
+adilet-0693	substantive	T05		commitment	0	7,5 млрд кубометров газа
+adilet-0694	substantive	T05		goal	0	
+adilet-0695	substantive	T05		commitment	0	попутный и сжиженный газ
+adilet-0696	substantive	T05		commitment	0	газохимический комплекс
+adilet-0697	substantive	T05		goal	0	
+adilet-0698	substantive	T05		description	0	запасы угля
+adilet-0699	substantive	T05		description	0	
+adilet-0700	substantive	T05	T06	goal	0	«чистый уголь»
+adilet-0701	structural				0	маркер «200 млрд»
+adilet-0702	substantive	T05	T08	commitment	0	Западный Казахстан в ЕЭС
+adilet-0703	substantive	T05		goal	0	
+adilet-0704	substantive	T05		goal	0	энергоёмкость экономики
+adilet-0705	substantive	T05	T14	commitment	0	энергосервисные контракты
+adilet-0706	substantive	T05		description	0	
+adilet-0707	substantive	T05	T01	description	0	референдум по АЭС 2024
+adilet-0708	substantive	T05		description	0	первая АЭС 2400 МВт
+adilet-0709	substantive	T05		description	0	вторая АЭС
+adilet-0710	substantive	T05		description	0	не менее трёх АЭС
+adilet-0711	substantive	T05		description	0	14% мировых ресурсов урана
+adilet-0712	substantive	T05	T04	description	0	
+adilet-0713	substantive	T05	T11	commitment	0	ядерная безопасность и кадры
+adilet-0714	substantive	T05	T03	problem	0	геологическая информация
+adilet-0715	substantive	T05		description	0	редкоземельные металлы
+adilet-0716	substantive	T05	T13	description	0	
+adilet-0717	substantive	T05		goal	0	
+adilet-0718	substantive	T05		commitment	0	ГМК
+adilet-0719	substantive	T05		commitment	0	цветная металлургия, РЗМ
+adilet-0720	substantive	T05	T03	goal	0	
+adilet-0721	substantive	T05		commitment	0	законодательство о недропользовании
+adilet-0722	substantive	T05	T06	instrument	0	водоохранные полосы
+adilet-0723	substantive	T05	T02	instrument	0	сервитут, компенсации, переселение
+adilet-0724	substantive	T05	T03	commitment	0	мораторий на изменения; отклонён из переписи T15
+adilet-0725	substantive	T05		commitment	0	угольная отрасль до 2035
+adilet-0726	substantive	T05	T11	commitment	0	углехимия, золошлаки
+adilet-0727	substantive	T05	T04	commitment	0	внутристрановая ценность в нефтегазе
+adilet-0728	substantive	T05	T04	goal	0	
+adilet-0729	substantive	T05	T04	instrument	0	
+adilet-0730	substantive	T05	T04	instrument	0	четвёртый НПЗ
+adilet-0731	substantive	T05		instrument	0	
+adilet-0732	substantive	T05	T11	commitment	0	
+adilet-0733	substantive	T05	T11	commitment	0	отраслевой совет по кадрам
+adilet-0734	substantive	T05	T11	instrument	0	
+adilet-0735	substantive	T03	T05	commitment	0	роялти на ТПИ
+adilet-0736	substantive	T03	T05	instrument	0	
+adilet-0737	substantive	T03	T05	commitment	0	
+adilet-0738	substantive	T03	T05	instrument	0	акцизы на нефтепродукты
+adilet-0739	substantive	T03	T05	commitment	0	НДПИ
+adilet-0740	substantive	T03	T05	instrument	0	геологоразведка
+adilet-0741	substantive	T05	T08	commitment	0	тарифная политика
+adilet-0742	substantive	T05	T08	instrument	0	
+adilet-0743	substantive	T05	T09	commitment	0	перекрёстное субсидирование
+adilet-0744	structural				0	заголовок раздела 5
+adilet-0745	structural				0	заголовок «Цифровое государство»
+adilet-0746	substantive	T11		goal	0	ДЕФЕКТ: заголовок слился с текстом
+adilet-0747	substantive	T11	T13	description	0	
+adilet-0748	substantive	T14		goal	0	
+adilet-0749	substantive	T11		description	0	
+adilet-0750	substantive	T11		description	0	
+adilet-0751	substantive	T11	T01	description	0	НАН, Закон о науке
+adilet-0752	substantive	T11		description	0	
+adilet-0753	substantive	T11		problem	0	
+adilet-0754	substantive	T11	T03	problem	0	наука не интегрирована в экономику
+adilet-0755	substantive	T11		problem	0	
+adilet-0756	substantive	T11		problem	0	дефицит кадров, инфраструктура
+adilet-0757	substantive	T11	T04	problem	0	кадровый разрыв
+adilet-0758	substantive	T11	T04	problem	0	400 тыс. специалистов
+adilet-0759	substantive	T11	T14	commitment	0	AI-Sana
+adilet-0760	substantive	T11		description	0	650 тыс. студентов
+adilet-0761	substantive	T14	T11	commitment	0	ИИ во всех профессиях
+adilet-0762	substantive	T14	T11	commitment	0	100 тыс. специалистов по ИИ
+adilet-0763	substantive	T11	T14	commitment	0	ИИ-Университет, TUMO Centers
+adilet-0764	substantive	T11	T05	commitment	0	«наука — образование — производство»
+adilet-0765	substantive	T11	T05	instrument	0	
+adilet-0766	substantive	T11	T03	commitment	0	
+adilet-0767	substantive	T11	T03	instrument	0	эндаумент-фонды
+adilet-0768	substantive	T11		commitment	0	математическая школа
+adilet-0769	substantive	T14	T11	goal	0	
+adilet-0770	substantive	T11		commitment	0	управление талантами
+adilet-0771	substantive	T11		instrument	0	
+adilet-0772	substantive	T11	T03	goal	0	
+adilet-0773	substantive	T14		description	0	ДЕФЕКТ: заголовок и маркер «99%» слились с текстом
+adilet-0774	substantive	T14		description	0	99% интернет, 28 место в мире
+adilet-0775	substantive	T14		description	0	
+adilet-0776	substantive	T14	T03	description	0	эффект 1,6 трлн тенге
+adilet-0777	fragment				0	продолжение 0776
+adilet-0778	substantive	T14		problem	0	
+adilet-0779	substantive	T14		problem	0	400 разрозненных систем
+adilet-0780	substantive	T14	T01	problem	0	
+adilet-0781	substantive	T14	T08	problem	0	инфраструктурное неравенство
+adilet-0782	substantive	T14	T07	problem	0	широкополосный доступ на селе
+adilet-0783	substantive	T14	T13	description	0	
+adilet-0784	substantive	T14	T13	description	0	70% мировой экономики на платформах
+adilet-0785	substantive	T14		goal	0	
+adilet-0786	substantive	T14	T08	commitment	0	кабель по дну Каспия
+adilet-0787	substantive	T14	T13	goal	0	цифровой транзитный хаб
+adilet-0788	substantive	T14		commitment	0	
+adilet-0789	substantive	T14	T07	commitment	0	спутниковый интернет
+adilet-0790	substantive	T14	T07	commitment	0	3000 сельских пунктов
+adilet-0791	substantive	T14	T09	goal	0	
+adilet-0792	substantive	T14	T04	commitment	0	офтейк-модели в цифровой сфере
+adilet-0793	substantive	T14	T04	goal	0	
+adilet-0794	substantive	T14	T04	commitment	0	ИИ-стартапы
+adilet-0795	substantive	T14	T04	commitment	0	Astana Hub
+adilet-0796	substantive	T14	T08	commitment	0	IT-хабы до районов
+adilet-0797	substantive	T14	T03	commitment	0	
+adilet-0798	substantive	T14		commitment	0	экономика данных
+adilet-0799	substantive	T14		instrument	0	отраслевые «озёра данных»
+adilet-0800	substantive	T14		commitment	0	
+adilet-0801	substantive	T14		commitment	0	AI Hub
+adilet-0802	substantive	T14	T04	commitment	0	Exponential Cluster
+adilet-0803	substantive	T14	T03	commitment	0	CryptoCity
+adilet-0804	substantive	T14	T13	commitment	0	беспилотная индустрия
+adilet-0805	substantive	T14	T08	commitment	0	BIM-проектирование
+adilet-0806	substantive	T14		commitment	0	
+adilet-0807	substantive	T14	T01	goal	0	
+adilet-0808	substantive	T14		commitment	0	
+adilet-0809	substantive	T14	T04	goal	0	
+adilet-0810	substantive	T14		commitment	0	национальная инфраструктура ИИ
+adilet-0811	substantive	T14	T05	commitment	0	космическая связь
+adilet-0812	substantive	T14		commitment	0	замена KazSat-3
+adilet-0813	substantive	T11	T14	commitment	0	НИОКР в космосе
+adilet-0814	substantive	T05	T14	commitment	0	аэрокосмическая промышленность
+adilet-0815	substantive	T14	T05	commitment	0	спутники ДЗЗ
+adilet-0816	substantive	T14		commitment	0	356 тыс. кв. км
+adilet-0817	substantive	T14	T06	instrument	0	мониторинг земель и экологии
+adilet-0818	substantive	T14	T13	commitment	0	экспорт спутников
+adilet-0819	substantive	T11	T14	commitment	0	
+adilet-0820	substantive	T14	T11	commitment	0	«Цифрлық қоғам»
+adilet-0821	substantive	T09	T14	instrument	0	обучение пожилых, защита от мошенничества
+adilet-0822	substantive	T14	T11	instrument	0	олимпиады по цифровой грамотности
+adilet-0823	structural				0	маркер «5 млн»
+adilet-0824	substantive	T14	T11	commitment	0	5 млн обученных ИИ
+adilet-0825	substantive	T14	T03	goal	0	
+adilet-0826	substantive	T13	T14	goal	0	
+adilet-0827	structural				0	заголовок 5.3
+adilet-0828	substantive	T14	T02	problem	0	утечки данных, мошенничество
+adilet-0829	substantive	T14	T02	goal	0	
+adilet-0830	substantive	T14	T02	commitment	0	персональные данные
+adilet-0831	substantive	T14	T02	instrument	0	цифровое портмоне
+adilet-0832	substantive	T14	T02	goal	0	
+adilet-0833	substantive	T14	T02	commitment	0	
+adilet-0834	substantive	T14	T02	commitment	0	прозрачность автоматизированных решений
+adilet-0835	substantive	T14	T02	goal	0	против «чёрного ящика»
+adilet-0836	substantive	T14	T02	commitment	0	противодействие цифровому мошенничеству
+adilet-0837	substantive	T14	T09	commitment	0	безопасная среда для детей
+adilet-0838	structural				0	заголовок раздела 6
+adilet-0839	structural				0	заголовок, разорван вёрсткой
+adilet-0840	structural				0	продолжение заголовка
+adilet-0841	substantive	T09		goal	0	
+adilet-0842	substantive	T15	T09	goal	0	противодействие семейному насилию — принято в перепись T15
+adilet-0843	structural				0	маркер «4,6 млн»
+adilet-0844	substantive	T09	T03	description	0	
+adilet-0845	substantive	T09		description	0	4,6 млн получателей
+adilet-0846	structural				0	заголовок 6.1
+adilet-0847	substantive	T09		goal	0	
+adilet-0848	substantive	T09		goal	0	против иждивенчества
+adilet-0849	substantive	T09		commitment	0	
+adilet-0850	substantive	T09		goal	0	
+adilet-0851	substantive	T09	T14	instrument	0	оценка благополучия семьи
+adilet-0852	substantive	T09	T14	commitment	0	Единая платформа социальной защиты
+adilet-0853	substantive	T09	T14	instrument	0	
+adilet-0854	substantive	T09	T14	commitment	0	проактивные выплаты
+adilet-0855	substantive	T09	T14	instrument	0	
+adilet-0856	substantive	T09		commitment	0	
+adilet-0857	substantive	T09		instrument	0	
+adilet-0858	substantive	T09		commitment	0	
+adilet-0859	substantive	T09	T04	instrument	0	
+adilet-0860	substantive	T09		goal	0	
+adilet-0861	structural				0	заголовок 6.2
+adilet-0862	substantive	T09	T12	goal	0	
+adilet-0863	substantive	T09	T01	description	0	
+adilet-0864	substantive	T09		goal	0	
+adilet-0865	substantive	T09		goal	0	
+adilet-0866	substantive	T15	T09	goal	0	ПОГРАНИЧНЫЙ, принят в перепись T15: «насилие» без уточнения, но в ряду с социальным сиротством
+adilet-0867	substantive	T09		goal	0	
+adilet-0868	substantive	T09		commitment	0	Центры поддержки семьи
+adilet-0869	substantive	T09	T14	instrument	0	раннее выявление, мобильные группы
+adilet-0870	substantive	T09		commitment	0	концепция «Дети Казахстана»
+adilet-0871	substantive	T09	T14	instrument	0	цифровой маршрут ребёнка
+adilet-0872	substantive	T09	T14	goal	0	
+adilet-0873	substantive	T09		commitment	0	
+adilet-0874	substantive	T09	T11	instrument	0	
+adilet-0875	substantive	T09		commitment	0	сопровождение женщин; не T15 — о насилии не говорится
+adilet-0876	structural				0	заголовок 6.3
+adilet-0877	substantive	T09		description	0	
+adilet-0878	substantive	T09		goal	0	
+adilet-0879	substantive	T09	T10	goal	0	
+adilet-0880	substantive	T12	T09	goal	0	
+adilet-0881	substantive	T09	T04	commitment	0	охват пенсионной системой
+adilet-0882	substantive	T09		goal	0	
+adilet-0883	substantive	T09		commitment	0	
+adilet-0884	substantive	T09		goal	0	
+adilet-0885	substantive	T09	T12	commitment	0	серебряное волонтёрство
+adilet-0886	substantive	T09		description	0	
+adilet-0887	substantive	T09	T14	commitment	0	цифровая грамотность пожилых
+adilet-0888	substantive	T09	T10	commitment	0	система долговременного ухода
+adilet-0889	structural				0	заголовок 6.4
+adilet-0890	substantive	T09		description	0	751 тыс. лиц с инвалидностью
+adilet-0891	substantive	T09		description	0	
+adilet-0892	substantive	T09		goal	0	
+adilet-0893	substantive	T09		goal	0	от опеки к самостоятельности
+adilet-0894	substantive	T09	T14	commitment	0	заочное установление инвалидности
+adilet-0895	substantive	T09	T14	commitment	0	ИИ в медико-социальной экспертизе
+adilet-0896	substantive	T09		instrument	0	социальные ваучеры
+adilet-0897	substantive	T09		commitment	0	
+adilet-0898	substantive	T09	T10	commitment	0	реабилитационные центры в 8 регионах
+adilet-0899	substantive	T09	T10	commitment	0	реабилитация на дому
+adilet-0900	substantive	T09	T10	description	0	эффект у 71% детей
+adilet-0901	substantive	T09		goal	0	
+adilet-0902	substantive	T09		commitment	0	технические средства реабилитации
+adilet-0903	substantive	T09	T10	commitment	0	протезы нового поколения
+adilet-0904	substantive	T11	T09	commitment	0	трудовое обучение в спецшколах
+adilet-0905	substantive	T11	T09	commitment	0	
+adilet-0906	substantive	T11	T09	commitment	0	
+adilet-0907	substantive	T11		commitment	0	
+adilet-0908	substantive	T09		commitment	0	временный уход и дневное пребывание
+adilet-0909	substantive	T09		goal	0	
+adilet-0910	substantive	T09	T11	commitment	0	«одно окно» для родителей
+adilet-0911	substantive	T09	T08	commitment	0	доступная среда
+adilet-0912	substantive	T09	T08	commitment	0	карта доступности
+adilet-0913	substantive	T09	T08	commitment	0	приёмка объектов только с доступностью
+adilet-0914	substantive	T09	T14	commitment	0	
+adilet-0915	substantive	T09	T14	commitment	0	адаптация ЦОНов
+adilet-0916	substantive	T09		commitment	0	жестовый язык
+adilet-0917	substantive	T09	T03	commitment	0	налоговый вычет при смене группы
+adilet-0918	substantive	T09	T03	instrument	0	
+adilet-0919	structural				0	заголовок раздела 7
+adilet-0920	structural				0	заголовок «Человеческий потенциал»
+adilet-0921	substantive	T11		goal	0	
+adilet-0922	substantive	T11	T10	description	0	
+adilet-0923	substantive	T11		goal	0	
+adilet-0924	substantive	T11	T03	goal	0	
+adilet-0925	substantive	T11		goal	0	
+adilet-0926	substantive	T11		commitment	0	обучение на протяжении жизни
+adilet-0927	substantive	T11	T04	goal	0	
+adilet-0928	substantive	T10		goal	0	
+adilet-0929	substantive	T10		commitment	0	
+adilet-0930	structural				0	заголовок 7.1
+adilet-0931	substantive	T11		goal	0	
+adilet-0932	substantive	T11		description	0	
+adilet-0933	substantive	T11		commitment	0	
+adilet-0934	substantive	T11	T12	goal	0	
+adilet-0935	substantive	T11		commitment	0	академическая честность
+adilet-0936	substantive	T11		goal	0	
+adilet-0937	substantive	T11		instrument	0	
+adilet-0938	substantive	T11		goal	0	ДЕФЕКТ: заголовок слился с текстом
+adilet-0939	substantive	T11		description	0	1,7 млн детей, 4 млн школьников
+adilet-0940	substantive	T11	T07	problem	0	разрыв город — село
+adilet-0941	substantive	T11		goal	0	
+adilet-0942	structural				0	маркер «79 тыс.»
+adilet-0943	substantive	T11		commitment	0	79 тыс. дошкольных мест
+adilet-0944	substantive	T11		commitment	0	охват к 2028
+adilet-0945	structural				0	маркер «300 тыс.»
+adilet-0946	substantive	T11		commitment	0	
+adilet-0947	substantive	T11		commitment	0	300 тыс. ученических мест
+adilet-0948	substantive	T11	T08	instrument	0	
+adilet-0949	substantive	T11	T07	commitment	0	
+adilet-0950	substantive	T11	T07	commitment	0	сеть сельских опорных школ
+adilet-0951	substantive	T11	T07	commitment	0	педагоги в сельские регионы
+adilet-0952	substantive	T11	T07	commitment	0	«English ауылда»
+adilet-0953	substantive	T11		commitment	0	60 профильных школ
+adilet-0954	substantive	T11		goal	0	
+adilet-0955	substantive	T11		commitment	0	200 STEM-классов
+adilet-0956	substantive	T11	T07	instrument	0	
+adilet-0957	substantive	T11		description	0	
+adilet-0958	substantive	T11		commitment	0	читательская грамотность
+adilet-0959	substantive	T11		instrument	0	
+adilet-0960	substantive	T11	T14	goal	0	основы ИИ в школе
+adilet-0961	substantive	T11	T14	commitment	0	
+adilet-0962	substantive	T11	T02	commitment	0	«Основы права»
+adilet-0963	substantive	T11	T02	description	0	
+adilet-0964	substantive	T11	T12	commitment	0	«Адал азамат»
+adilet-0965	substantive	T11	T04	commitment	0	рабочая профессия в школе
+adilet-0966	substantive	T11	T04	commitment	0	
+adilet-0967	substantive	T11		commitment	0	внешняя оценка качества
+adilet-0968	substantive	T11		instrument	0	экзамены во внешних центрах
+adilet-0969	substantive	T11		commitment	0	логика приёма в вузы
+adilet-0970	substantive	T11	T14	instrument	0	критическое мышление, ИИ-грамотность
+adilet-0971	substantive	T11	T12	commitment	0	шахматы в образовании
+adilet-0972	substantive	T11		goal	0	
+adilet-0973	substantive	T11		commitment	0	учёт внеучебной активности
+adilet-0974	substantive	T11		instrument	0	Портфель компетенций
+adilet-0975	substantive	T11		instrument	0	
+adilet-0976	substantive	T12	T11	commitment	0	дворцы школьников, школы искусств
+adilet-0977	substantive	T11	T04	goal	0	ДЕФЕКТ: заголовок слился с текстом
+adilet-0978	substantive	T11	T04	goal	0	
+adilet-0979	substantive	T11		goal	0	
+adilet-0980	substantive	T11	T05	goal	0	рабочие профессии
+adilet-0981	substantive	T11	T04	goal	0	
+adilet-0982	substantive	T11	T04	goal	0	
+adilet-0983	substantive	T11	T04	commitment	0	госзаказ по потребностям экономики
+adilet-0984	substantive	T11	T04	commitment	0	профстандарты
+adilet-0985	substantive	T11	T05	commitment	0	инженерное образование
+adilet-0986	substantive	T11	T05	instrument	0	интеграция обучения с производством
+adilet-0987	substantive	T11	T04	commitment	0	дуальное обучение
+adilet-0988	substantive	T11	T04	commitment	0	45% студентов на предприятии к 2031
+adilet-0989	substantive	T11	T04	commitment	0	центры отраслевых компетенций
+adilet-0990	substantive	T11	T05	commitment	0	специализация технических вузов
+adilet-0991	substantive	T11	T04	instrument	0	
+adilet-0992	substantive	T11		commitment	0	центры академического превосходства
+adilet-0993	substantive	T11		commitment	0	
+adilet-0994	substantive	T11	T04	instrument	0	гарантированное трудоустройство
+adilet-0995	substantive	T11	T04	commitment	0	Центр трансформации профессий
+adilet-0996	substantive	T11	T14	instrument	0	
+adilet-0997	substantive	T11	T04	commitment	0	вторая рабочая профессия бесплатно
+adilet-0998	substantive	T11	T03	commitment	0	образовательные кредиты
+adilet-0999	structural				0	заголовок 7.2
+adilet-1000	substantive	T10		goal	0	
+adilet-1001	substantive	T10		description	0	
+adilet-1002	substantive	T10		goal	0	
+adilet-1003	substantive	T10	T12	commitment	0	
+adilet-1004	substantive	T12	T10	commitment	0	доступность спорта
+adilet-1005	substantive	T10	T12	problem	0	35,7% ЗОЖ, 44,5% спорт
+adilet-1006	substantive	T10		problem	0	избыточный вес у детей
+adilet-1007	substantive	T10	T07	problem	0	
+adilet-1008	substantive	T12	T07	problem	0	
+adilet-1009	substantive	T10		commitment	0	«Саламатты шаңырақ»
+adilet-1010	substantive	T10	T11	commitment	0	«Саламатты мектеп»
+adilet-1011	substantive	T10	T11	instrument	0	
+adilet-1012	substantive	T10	T11	commitment	0	ограничение вредных продуктов в школах
+adilet-1013	substantive	T12	T11	commitment	0	школьные и студенческие лиги
+adilet-1014	substantive	T12	T11	instrument	0	қазақ күресі, тоғызқұмалақ, асық ату
+adilet-1015	substantive	T10	T04	commitment	0	
+adilet-1016	substantive	T10	T04	instrument	0	маркировка «Полезный выбор»
+adilet-1017	substantive	T12	T10	commitment	0	50% занимающихся спортом к 2029
+adilet-1018	substantive	T10	T12	commitment	0	
+adilet-1019	substantive	T12	T07	commitment	0	модульные спортивные объекты на селе
+adilet-1020	substantive	T12	T08	commitment	0	
+adilet-1021	substantive	T12		commitment	0	
+adilet-1022	substantive	T12	T04	instrument	0	стимулирующие выплаты тренерам
+adilet-1023	structural				0	заголовок 7.3
+adilet-1024	substantive	T10		goal	0	
+adilet-1025	substantive	T10		goal	0	
+adilet-1026	substantive	T10		commitment	0	
+adilet-1027	substantive	T10		goal	0	
+adilet-1028	substantive	T10		goal	0	ДЕФЕКТ: заголовок слился с текстом
+adilet-1029	substantive	T10		goal	0	
+adilet-1030	substantive	T10		commitment	0	кардиологическая служба
+adilet-1031	substantive	T10		goal	0	
+adilet-1032	structural				0	маркер «150 тыс.»
+adilet-1033	substantive	T10		commitment	0	центры неинвазивной диагностики
+adilet-1034	substantive	T10		goal	0	
+adilet-1035	substantive	T10		commitment	0	кардиореабилитация
+adilet-1036	substantive	T10	T11	commitment	0	
+adilet-1037	substantive	T10	T11	commitment	0	
+adilet-1038	substantive	T10		problem	0	дефицит 2 тыс. специалистов
+adilet-1039	substantive	T10	T11	instrument	0	
+adilet-1040	substantive	T10	T14	commitment	0	профилактические осмотры
+adilet-1041	substantive	T10		commitment	0	скрининг рака лёгких
+adilet-1042	substantive	T10		goal	0	
+adilet-1043	substantive	T10	T14	commitment	0	единая медицинская информационная система
+adilet-1044	substantive	T10	T14	commitment	0	паспорт здоровья, 90% к 2029
+adilet-1045	substantive	T10	T14	commitment	0	
+adilet-1046	substantive	T10		commitment	0	маршрут пациента с предельными сроками
+adilet-1047	substantive	T10	T14	instrument	0	
+adilet-1048	substantive	T10		commitment	0	9 перинатальных центров
+adilet-1049	substantive	T10		commitment	0	неонатальный скрининг
+adilet-1050	substantive	T10	T09	goal	0	
+adilet-1051	substantive	T10		commitment	0	
+adilet-1052	substantive	T10		goal	0	
+adilet-1053	substantive	T10		commitment	0	
+adilet-1054	substantive	T10	T08	instrument	0	
+adilet-1055	substantive	T10	T04	commitment	0	поддержка работников ПМСП
+adilet-1056	substantive	T10	T04	instrument	0	
+adilet-1057	substantive	T10	T11	commitment	0	резидентура
+adilet-1058	substantive	T11	T10	commitment	0	медицинское образование
+adilet-1059	substantive	T11	T10	instrument	0	
+adilet-1060	substantive	T11	T10	commitment	0	университетские клиники
+adilet-1061	substantive	T10	T14	commitment	0	биомедицина, ИИ
+adilet-1062	substantive	T10		problem	0	ДЕФЕКТ: заголовок слился с текстом; психическое здоровье
+adilet-1063	substantive	T10		goal	0	
+adilet-1064	substantive	T10		commitment	0	
+adilet-1065	substantive	T10	T14	commitment	0	
+adilet-1066	substantive	T10	T14	commitment	0	раннее выявление групп риска
+adilet-1067	substantive	T10		commitment	0	
+adilet-1068	substantive	T10	T11	commitment	0	лудомания, наркомания, профилактика суицида
+adilet-1069	substantive	T10	T11	commitment	0	психологическая помощь молодёжи
+adilet-1070	structural				0	заголовок 7.4
+adilet-1071	substantive	T11		goal	0	
+adilet-1072	substantive	T11	T09	description	0	
+adilet-1073	substantive	T11		goal	0	
+adilet-1074	substantive	T09	T04	description	0	приток молодёжи в трудоспособный возраст
+adilet-1075	substantive	T04	T09	description	0	
+adilet-1076	substantive	T11	T09	goal	0	ДЕФЕКТ: заголовок слился с текстом
+adilet-1077	substantive	T11	T09	goal	0	
+adilet-1078	substantive	T11		commitment	0	
+adilet-1079	structural				0	маркер «40 тыс.»
+adilet-1080	substantive	T04	T11	commitment	0	трудоустройство молодёжи, 40 тыс. в год
+adilet-1081	substantive	T04	T11	commitment	0	безвозвратные гранты
+adilet-1082	structural				0	маркер «30 тыс.»
+adilet-1083	substantive	T04	T06	commitment	0	трудовые отряды на озеленении
+adilet-1084	substantive	T11	T14	commitment	0	Enbek.kz
+adilet-1085	substantive	T11	T14	commitment	0	Skills Enbek
+adilet-1086	substantive	T11	T04	commitment	0	микроквалификации
+adilet-1087	substantive	T11		commitment	0	архитектура работы с талантами
+adilet-1088	substantive	T11		goal	0	
+adilet-1089	substantive	T04	T11	commitment	0	трудоустройство молодёжи до 65%
+adilet-1090	substantive	T08	T11	commitment	0	региональная ипотека для молодёжи
+adilet-1091	substantive	T08	T11	goal	0	
+adilet-1092	substantive	T07	T08	commitment	0	«С дипломом в село»
+adilet-1093	substantive	T08	T04	instrument	0	
+adilet-1094	substantive	T11		goal	0	
+adilet-1095	substantive	T11	T14	description	0	
+adilet-1096	structural				0	заголовок раздела 8
+adilet-1097	structural				0	заголовок, разорван вёрсткой
+adilet-1098	structural				0	продолжение заголовка
+adilet-1099	substantive	T12		goal	0	культурный код
+adilet-1100	substantive	T12	T09	commitment	0	
+adilet-1101	substantive	T12		goal	0	принципы «Адал азамат»
+adilet-1102	substantive	T12		description	0	
+adilet-1103	structural				0	заголовок 8.1
+adilet-1104	substantive	T11	T01	goal	0	
+adilet-1105	substantive	T01	T11	commitment	0	
+adilet-1106	substantive	T12	T11	commitment	0	гранты молодёжным инициативам
+adilet-1107	substantive	T12	T11	commitment	0	волонтёрство до 32%
+adilet-1108	substantive	T12	T14	commitment	0	цифровая благотворительность
+adilet-1109	substantive	T01	T11	commitment	0	молодёжная квота 20%
+adilet-1110	substantive	T12	T11	commitment	0	коворкинги, комьюнити-центры
+adilet-1111	substantive	T12		goal	0	ДЕФЕКТ: заголовок слился с текстом
+adilet-1112	substantive	T12		commitment	0	
+adilet-1113	substantive	T09	T12	goal	0	
+adilet-1114	substantive	T04	T12	commitment	0	человек труда, охват 70%
+adilet-1115	substantive	T12	T04	commitment	0	экономический патриотизм
+adilet-1116	substantive	T12	T04	instrument	0	
+adilet-1117	substantive	T04	T12	commitment	0	
+adilet-1118	substantive	T04	T12	goal	0	
+adilet-1119	substantive	T12	T04	goal	0	
+adilet-1120	substantive	T12	T04	commitment	0	креативная экономика до 3% ВВП
+adilet-1121	substantive	T12	T04	commitment	0	
+adilet-1122	substantive	T12	T14	commitment	0	продвижение казахского языка с ИИ
+adilet-1123	substantive	T12	T04	commitment	0	закон о ремесленной деятельности
+adilet-1124	substantive	T12		commitment	0	объекты культуры
+adilet-1125	substantive	T09	T12	commitment	0	женское лидерство
+adilet-1126	substantive	T01	T09	commitment	0	представительство женщин во власти
+adilet-1127	substantive	T01		commitment	0	
+adilet-1128	substantive	T12	T09	commitment	0	«Jarkyn Jol»
+adilet-1129	substantive	T12	T02	goal	0	
+adilet-1130	structural				0	П-01: подзаголовок о культуре чтения
+adilet-1131	substantive	T12	T11	goal	0	
+adilet-1132	substantive	T12	T11	goal	0	
+adilet-1133	substantive	T12	T11	commitment	0	«Читающая нация»
+adilet-1134	substantive	T12		commitment	0	закон о библиотечном деле
+adilet-1135	substantive	T12	T14	commitment	0	цифровая библиотечная платформа
+adilet-1136	substantive	T12	T14	commitment	0	цифровизация музеев и архивов
+adilet-1137	substantive	T12		commitment	0	
+adilet-1138	substantive	T12		commitment	0	фонды на государственном и русском языках
+adilet-1139	substantive	T12		commitment	0	поддержка авторов и издателей
+adilet-1140	substantive	T12	T04	commitment	0	
+adilet-1141	substantive	T12	T11	commitment	0	детская и научно-популярная литература
+adilet-1142	substantive	T11	T12	commitment	0	
+adilet-1143	substantive	T12	T13	commitment	0	книга на международных рынках
+adilet-1144	substantive	T12	T14	commitment	0	ИИ в библиотеках
+adilet-1145	substantive	T12		commitment	0	
+adilet-1146	substantive	T12	T07	commitment	0	книжные магазины в сёлах
+adilet-1147	substantive	T12		commitment	0	чтение на государственном языке
+adilet-1148	substantive	T12	T04	commitment	0	
+adilet-1149	structural				0	заголовок раздела 9
+adilet-1150	structural				0	заголовок «Таза Қазақстан»
+adilet-1151	structural				0	заголовок 9.1
+adilet-1152	substantive	T06		goal	0	
+adilet-1153	substantive	T06	T12	goal	0	
+adilet-1154	substantive	T06	T12	goal	0	
+adilet-1155	substantive	T06		goal	0	
+adilet-1156	substantive	T06		goal	0	
+adilet-1157	substantive	T06	T05	goal	0	
+adilet-1158	substantive	T06	T05	goal	0	наилучшие доступные технологии
+adilet-1159	substantive	T06	T01	description	0	
+adilet-1160	substantive	T06	T12	commitment	0	
+adilet-1161	substantive	T06	T05	commitment	0	
+adilet-1162	substantive	T05	T06	goal	0	
+adilet-1163	substantive	T06	T05	commitment	0	ресурсосбережение
+adilet-1164	substantive	T06	T10	description	0	
+adilet-1165	fragment				0	продолжение 1164
+adilet-1166	substantive	T06	T12	commitment	0	движение «Таза Қазақстан»
+adilet-1167	substantive	T06	T12	goal	0	
+adilet-1168	substantive	T06	T14	commitment	0	мониторинг эмиссий
+adilet-1169	substantive	T06		commitment	0	законодательство об ООПТ
+adilet-1170	structural				0	маркер «14,5 млн»
+adilet-1171	substantive	T06		commitment	0	леса до 14,5 млн га
+adilet-1172	structural				0	маркер «2 млн»
+adilet-1173	substantive	T06		commitment	0	новая ООПТ до 2 млн га
+adilet-1174	substantive	T06		commitment	0	статус Балхаша и Каспия
+adilet-1175	substantive	T06	T05	goal	0	исторические загрязнения
+adilet-1176	substantive	T07		commitment	0	П-10: дословный повтор adilet-0654
+adilet-1177	substantive	T07	T06	instrument	0	
+adilet-1178	substantive	T07	T01	commitment	0	
+adilet-1179	substantive	T06	T12	commitment	0	идеология водосбережения
+adilet-1180	substantive	T06	T05	commitment	0	«тотальное сбережение»
+adilet-1181	substantive	T06	T08	commitment	0	зарядные станции
+adilet-1182	substantive	T13	T06	commitment	0	П-15: природные катаклизмы
+adilet-1183	substantive	T13	T01	instrument	0	П-15
+adilet-1184	substantive	T06	T14	commitment	0	учёт отходов
+adilet-1185	substantive	T06	T08	commitment	0	20 пунктов приёма вторсырья
+adilet-1186	substantive	T06		commitment	0	переработка ТБО 40% к 2030
+adilet-1187	substantive	T06	T08	commitment	0	
+adilet-1188	substantive	T06		commitment	0	полигоны ТБО
+adilet-1189	substantive	T16	T02	commitment	0	жестокое обращение с животными — принято в перепись T16
+adilet-1190	substantive	T06	T14	commitment	0	
+adilet-1191	substantive	T05	T06	commitment	0	энергоёмкость −15% к 2035
+adilet-1192	substantive	T05	T06	commitment	0	«Энергосауаттылық»
+adilet-1193	substantive	T06	T14	commitment	0	мониторинг качества воздуха
+adilet-1194	substantive	T06		goal	0	биоразнообразие
+adilet-1195	substantive	T06		commitment	0	
+adilet-1196	structural				0	заголовок 9.2
+adilet-1197	substantive	T05		goal	0	ДЕФЕКТ: маркер «50%» слился с текстом
+adilet-1198	substantive	T05	T06	commitment	0	
+adilet-1199	substantive	T05	T06	commitment	0	чистая энергия 15% к 2030, 50% к 2050
+adilet-1200	substantive	T05	T06	commitment	0	8,4 ГВт ВИЭ к 2035
+adilet-1201	substantive	T05		commitment	0	накопители 3 ГВт·ч
+adilet-1202	substantive	T05	T14	commitment	0	
+adilet-1203	substantive	T05	T08	commitment	0	приборы учёта
+adilet-1204	substantive	T05	T14	commitment	0	платформа энергосбережения
+adilet-1205	substantive	T05	T08	goal	0	
+adilet-1206	structural				0	заголовок раздела 10
+adilet-1207	structural				0	заголовок «Средняя держава»
+adilet-1208	structural				0	заголовок 10.1
+adilet-1209	substantive	T13		problem	0	
+adilet-1210	substantive	T13		problem	0	размывание международного права
+adilet-1211	substantive	T13		goal	0	роль средней державы
+adilet-1212	substantive	T13		description	0	
+adilet-1213	substantive	T13	T03	goal	0	
+adilet-1214	substantive	T13		commitment	0	
+adilet-1215	substantive	T13	T03	goal	0	
+adilet-1216	substantive	T13	T04	commitment	0	защита бизнеса за рубежом
+adilet-1217	substantive	T13		commitment	0	превентивная дипломатия
+adilet-1218	substantive	T13	T06	commitment	0	трансграничное водное сотрудничество
+adilet-1219	substantive	T13		goal	0	
+adilet-1220	structural				0	заголовок 10.2
+adilet-1221	substantive	T13		problem	0	гибридные угрозы
+adilet-1222	substantive	T13		description	0	
+adilet-1223	substantive	T13		goal	0	
+adilet-1224	substantive	T13		goal	0	
+adilet-1225	substantive	T13		description	0	
+adilet-1226	substantive	T13		goal	0	асимметричный ответ
+adilet-1227	substantive	T13		goal	0	
+adilet-1228	substantive	T13	T01	commitment	0	мобилизационная готовность
+adilet-1229	substantive	T13	T09	commitment	0	социальная защита военнослужащих
+adilet-1230	substantive	T02	T14	commitment	0	видеонаблюдение и предиктивная аналитика
+adilet-1231	substantive	T13	T14	commitment	0	технологии двойного назначения
+adilet-1232	substantive	T13	T05	goal	0	
+adilet-1233	structural				0	заголовок заключения
+adilet-1234	substantive	T00		description	0	
+adilet-1235	fragment				0	вводная фраза к перечню
+adilet-1236	substantive	T02	T08	commitment	0	ДЕФЕКТ: заголовок «Семьи с детьми» слился с текстом
+adilet-1237	substantive	T11		commitment	0	
+adilet-1238	substantive	T11		commitment	0	
+adilet-1239	substantive	T11		commitment	0	
+adilet-1240	substantive	T11	T14	commitment	0	
+adilet-1241	substantive	T11	T04	commitment	0	
+adilet-1242	structural				0	маркер «1 млрд»
+adilet-1243	substantive	T08		commitment	0	
+adilet-1244	substantive	T08	T03	commitment	0	
+adilet-1245	substantive	T08		commitment	0	
+adilet-1246	substantive	T04	T09	commitment	0	
+adilet-1247	substantive	T04	T09	goal	0	
+adilet-1248	substantive	T10		commitment	0	
+adilet-1249	substantive	T03	T08	commitment	0	
+adilet-1250	substantive	T09		commitment	0	
+adilet-1251	substantive	T09	T14	commitment	0	
+adilet-1252	substantive	T09	T01	commitment	0	ДЕФЕКТ: заголовок «Женщины» слился с текстом
+adilet-1253	substantive	T09		goal	0	
+adilet-1254	substantive	T04	T09	goal	0	гендерный разрыв в новых отраслях
+adilet-1255	substantive	T10		commitment	0	
+adilet-1256	substantive	T10		commitment	0	
+adilet-1257	substantive	T04	T09	commitment	0	права работниц, равная оплата
+adilet-1258	substantive	T15	T09	commitment	0	подразделения по защите женщин от насилия — принято в перепись T15
+adilet-1259	substantive	T10		commitment	0	
+adilet-1260	substantive	T04	T11	commitment	0	
+adilet-1261	substantive	T04	T11	goal	0	
+adilet-1262	substantive	T04	T11	commitment	0	
+adilet-1263	substantive	T11		goal	0	
+adilet-1264	structural				0	маркер «100 тыс.»
+adilet-1265	substantive	T11	T14	commitment	0	
+adilet-1266	substantive	T14	T11	commitment	0	100 тыс. специалистов по ИИ
+adilet-1267	substantive	T04	T11	commitment	0	
+adilet-1268	substantive	T04	T11	goal	0	
+adilet-1269	substantive	T11	T03	commitment	0	
+adilet-1270	substantive	T14	T04	goal	0	
+adilet-1271	structural				0	П-01: заголовок без сказуемого
+adilet-1272	structural				0	маркер «1 млн»
+adilet-1273	substantive	T04		commitment	0	
+adilet-1274	substantive	T04	T14	commitment	0	95% электронных договоров
+adilet-1275	substantive	T04		commitment	0	против «серой» занятости
+adilet-1276	substantive	T04	T09	commitment	0	
+adilet-1277	substantive	T04	T09	goal	0	
+adilet-1278	substantive	T04	T02	commitment	0	
+adilet-1279	substantive	T04	T14	commitment	0	ИИ-профилирование занятости
+adilet-1280	substantive	T14	T11	commitment	0	5 млн обученных ИИ
+adilet-1281	substantive	T11	T04	goal	0	
+adilet-1282	substantive	T04		commitment	0	поддержка при зарплате не ниже медианной
+adilet-1283	substantive	T04		commitment	0	
+adilet-1284	substantive	T10	T09	commitment	0	ДЕФЕКТ: заголовок «Пенсионеры» слился с текстом
+adilet-1285	substantive	T10		commitment	0	
+adilet-1286	substantive	T10		commitment	0	
+adilet-1287	substantive	T02	T08	commitment	0	
+adilet-1288	substantive	T10	T09	commitment	0	
+adilet-1289	substantive	T10		commitment	0	
+adilet-1290	substantive	T09	T10	commitment	0	
+adilet-1291	substantive	T07	T04	commitment	0	
+adilet-1292	substantive	T04		commitment	0	ДЕФЕКТ: заголовок «Предприниматели» слился с текстом
+adilet-1293	substantive	T04	T14	commitment	0	
+adilet-1294	substantive	T04	T03	commitment	0	
+adilet-1295	substantive	T04		goal	0	
+adilet-1296	substantive	T04		commitment	0	«Орлеу»
+adilet-1297	substantive	T04	T14	commitment	0	картельные сговоры
+adilet-1298	substantive	T04		goal	0	
+adilet-1299	substantive	T04	T05	commitment	0	офтейк-контракты
+adilet-1300	substantive	T04		commitment	0	средний бизнес до 20%
+adilet-1301	substantive	T04		commitment	0	
+adilet-1302	substantive	T04	T03	commitment	0	
+adilet-1303	substantive	T02	T04	goal	0	
+adilet-1304	substantive	T04	T14	commitment	0	
+adilet-1305	substantive	T03	T04	commitment	0	
+adilet-1306	substantive	T09	T04	commitment	0	
+adilet-1307	substantive	T04		commitment	0	франчайзинг
+adilet-1308	substantive	T03	T04	commitment	0	факторинг
+adilet-1309	substantive	T04	T14	commitment	0	
+adilet-1310	substantive	T03	T05	commitment	0	
+adilet-1311	substantive	T07	T09	commitment	0	ДЕФЕКТ: заголовок «Жители ауыла» слился с текстом
+adilet-1312	substantive	T07		goal	0	
+adilet-1313	substantive	T08		commitment	0	дороги с 86% до 95%
+adilet-1314	substantive	T08	T09	commitment	0	
+adilet-1315	substantive	T14	T07	commitment	0	интернет 97% села
+adilet-1316	substantive	T14	T07	goal	0	
+adilet-1317	substantive	T07	T04	commitment	0	
+adilet-1318	substantive	T07	T06	commitment	0	агрострахование
+adilet-1319	substantive	T07		goal	0	
+adilet-1320	substantive	T07	T04	goal	0	
+adilet-1321	substantive	T08	T07	commitment	0	
+adilet-1322	substantive	T07	T14	commitment	0	
+adilet-1323	substantive	T11	T07	commitment	0	
+adilet-1324	substantive	T00	T01	goal	0	
+adilet-1325	substantive	T00		goal	0	
+adilet-1326	substantive	T03		goal	0	
+adilet-1327	substantive	T05	T03	goal	0	
+adilet-1328	substantive	T08		goal	0	
+adilet-1329	substantive	T08		goal	0	
+adilet-1330	substantive	T08	T07	goal	0	
+adilet-1331	substantive	T08	T07	goal	0	
+adilet-1332	substantive	T11	T03	goal	0	
+adilet-1333	substantive	T11	T14	goal	0	
+adilet-1334	substantive	T11		goal	0	
+adilet-1335	substantive	T06		goal	0	
+adilet-1336	substantive	T06	T12	goal	0	
+adilet-1337	substantive	T01		description	0	
+adilet-1338	substantive	T01		description	0	
+adilet-1339	substantive	T01	T00	goal	0	
+adilet-1340	substantive	T00		description	0	
+adilet-1341	substantive	T00		goal	0	
+adilet-1342	substantive	T00		description	0	
+adilet-1343	substantive	T00		goal	0	
+adilet-1344	substantive	T00		description	0	
+adilet-1345	rhetorical				0	
+adilet-1346	rhetorical				0	

@@ -1,0 +1,63 @@
+# Secrets / SSH keys — never commit
+.secrets/
+*.pem
+id_ed25519*
+id_rsa*
+*_deploy
+*_deploy.pub
+
+# macOS
+.DS_Store
+.idea
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Java / Gradle
+.gradle/
+**/build/
+*.class
+*.log
+hs_err_pid*
+
+# Node.js / pnpm
+node_modules/
+dist/
+.pnpm-store/
+
+# IDEs
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+.vscode/
+
+# Spring Boot local configuration and secrets
+application-local.yml
+application-local.yaml
+application-*.local.yml
+application-*.local.yaml
+**/.env
+**/.env.*
+!**/.env.example
+
+# Local databases
+*.mv.db
+*.trace.db
+
+# Downloaded research images (source-attributed, not license-cleared)
+data/work/photos/
+
+# local scratch previews
+.scratch/
+
+# Programme texts: analysed, never republished
+data/work/programs/
+
+# Pilot sheets carry programme text
+data/work/pilot/

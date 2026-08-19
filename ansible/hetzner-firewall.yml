@@ -1,0 +1,17 @@
+---
+# Configure the Hetzner Cloud (edge) firewall to allow 443 only from Cloudflare
+# (plus Tailscale UDP + ICMP), refreshed daily. This complements the on-host UFW.
+#
+# Prerequisites (do these in the Hetzner Cloud console first):
+#   1. Create a Cloud Firewall and ATTACH it to quryltai-server.
+#   2. Create a read/write API token (Security -> API tokens).
+#   3. Put HETZNER_API_TOKEN and HETZNER_FIREWALL_ID in .env.
+#
+# Run as the deploy user:
+#     ansible-playbook -i inventories/prod/inventory-server-bootstrap.ini \
+#       hetzner-firewall.yml -u "$ANSIBLE_USERNAME" --become --ask-become-pass
+- name: Configure Hetzner Cloud firewall (Cloudflare allowlist)
+  hosts: all
+  become: yes
+  roles:
+    - hetzner_firewall

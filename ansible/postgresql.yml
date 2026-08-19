@@ -1,0 +1,11 @@
+---
+# Install and configure PostgreSQL 16 (local-only) for the backend.
+# Requires PG_ROOT_USER_PASSWORD and PG_APP_USER_PASSWORD in the environment.
+# Run as the deploy user (root login is disabled post-hardening):
+#     ansible-playbook -i inventories/prod/inventory-server-bootstrap.ini \
+#       postgresql.yml -u "$ANSIBLE_USERNAME" --become --ask-become-pass
+- name: Install and configure PostgreSQL
+  hosts: all
+  become: yes
+  roles:
+    - postgresql

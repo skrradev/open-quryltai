@@ -1,0 +1,20 @@
+official_name_ru	official_name_kk	source_type	official_source_url	best_candidate_guess	match_score	match_margin	review_status
+Мауленкулов Габит Патшаханович	Мауленкулов Ғабит Патшаханұлы	PARTY_LEADERSHIP	https://api.respublica-partiyasy.kz/api/v1/party-leadership/5	Алибеков Бейбит Бахытович	0.601	0.075	NEEDS_IDENTITY_REVIEW
+Копайлов Игорь Игоревич	Копайлов Игорь Игоревич	PARTY_LEADERSHIP	https://api.respublica-partiyasy.kz/api/v1/party-leadership/6	Смаилов Нурсултан Сагындыкович	0.501	0.006	NEEDS_IDENTITY_REVIEW
+Ашметов Алибек Сакенович	Ашметов Алибек Сакенович	PARTY_LEADERSHIP	https://api.respublica-partiyasy.kz/api/v1/party-leadership/7	Ахметов Сеилжан Адилханович	0.666	0.006	NEEDS_IDENTITY_REVIEW
+Алтыбаев Райымбек Серикказыевич	Алтыбаев Райымбек Серикказыевич	PARTY_LEADERSHIP	https://api.respublica-partiyasy.kz/api/v1/party-leadership/8	Алимбаева Адия Базиловна	0.588	0.019	NEEDS_IDENTITY_REVIEW
+ Саламбеков Арман Тлектесович	 Саламбеков Арман Тлектесович	PARTY_LEADERSHIP	https://api.respublica-partiyasy.kz/api/v1/party-leadership/11	Сулейменов Ерлан Мельсович	0.607	0.021	NEEDS_IDENTITY_REVIEW
+Козубаева Сауле Турсунхановна	Козубаева Сауле Турсунхановна	PARTY_LEADERSHIP	https://api.respublica-partiyasy.kz/api/v1/party-leadership/12	Сагади Сауле	0.560	0.018	NEEDS_IDENTITY_REVIEW
+Искакова Айгерим Болатбековна	Искакова Айгерим Болатбековна	PARTY_LEADERSHIP	https://api.respublica-partiyasy.kz/api/v1/party-leadership/13	Искаков Жанат Маратович	0.643	0.054	NEEDS_IDENTITY_REVIEW
+Бокишев Саят Жомартович	Бокишев Саят Жомартович	PARTY_LEADERSHIP	https://api.respublica-partiyasy.kz/api/v1/party-leadership/14	Бейсембаева Сабина Сакеновна	0.508	0.003	NEEDS_IDENTITY_REVIEW
+ Айткей Болатбек	 Айткей Болатбек	PARTY_LEADERSHIP	https://api.respublica-partiyasy.kz/api/v1/party-leadership/15	Айткулов Бекжан Бахтыбекович	0.563	0.097	NEEDS_IDENTITY_REVIEW
+Хопабаев Данияр Зиядинович	Хопабаев Данияр Зиядинович	PARTY_LEADERSHIP	https://api.respublica-partiyasy.kz/api/v1/party-leadership/16	Алимбаева Адия Базиловна	0.591	0.014	NEEDS_IDENTITY_REVIEW
+ Рахимжанова Балдырган Секербековна	 Рахимжанова Балдырган Секербековна	PARTY_LEADERSHIP	https://api.respublica-partiyasy.kz/api/v1/party-leadership/17	Ахметканов Арман Шамаевич	0.581	0.019	NEEDS_IDENTITY_REVIEW
+ Окашев Газиз Кыйлыбаевич	 Окашев Газиз Кыйлыбаевич	PARTY_LEADERSHIP	https://api.respublica-partiyasy.kz/api/v1/party-leadership/18	Доскалиев Айдос Жаксылыкович	0.557	0.032	NEEDS_IDENTITY_REVIEW
+Бейбит Алибеков	Бейбит Алибеков	PARTY_LEADERSHIP	https://api.respublica-partiyasy.kz/api/v1/party-leadership/19	Кумысбеков Айбек Кумысбекович	0.481	0.013	NEEDS_IDENTITY_REVIEW
+Максим Барышев	Максим Барышев	PARTY_LEADERSHIP	https://api.respublica-partiyasy.kz/api/v1/party-leadership/20	Кикимов Максат Сакенович	0.463	0.009	NEEDS_IDENTITY_REVIEW
+Сырымбек Тау	Сырымбек Тау	PARTY_LEADERSHIP	https://api.respublica-partiyasy.kz/api/v1/party-leadership/21	Касымбаев Мейрхат Мейрамханович	0.513	0.013	NEEDS_IDENTITY_REVIEW
+Қуаныш Шонбай	Қуаныш Шонбай	PARTY_LEADERSHIP	https://api.respublica-partiyasy.kz/api/v1/party-leadership/22	Карин Сакен Абуханович	0.500	0.011	NEEDS_IDENTITY_REVIEW
+Динара Шукижанова	Динара Шукижанова	PARTY_LEADERSHIP	https://api.respublica-partiyasy.kz/api/v1/party-leadership/23	Жайнарбай Жалынбек	0.589	0.070	NEEDS_IDENTITY_REVIEW
+ Данияр Азамат Алматұлы	 Данияр Азамат Алматұлы	PARTY_LEADERSHIP	https://api.respublica-partiyasy.kz/api/v1/party-leadership/24	Марклен Азамат Ержанулы	0.518	0.065	NEEDS_IDENTITY_REVIEW
+КОШМАМБЕТОВ Айтуар	ҚОШМАМБЕТОВ Айтуар	PARTY_FRACTION	https://api.respublica-partiyasy.kz/api/v1/deputies	Келимбетова Айнур Шайзханкызы	0.683	0.134	NEEDS_IDENTITY_REVIEW

@@ -1,0 +1,77 @@
+---
+# SSH is kept on the default port 22; only security settings are hardened.
+- name: Get timestamp
+  command: date +%Y%m%d_%H%M%S
+  register: timestamp
+  changed_when: false
+
+- name: Backup original sshd_config
+  copy:
+    src: /etc/ssh/sshd_config
+    dest: "/etc/ssh/sshd_config.backup.{{ timestamp.stdout }}"
+    remote_src: yes
+    mode: "0600"
+    owner: root
+    group: root
+
+- name: Ensure secure SSH configuration
+  lineinfile:
+    path: /etc/ssh/sshd_config
+    regexp: "{{ item.regexp }}"
+    line: "{{ item.line }}"
+    validate: "/usr/sbin/sshd -t -f %s"
+    state: present
+  loop:
+    # Access configuration
+    - { regexp: "^#?Protocol.*", line: "Protocol 2" } # Enforce SSH protocol 2
+    - { regexp: "^#?PermitRootLogin.*", line: "PermitRootLogin no" }
+    - { regexp: "^#?AllowGroups.*", line: "AllowGroups sshusers" }
+
+    # Authentication settings
+    - {
+        regexp: "^#?PasswordAuthentication.*",
+        line: "PasswordAuthentication no",
+      }
+    - {
+        regexp: "^#?ChallengeResponseAuthentication.*",
+        line: "ChallengeResponseAuthentication no",
+      }
+    - { regexp: "^#?PubkeyAuthentication.*", line: "PubkeyAuthentication yes" }
+    - { regexp: "^#?PermitEmptyPasswords.*", line: "PermitEmptyPasswords no" }
+    - { regexp: "^#?MaxAuthTries.*", line: "MaxAuthTries 3" }
+    - {
+        regexp: "^#?AuthenticationMethods.*",
+        line: "AuthenticationMethods publickey",
+      }
+    - { regexp: "^#?LoginGraceTime.*", line: "LoginGraceTime 60" } # Reduce login grace time
+
+    # Session settings
+    - { regexp: "^#?ClientAliveInterval.*", line: "ClientAliveInterval 300" } # Timeout idle sessions after 5 minutes
+    - { regexp: "^#?ClientAliveCountMax.*", line: "ClientAliveCountMax 2" } # Number of client alive messages that can be sent without response
+
+    # Forwarding and tunneling
+    - { regexp: "^#?X11Forwarding.*", line: "X11Forwarding no" }
+    - { regexp: "^#?AllowAgentForwarding.*", line: "AllowAgentForwarding no" }
+    - { regexp: "^#?AllowTcpForwarding.*", line: "AllowTcpForwarding no" }
+
+    # Connection and performance
+    - { regexp: "^#?MaxStartups.*", line: "MaxStartups 10:30:60" } # Protection against connection flooding
+
+- name: Verify sshd configuration
+  command: /usr/sbin/sshd -t
+  changed_when: false
+
+- name: Restart SSH service
+  service:
+    name: ssh
+    state: restarted
+
+- name: Verify SSH access on port 22
+  local_action:
+    module: wait_for
+    host: "{{ ansible_host }}"
+    port: 22
+    state: started
+    timeout: 30
+    delay: 5
+  become: no

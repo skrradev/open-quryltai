@@ -1,0 +1,421 @@
+unit_id	unit_kind_check	topic_primary	topic_secondary	statement_type	unclear	notes
+baitaq-0001	structural				0	титул
+baitaq-0002	structural				0	П-01: подзаголовок титула
+baitaq-0003	rhetorical				0	название платформы слито с обращением
+baitaq-0004	substantive	T01		description	0	
+baitaq-0005	substantive	T01		description	0	
+baitaq-0006	fragment				0	продолжение 0005
+baitaq-0007	substantive	T01		goal	0	
+baitaq-0008	substantive	T01		goal	0	
+baitaq-0009	substantive	T00		description	0	
+baitaq-0010	lead_in				0	
+baitaq-0011	substantive	T06		goal	0	
+baitaq-0012	substantive	T06	T03	goal	0	баланс развития и природы
+baitaq-0013	substantive	T00		instrument	0	Экологические советы партии
+baitaq-0014	substantive	T00		goal	0	
+baitaq-0015	substantive	T00		description	0	
+baitaq-0016	rhetorical				0	лозунг, повтор титула
+baitaq-0017	structural				0	заголовок раздела
+baitaq-0018	substantive	T00	T06	description	0	
+baitaq-0019	substantive	T00	T06	description	0	«Таза Қазақстан»
+baitaq-0020	substantive	T00	T06	achievement	0	
+baitaq-0021	substantive	T06	T01	description	0	экологическая культура в Конституции
+baitaq-0022	substantive	T00		achievement	0	
+baitaq-0023	substantive	T00		description	0	150 тысяч членов
+baitaq-0024	rhetorical				0	П-14: риторическое отождествление с 20 млн граждан
+baitaq-0025	fragment				0	«с ясным пониманием» — раскрывается в 0026
+baitaq-0026	substantive	T06	T00	problem	0	
+baitaq-0027	substantive	T06		problem	0	Өскемен, Темиртау, Павлодар
+baitaq-0028	fragment				0	«И мы можем» — отсылка
+baitaq-0029	rhetorical				0	призыв
+baitaq-0030	structural				0	заголовок «Наши принципы»
+baitaq-0031	substantive	T06		goal	0	
+baitaq-0032	substantive	T00		goal	0	партия как площадка участия
+baitaq-0033	substantive	T05		goal	0	недра принадлежат народу
+baitaq-0034	substantive	T05	T06	goal	0	
+baitaq-0035	substantive	T01		goal	0	
+baitaq-0036	substantive	T06	T01	goal	0	общественные слушания и экоэкспертиза
+baitaq-0037	substantive	T02		description	0	
+baitaq-0038	substantive	T06		description	0	
+baitaq-0039	substantive	T06		goal	0	
+baitaq-0040	substantive	T06		goal	0	
+baitaq-0041	fragment				0	«Это не привилегия» — отсылка к 0040
+baitaq-0042	structural				0	П-01: подзаголовок «Научно-ориентированность»
+baitaq-0043	substantive	T06		goal	0	
+baitaq-0044	structural				0	П-01: подзаголовок
+baitaq-0045	substantive	T06		description	0	
+baitaq-0046	substantive	T06		description	0	
+baitaq-0047	substantive	T06		instrument	0	санкции за экологический ущерб
+baitaq-0048	substantive	T06	T04	instrument	0	вторичное сырьё
+baitaq-0049	substantive	T06	T03	goal	0	циркулярная экономика
+baitaq-0050	structural				0	заголовок «Времени мало»
+baitaq-0051	substantive	T06		problem	0	
+baitaq-0052	substantive	T06		description	0	законы 1992 года; отклонён из переписи T15
+baitaq-0053	lead_in				0	
+baitaq-0054	substantive	T06	T08	instrument	0	очистка питьевой воды
+baitaq-0055	substantive	T06		instrument	0	очистные на предприятиях
+baitaq-0056	substantive	T05	T06	instrument	0	перевод городов с угольного отопления
+baitaq-0057	substantive	T07	T06	instrument	0	поливные системы — §4, орошение
+baitaq-0058	rhetorical				0	
+baitaq-0059	substantive	T06		commitment	0	
+baitaq-0060	substantive	T06		problem	0	уязвимость к климатическим шокам
+baitaq-0061	substantive	T06		description	0	
+baitaq-0062	substantive	T06		problem	0	засуха 2023
+baitaq-0063	substantive	T07	T06	problem	0	урожайность 9 ц/га
+baitaq-0064	substantive	T07		problem	0	списано 2 млн голов скота
+baitaq-0065	substantive	T07	T03	problem	0	ущерб 1,3% ВВП
+baitaq-0066	fragment				0	«И это не разовое» — отсылка
+baitaq-0067	fragment				0	«К этому прибавляется» — отсылка
+baitaq-0068	substantive	T06		problem	0	реки мелеют
+baitaq-0069	substantive	T06		problem	0	Урал
+baitaq-0070	substantive	T06		problem	0	Каспий, −36 тыс. кв. км
+baitaq-0071	substantive	T06		problem	0	Балхаш
+baitaq-0072	substantive	T06		problem	0	−15% водных ресурсов к 2030
+baitaq-0073	substantive	T06		problem	0	
+baitaq-0074	substantive	T06		problem	0	
+baitaq-0075	substantive	T06		problem	0	
+baitaq-0076	substantive	T06		problem	0	
+baitaq-0077	substantive	T07	T06	problem	0	
+baitaq-0078	fragment				0	отсылка к 0077
+baitaq-0079	substantive	T06		description	0	
+baitaq-0080	substantive	T00	T06	goal	0	
+baitaq-0081	substantive	T00	T06	description	0	экология как рамка платформы
+baitaq-0082	fragment				0	«Это рамка» — отсылка к 0081
+baitaq-0083	substantive	T06		description	0	
+baitaq-0084	substantive	T00		description	0	
+baitaq-0085	substantive	T06		problem	0	ДЕФЕКТ: заголовок «Воздух» слился с текстом, П-11
+baitaq-0086	substantive	T06	T10	problem	0	10 тыс. преждевременных смертей
+baitaq-0087	substantive	T04	T06	problem	0	вредные производства как безальтернативная занятость
+baitaq-0088	substantive	T04	T10	problem	0	
+baitaq-0089	substantive	T05	T06	problem	0	
+baitaq-0090	substantive	T06	T04	problem	0	
+baitaq-0091	substantive	T06		description	0	
+baitaq-0092	fragment				0	продолжение 0091
+baitaq-0093	substantive	T06		instrument	0	независимый экологический аудит
+baitaq-0094	fragment				0	«Их в стране немного» — отсылка к 0093
+baitaq-0095	substantive	T06		instrument	0	реестр загрязнителей
+baitaq-0096	substantive	T06		instrument	0	план модернизации очистных
+baitaq-0097	substantive	T04	T06	instrument	0	социальная ответственность бизнеса
+baitaq-0098	substantive	T06	T10	instrument	0	расследование случаев заболеваний
+baitaq-0099	substantive	T06		goal	0	
+baitaq-0100	substantive	T06	T01	instrument	0	Экологические советы в городах
+baitaq-0101	fragment				0	продолжение 0100
+baitaq-0102	substantive	T06	T10	instrument	0	нормативы и взыскания; отклонён из переписи T15
+baitaq-0103	substantive	T06		instrument	0	переработка отходов
+baitaq-0104	substantive	T06		problem	0	ДЕФЕКТ: заголовок «Вода» слился с текстом, П-11
+baitaq-0105	fragment				0	продолжение 0104
+baitaq-0106	substantive	T07	T06	problem	0	40% поливной воды теряется
+baitaq-0107	substantive	T07	T06	problem	0	артезианская вода на полив
+baitaq-0108	substantive	T08	T06	problem	0	питьевая вода в городах и селах
+baitaq-0109	substantive	T06		problem	0	
+baitaq-0110	fragment				0	«Это не приговор» — отсылка
+baitaq-0111	substantive	T08	T06	instrument	0	инвентаризация очистных в 20 городах
+baitaq-0112	substantive	T07	T06	instrument	0	реформа поливного земледелия
+baitaq-0113	substantive	T07		problem	0	
+baitaq-0114	substantive	T07	T06	problem	0	
+baitaq-0115	substantive	T07	T06	instrument	0	капельное орошение, закрытые каналы
+baitaq-0116	substantive	T13	T06	goal	0	трансграничные воды — §4, T13
+baitaq-0117	substantive	T13	T06	goal	0	Иртыш, Или, Сырдарья, Урал
+baitaq-0118	substantive	T13		goal	0	требование позиции МИД
+baitaq-0119	substantive	T06		instrument	0	Каспий, Балхаш, Арал
+baitaq-0120	structural				0	заголовок раздела II
+baitaq-0121	substantive	T00	T03	description	0	ДЕФЕКТ: заголовок «Экономика для людей» слился с текстом
+baitaq-0122	fragment				0	продолжение 0121
+baitaq-0123	substantive	T03		goal	0	
+baitaq-0124	substantive	T04		problem	0	
+baitaq-0125	fragment				0	«И не деньгами» — отсылка к 0124
+baitaq-0126	substantive	T06	T03	instrument	0	циркулярность
+baitaq-0127	substantive	T06		description	0	
+baitaq-0128	substantive	T06	T13	description	0	опыт ЕС
+baitaq-0129	substantive	T06	T13	description	0	опыт Китая
+baitaq-0130	substantive	T04		goal	0	
+baitaq-0131	substantive	T04		goal	0	
+baitaq-0132	substantive	T04		commitment	0	
+baitaq-0133	substantive	T04		goal	0	
+baitaq-0134	substantive	T03	T04	instrument	0	упрощение налогов, демонополизация
+baitaq-0135	substantive	T07		instrument	0	
+baitaq-0136	substantive	T07		instrument	0	пересмотр политики АПК с участием крестьян
+baitaq-0137	substantive	T06	T03	instrument	0	Закон о циркулярной экономике
+baitaq-0138	substantive	T05		description	0	ДЕФЕКТ: заголовок «Энергетика будущего» слился с текстом
+baitaq-0139	substantive	T03		description	0	
+baitaq-0140	substantive	T08	T06	description	0	
+baitaq-0141	substantive	T08	T06	description	0	
+baitaq-0142	substantive	T05	T06	description	0	
+baitaq-0143	fragment				0	отсылка к 0142
+baitaq-0144	substantive	T05	T06	goal	0	
+baitaq-0145	substantive	T05		problem	0	дефицит электроэнергии на юге
+baitaq-0146	substantive	T05	T06	description	0	
+baitaq-0147	substantive	T05		description	0	
+baitaq-0148	rhetorical				0	пословица; отклонён из переписи T16
+baitaq-0149	substantive	T05		description	0	
+baitaq-0150	substantive	T05	T13	problem	0	отставание от Узбекистана
+baitaq-0151	fragment				0	сказуемое в 0152
+baitaq-0152	substantive	T05		description	0	нестабильность ВИЭ преодолевается
+baitaq-0153	substantive	T05		description	0	
+baitaq-0154	substantive	T05		description	0	−82% стоимость солнечной генерации
+baitaq-0155	substantive	T05		description	0	4,3 и 3,4 цента за кВт·ч
+baitaq-0156	substantive	T05		description	0	
+baitaq-0157	substantive	T05	T03	problem	0	энергоёмкость выше среднемировой
+baitaq-0158	substantive	T05		goal	0	атомная энергетика
+baitaq-0159	substantive	T05		description	0	запасы урана
+baitaq-0160	substantive	T05	T06	instrument	0	национальная программа ВИЭ
+baitaq-0161	substantive	T05		instrument	0	системы хранения энергии
+baitaq-0162	substantive	T05	T06	instrument	0	ТЭЦ на газ, −30% выбросов
+baitaq-0163	substantive	T06	T03	instrument	0	Национальный зелёный фонд на МФЦА
+baitaq-0164	substantive	T03	T06	instrument	0	
+baitaq-0165	substantive	T13	T06	instrument	0	соглашения с ЗКФ ООН, ЕБРР, ВБ
+baitaq-0166	substantive	T13	T06	description	0	
+baitaq-0167	substantive	T08	T06	problem	0	ДЕФЕКТ: заголовок слился с текстом; 80% автопарка старше 10 лет
+baitaq-0168	substantive	T06	T08	problem	0	70% выбросов от личного транспорта
+baitaq-0169	substantive	T08		description	0	
+baitaq-0170	substantive	T08		description	0	
+baitaq-0171	substantive	T08		description	0	
+baitaq-0172	fragment				0	отсылка к 0171
+baitaq-0173	substantive	T08	T06	goal	0	
+baitaq-0174	substantive	T03	T08	problem	0	отмена беспошлинного ввоза электромобилей
+baitaq-0175	substantive	T03		problem	0	нагрузка до 31%
+baitaq-0176	substantive	T06	T03	problem	0	
+baitaq-0177	substantive	T08		problem	0	нет инфраструктуры зарядок
+baitaq-0178	substantive	T06	T08	description	0	признание акимата Алматы
+baitaq-0179	fragment				0	отсылка к 0178
+baitaq-0180	substantive	T08		description	0	идея выкупа старых автомобилей
+baitaq-0181	fragment				0	отсылка к 0180
+baitaq-0182	substantive	T08	T03	problem	0	субсидирование автодилеров
+baitaq-0183	fragment				0	отсылка к 0182
+baitaq-0184	fragment				0	отсылка к 0182
+baitaq-0185	substantive	T03	T08	instrument	0	снятие ограничений на ввоз электромобилей
+baitaq-0186	substantive	T03	T08	instrument	0	
+baitaq-0187	substantive	T08		goal	0	
+baitaq-0188	substantive	T08		instrument	0	зарядные станции на трассах
+baitaq-0189	substantive	T08		instrument	0	зарядки в ЖК и ТЦ
+baitaq-0190	substantive	T08		instrument	0	перехватывающие парковки
+baitaq-0191	substantive	T08		problem	0	
+baitaq-0192	substantive	T08		problem	0	
+baitaq-0193	substantive	T08	T06	instrument	0	чистый общественный транспорт Алматы
+baitaq-0194	substantive	T08		problem	0	92 электробуса из 2939
+baitaq-0195	substantive	T08		problem	0	
+baitaq-0196	substantive	T08	T03	instrument	0	дотации тарифа
+baitaq-0197	fragment				0	продолжение 0196
+baitaq-0198	substantive	T08		goal	0	
+baitaq-0199	substantive	T08	T13	description	0	опыт Вены и Парижа
+baitaq-0200	substantive	T05		description	0	ДЕФЕКТ: заголовок «Недра — народу» слился с текстом
+baitaq-0201	substantive	T05		description	0	условия заключения СРП
+baitaq-0202	substantive	T05		problem	0	
+baitaq-0203	substantive	T05		description	0	истечение контрактов
+baitaq-0204	substantive	T05		goal	0	
+baitaq-0205	substantive	T06	T05	goal	0	
+baitaq-0206	substantive	T05	T01	instrument	0	раскрытие условий СРП
+baitaq-0207	substantive	T05		goal	0	
+baitaq-0208	substantive	T05	T03	instrument	0	отчётность о доходах от недр
+baitaq-0209	substantive	T06		instrument	0	обязательная ОВОС
+baitaq-0210	substantive	T06		instrument	0	финансовая ответственность владельцев
+baitaq-0211	substantive	T06	T03	instrument	0	природоохранные фонды
+baitaq-0212	structural				0	заголовок раздела III
+baitaq-0213	substantive	T09		description	0	ДЕФЕКТ: заголовок «Социальная защита» слился с текстом
+baitaq-0214	substantive	T09	T06	description	0	
+baitaq-0215	fragment				0	ДЕФЕКТ ВЁРСТКИ: подлежащее, сказуемое в 0216
+baitaq-0216	substantive	T09	T13	description	0	сказуемое к 0215
+baitaq-0217	substantive	T09		commitment	0	
+baitaq-0218	substantive	T09		description	0	
+baitaq-0219	substantive	T11	T03	description	0	4,9% ВВП на образование
+baitaq-0220	substantive	T03		problem	0	
+baitaq-0221	substantive	T04	T10	problem	0	
+baitaq-0222	substantive	T03		description	0	госрасходы 23% ВВП
+baitaq-0223	substantive	T03	T13	description	0	
+baitaq-0224	substantive	T09		problem	0	структура детских пособий
+baitaq-0225	fragment				0	вводная фраза к 0226
+baitaq-0226	substantive	T09		description	0	24 912 тенге неработающей матери
+baitaq-0227	fragment				0	ДЕФЕКТ ВЁРСТКИ: сказуемое в 0228
+baitaq-0228	substantive	T09		description	0	потолок выплаты 214 тысяч
+baitaq-0229	substantive	T09		problem	0	разница в 8–9 раз
+baitaq-0230	substantive	T09		description	0	единовременное пособие при рождении
+baitaq-0231	substantive	T09		description	0	
+baitaq-0232	substantive	T09		problem	0	
+baitaq-0233	substantive	T09		problem	0	выплата по беременности недоступна неработающим
+baitaq-0234	substantive	T09		problem	0	неравенство для уязвимых женщин
+baitaq-0235	substantive	T09		problem	0	
+baitaq-0236	substantive	T04		instrument	0	МЗП к индексу цен
+baitaq-0237	substantive	T04	T11	instrument	0	оплата труда в образовании и здравоохранении
+baitaq-0238	substantive	T03	T01	instrument	0	источник — сокращение аппаратов
+baitaq-0239	substantive	T09		instrument	0	пенсии и реальная инфляция
+baitaq-0240	substantive	T09		instrument	0	пособие по доходу семьи, а не статусу матери
+baitaq-0241	substantive	T09		goal	0	
+baitaq-0242	substantive	T09		instrument	0	выплата по беременности всем матерям
+baitaq-0243	substantive	T09		description	0	
+baitaq-0244	substantive	T09		instrument	0	пособие по уходу до трёх лет
+baitaq-0245	substantive	T09		problem	0	
+baitaq-0246	substantive	T09	T04	problem	0	
+baitaq-0247	substantive	T11	T06	goal	0	ДЕФЕКТ: заголовок «Образование и культура» слился с текстом
+baitaq-0248	substantive	T11		description	0	
+baitaq-0249	substantive	T11		problem	0	
+baitaq-0250	substantive	T11		instrument	0	бесплатное высшее образование
+baitaq-0251	substantive	T11	T02	instrument	0	измерение вузовской коррупции
+baitaq-0252	substantive	T11	T02	instrument	0	рейтинг вузов по коррупционной нагрузке
+baitaq-0253	substantive	T02		description	0	
+baitaq-0254	substantive	T11		instrument	0	
+baitaq-0255	substantive	T11	T06	instrument	0	развитие науки экологии
+baitaq-0256	substantive	T11	T06	instrument	0	
+baitaq-0257	substantive	T10		description	0	ДЕФЕКТ: заголовок «Здравоохранение» слился с текстом
+baitaq-0258	substantive	T10		description	0	
+baitaq-0259	substantive	T10		problem	0	платежи из своего кармана
+baitaq-0260	substantive	T10		problem	0	данные ВОЗ
+baitaq-0261	substantive	T10	T06	problem	0	
+baitaq-0262	substantive	T00	T10	description	0	
+baitaq-0263	substantive	T06	T10	goal	0	
+baitaq-0264	substantive	T10	T03	problem	0	4% ВВП на здравоохранение
+baitaq-0265	substantive	T10	T13	description	0	
+baitaq-0266	substantive	T10	T13	description	0	Тайвань
+baitaq-0267	fragment				0	продолжение 0266
+baitaq-0268	substantive	T10	T13	description	0	Чили
+baitaq-0269	substantive	T10		description	0	задача Президента 5% ВВП
+baitaq-0270	substantive	T10		problem	0	
+baitaq-0271	substantive	T10	T03	problem	0	
+baitaq-0272	substantive	T03		description	0	
+baitaq-0273	fragment				0	продолжение 0272
+baitaq-0274	substantive	T10	T03	problem	0	
+baitaq-0275	substantive	T10	T03	problem	0	недофинансирование 366 млрд
+baitaq-0276	substantive	T10		problem	0	
+baitaq-0277	substantive	T10		problem	0	ФСМС
+baitaq-0278	substantive	T10		problem	0	рост частных расходов
+baitaq-0279	substantive	T10		problem	0	
+baitaq-0280	substantive	T10	T03	description	0	
+baitaq-0281	fragment				0	продолжение 0280
+baitaq-0282	fragment				0	продолжение 0281
+baitaq-0283	substantive	T10		problem	0	
+baitaq-0284	substantive	T10		problem	0	болезни системы кровообращения
+baitaq-0285	substantive	T10		problem	0	диабет, онкология
+baitaq-0286	substantive	T10	T13	problem	0	60-е место в Numbeo
+baitaq-0287	substantive	T10		goal	0	
+baitaq-0288	substantive	T03	T04	instrument	0	источник — реформа «Самрук-Қазына»
+baitaq-0289	substantive	T10	T03	instrument	0	5% ВВП к концу созыва
+baitaq-0290	substantive	T10	T03	instrument	0	доля в Бюджетном кодексе
+baitaq-0291	substantive	T10		instrument	0	погашение долга перед ФСМС
+baitaq-0292	substantive	T10		instrument	0	
+baitaq-0293	substantive	T10		instrument	0	оплата по результату
+baitaq-0294	substantive	T10		problem	0	приписки
+baitaq-0295	substantive	T10	T13	description	0	опыт Тайваня и Кореи
+baitaq-0296	substantive	T10	T04	instrument	0	зарплаты медиков
+baitaq-0297	substantive	T10		problem	0	
+baitaq-0298	substantive	T10	T08	instrument	0	модернизация поликлиник в малых городах
+baitaq-0299	substantive	T10		goal	0	
+baitaq-0300	substantive	T10		instrument	0	жизненно важные лекарства
+baitaq-0301	substantive	T10	T06	instrument	0	раннее выявление онкологии
+baitaq-0302	structural				0	заголовок, обрыв вёрстки
+baitaq-0303	structural				0	заголовок раздела IV
+baitaq-0304	substantive	T08		description	0	80% в городах к 2050
+baitaq-0305	substantive	T08		description	0	
+baitaq-0306	substantive	T08		goal	0	
+baitaq-0307	substantive	T08		problem	0	ЖК без школ и поликлиник
+baitaq-0308	fragment				0	продолжение 0307
+baitaq-0309	fragment				0	продолжение 0307
+baitaq-0310	substantive	T08	T06	problem	0	смог в Алматы, ветер в Астане
+baitaq-0311	substantive	T08	T13	description	0	
+baitaq-0312	substantive	T08	T13	description	0	Париж
+baitaq-0313	substantive	T08	T13	description	0	Вена, социальное арендное жильё
+baitaq-0314	substantive	T08	T13	description	0	Барселона, Милан, Богота, Сеул
+baitaq-0315	substantive	T08		goal	0	конец точечной застройки
+baitaq-0316	substantive	T08		problem	0	
+baitaq-0317	substantive	T08		problem	0	
+baitaq-0318	substantive	T06	T08	problem	0	60–70% выбросов от автомобилей
+baitaq-0319	substantive	T08		goal	0	
+baitaq-0320	substantive	T06	T08	description	0	
+baitaq-0321	substantive	T06		description	0	разница температуры 5 градусов
+baitaq-0322	substantive	T06	T10	problem	0	
+baitaq-0323	substantive	T08		problem	0	ипотека или аренда
+baitaq-0324	fragment				0	продолжение 0323
+baitaq-0325	fragment				0	вводная фраза к 0326
+baitaq-0326	substantive	T08		description	0	стоимость аренды
+baitaq-0327	substantive	T08		description	0	274 тысячи в Алматы
+baitaq-0328	fragment				0	продолжение 0327
+baitaq-0329	substantive	T08	T04	problem	0	60% дохода на аренду
+baitaq-0330	substantive	T08		problem	0	
+baitaq-0331	substantive	T04		problem	0	
+baitaq-0332	substantive	T08		problem	0	
+baitaq-0333	substantive	T08	T03	problem	0	платёж 140–280 тысяч на 20–25 лет
+baitaq-0334	substantive	T08		problem	0	
+baitaq-0335	lead_in				0	риторический вопрос, вводит 0337
+baitaq-0336	substantive	T08		problem	0	переплата в 1,5–2 раза
+baitaq-0337	substantive	T08	T03	problem	0	выгодополучатели — застройщики и банки
+baitaq-0338	fragment				0	продолжение 0337
+baitaq-0339	substantive	T08	T03	problem	0	
+baitaq-0340	substantive	T08	T13	goal	0	государственное арендное жильё
+baitaq-0341	substantive	T08	T13	description	0	Вена
+baitaq-0342	substantive	T08	T13	description	0	Сингапур, HDB
+baitaq-0343	substantive	T08	T13	description	0	Германия, Нидерланды, Финляндия, Швеция
+baitaq-0344	substantive	T08		description	0	
+baitaq-0345	substantive	T08		problem	0	
+baitaq-0346	substantive	T08		problem	0	Отбасы банк
+baitaq-0347	substantive	T08		problem	0	
+baitaq-0348	substantive	T08		description	0	
+baitaq-0349	fragment				0	продолжение 0348
+baitaq-0350	substantive	T08		goal	0	
+baitaq-0351	substantive	T08		commitment	0	запрет точечной застройки
+baitaq-0352	substantive	T08		instrument	0	
+baitaq-0353	substantive	T08	T11	instrument	0	нормативы доступности
+baitaq-0354	substantive	T08	T13	description	0	«15-минутный город»
+baitaq-0355	substantive	T08	T09	instrument	0	участки многодетным и одиноким матерям
+baitaq-0356	substantive	T08		commitment	0	госпрограмма арендного жилья
+baitaq-0357	substantive	T08		instrument	0	30 тысяч квартир в год
+baitaq-0358	substantive	T08		commitment	0	аренда не более 25% медианной зарплаты
+baitaq-0359	substantive	T08	T09	description	0	
+baitaq-0360	substantive	T08	T09	instrument	0	приоритет в очереди; отклонён из переписи T15
+baitaq-0361	substantive	T08		commitment	0	запрет продажи арендного жилья
+baitaq-0362	substantive	T08		goal	0	
+baitaq-0363	substantive	T08		commitment	0	земля госфонда под арендное жильё
+baitaq-0364	substantive	T08	T06	commitment	0	общественный транспорт, электробусы
+baitaq-0365	substantive	T08		goal	0	
+baitaq-0366	substantive	T08		commitment	0	многоуровневые парковки
+baitaq-0367	substantive	T08		description	0	
+baitaq-0368	substantive	T06	T08	commitment	0	озеленение с гарантийным уходом
+baitaq-0369	substantive	T06		problem	0	
+baitaq-0370	substantive	T06		instrument	0	цена вырубки взрослого дерева
+baitaq-0371	substantive	T06		problem	0	
+baitaq-0372	substantive	T08	T06	instrument	0	парки как стандарт района
+baitaq-0373	substantive	T08	T02	instrument	0	освещение дворов
+baitaq-0374	substantive	T01	T08	instrument	0	право блокировать градостроительные решения
+baitaq-0375	substantive	T08		description	0	
+baitaq-0376	fragment				0	продолжение 0375
+baitaq-0377	substantive	T08	T00	goal	0	
+baitaq-0378	substantive	T08		commitment	0	
+baitaq-0379	structural				0	заголовок раздела V
+baitaq-0380	substantive	T02		goal	0	
+baitaq-0381	substantive	T02		instrument	0	уголовная ответственность юрлиц
+baitaq-0382	substantive	T02	T13	instrument	0	статья 20 Конвенции ООН
+baitaq-0383	substantive	T02		instrument	0	незаконное обогащение
+baitaq-0384	substantive	T01	T03	instrument	0	прозрачные бюджеты
+baitaq-0385	substantive	T00	T01	commitment	0	пилотные открытые бюджеты
+baitaq-0386	substantive	T02		goal	0	бытовая коррупция
+baitaq-0387	substantive	T01		description	0	ДЕФЕКТ: заголовок «Участие» слился с текстом
+baitaq-0388	substantive	T01		description	0	
+baitaq-0389	substantive	T06	T01	description	0	
+baitaq-0390	substantive	T01		problem	0	
+baitaq-0391	substantive	T01		goal	0	
+baitaq-0392	substantive	T01		goal	0	
+baitaq-0393	structural				0	П-01: название меры, содержание в 0394
+baitaq-0394	substantive	T06	T01	instrument	0	Народные экологические советы
+baitaq-0395	substantive	T06	T01	instrument	0	состав советов; отклонён из переписи T15
+baitaq-0396	substantive	T06	T01	instrument	0	
+baitaq-0397	substantive	T01		instrument	0	общественные слушания
+baitaq-0398	substantive	T06	T01	instrument	0	общественная экспертиза промышленных проектов
+baitaq-0399	structural				0	заголовок, обрыв вёрстки
+baitaq-0400	structural				0	заголовок «Чего мы не обещаем»
+baitaq-0401	substantive	T00		description	0	
+baitaq-0402	substantive	T00		description	0	
+baitaq-0403	substantive	T00		description	0	не обещаем решить всё за созыв
+baitaq-0404	substantive	T00		description	0	
+baitaq-0405	substantive	T06	T00	description	0	не обещаем чудес от зелёной экономики
+baitaq-0406	substantive	T06		description	0	
+baitaq-0407	substantive	T00		description	0	
+baitaq-0408	substantive	T00		commitment	0	продолжение в 0409
+baitaq-0409	fragment				0	продолжение 0408
+baitaq-0410	rhetorical				0	
+baitaq-0411	substantive	T00	T06	description	0	
+baitaq-0412	substantive	T00		description	0	
+baitaq-0413	substantive	T00		description	0	филиалы, депутаты в маслихатах
+baitaq-0414	substantive	T00	T06	description	0	
+baitaq-0415	substantive	T00		description	0	
+baitaq-0416	substantive	T01	T00	description	0	порог пяти процентов
+baitaq-0417	substantive	T06	T01	goal	0	
+baitaq-0418	rhetorical				0	
+baitaq-0419	substantive	T00		goal	0	
+baitaq-0420	rhetorical				0	

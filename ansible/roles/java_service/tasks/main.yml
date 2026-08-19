@@ -1,0 +1,76 @@
+---
+- name: Install OpenJDK (headless JRE)
+  apt:
+    name: "openjdk-{{ java_version }}-jre-headless"
+    state: present
+    update_cache: yes
+
+- name: Create service user
+  user:
+    name: "{{ java_service_user }}"
+    system: yes
+    shell: /sbin/nologin
+    home: "{{ java_service_base_dir }}"
+    create_home: no
+    state: present
+
+- name: Create application directories
+  file:
+    path: "{{ item }}"
+    state: directory
+    mode: "0755"
+    owner: "{{ java_service_user }}"
+    group: "{{ java_service_group }}"
+  loop:
+    - "{{ java_service_base_dir }}"
+    - "{{ java_service_base_dir }}/scripts"
+    - "{{ java_service_base_dir }}/bak"
+
+- name: Install management scripts
+  template:
+    src: "{{ item }}.j2"
+    dest: "{{ java_service_base_dir }}/scripts/{{ item }}"
+    mode: "0755"
+    owner: "{{ java_service_user }}"
+    group: "{{ java_service_group }}"
+  loop:
+    - start-app.sh
+    - stop-app.sh
+    - cleanup.sh
+    - rollback.sh
+
+- name: Create systemd service unit
+  template:
+    src: service.service.j2
+    dest: "/etc/systemd/system/{{ java_service_name }}.service"
+    mode: "0644"
+    owner: root
+    group: root
+  notify: reload systemd
+
+- name: Create environment file
+  template:
+    src: service.env.j2
+    dest: "/etc/default/{{ java_service_name }}"
+    mode: "0640"
+    owner: root
+    group: "{{ java_service_group }}"
+  notify: restart java service
+
+- name: Reload systemd now (so enable/state below sees the unit)
+  systemd:
+    daemon_reload: yes
+
+- name: Configure service enablement/state
+  systemd:
+    name: "{{ java_service_name }}"
+    enabled: "{{ java_service_enabled }}"
+    state: "{{ java_service_state }}"
+
+- name: Setup daily cleanup cron job
+  cron:
+    name: "Cleanup old backups for {{ java_service_name }}"
+    minute: "0"
+    hour: "3"
+    job: "{{ java_service_base_dir }}/scripts/cleanup.sh"
+    user: "{{ java_service_user }}"

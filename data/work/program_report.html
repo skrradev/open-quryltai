@@ -1,0 +1,181 @@
+<title>Программы партий: тематический разбор</title>
+<style>
+:root {
+  color-scheme: light;
+  --surface: #fcfcfb; --panel: #ffffff; --line: #e4e3df;
+  --ink: #0b0b0b; --ink-2: #52514e; --ink-3: #78766f;
+  --ink-on-fill: #ffffff;
+    --ramp-0: #eef4fd; --ramp-ink-0: #0b0b0b;
+    --ramp-1: #cde2fb; --ramp-ink-1: #0b0b0b;
+    --ramp-2: #9ec5f4; --ramp-ink-2: #0b0b0b;
+    --ramp-3: #6da7ec; --ramp-ink-3: #0b0b0b;
+    --ramp-4: #3987e5; --ramp-ink-4: #0b0b0b;
+    --ramp-5: #256abf; --ramp-ink-5: #ffffff;
+    --ramp-6: #104281; --ramp-ink-6: #ffffff;
+    --type-0: #2a78d6; --type-ink-0: #0b0b0b;
+    --type-1: #eb6834; --type-ink-1: #0b0b0b;
+    --type-2: #1baf7a; --type-ink-2: #0b0b0b;
+    --type-3: #eda100; --type-ink-3: #0b0b0b;
+    --type-4: #e87ba4; --type-ink-4: #0b0b0b;
+    --type-5: #008300; --type-ink-5: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --surface: #1a1a19; --panel: #212120; --line: #383835;
+    --ink: #ffffff; --ink-2: #c3c2b7; --ink-3: #94938a;
+    --ink-on-fill: #ffffff;
+    --ramp-0: #20262e; --ramp-ink-0: #ffffff;
+    --ramp-1: #12304f; --ramp-ink-1: #ffffff;
+    --ramp-2: #184f95; --ramp-ink-2: #ffffff;
+    --ramp-3: #1c5cab; --ramp-ink-3: #ffffff;
+    --ramp-4: #2a78d6; --ramp-ink-4: #0b0b0b;
+    --ramp-5: #5598e7; --ramp-ink-5: #0b0b0b;
+    --ramp-6: #9ec5f4; --ramp-ink-6: #0b0b0b;
+    --type-0: #3987e5; --type-ink-0: #0b0b0b;
+    --type-1: #d95926; --type-ink-1: #0b0b0b;
+    --type-2: #199e70; --type-ink-2: #0b0b0b;
+    --type-3: #c98500; --type-ink-3: #0b0b0b;
+    --type-4: #d55181; --type-ink-4: #0b0b0b;
+    --type-5: #008300; --type-ink-5: #ffffff;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --surface: #1a1a19; --panel: #212120; --line: #383835;
+  --ink: #ffffff; --ink-2: #c3c2b7; --ink-3: #94938a;
+  --ink-on-fill: #ffffff;
+    --ramp-0: #20262e; --ramp-ink-0: #ffffff;
+    --ramp-1: #12304f; --ramp-ink-1: #ffffff;
+    --ramp-2: #184f95; --ramp-ink-2: #ffffff;
+    --ramp-3: #1c5cab; --ramp-ink-3: #ffffff;
+    --ramp-4: #2a78d6; --ramp-ink-4: #0b0b0b;
+    --ramp-5: #5598e7; --ramp-ink-5: #0b0b0b;
+    --ramp-6: #9ec5f4; --ramp-ink-6: #0b0b0b;
+    --type-0: #3987e5; --type-ink-0: #0b0b0b;
+    --type-1: #d95926; --type-ink-1: #0b0b0b;
+    --type-2: #199e70; --type-ink-2: #0b0b0b;
+    --type-3: #c98500; --type-ink-3: #0b0b0b;
+    --type-4: #d55181; --type-ink-4: #0b0b0b;
+    --type-5: #008300; --type-ink-5: #ffffff;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--surface); color: var(--ink);
+  font: 15px/1.55 ui-sans-serif, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+.wrap { max-width: 1080px; margin: 0 auto; padding: 40px 20px 72px; }
+h1 { font-size: 27px; line-height: 1.25; margin: 0 0 8px; letter-spacing: -0.01em; }
+h2 { font-size: 19px; margin: 44px 0 4px; letter-spacing: -0.005em; }
+p.sub { color: var(--ink-2); margin: 0 0 6px; max-width: 68ch; }
+p.note { color: var(--ink-3); font-size: 13.5px; margin: 6px 0 0; max-width: 74ch; }
+.kpis { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0 8px; }
+.kpi { background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+        padding: 12px 16px; min-width: 132px; }
+.kpi b { display: block; font-size: 26px; line-height: 1.15; letter-spacing: -0.02em; }
+.kpi span { color: var(--ink-2); font-size: 12.5px; }
+.scroll { overflow-x: auto; margin-top: 14px; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+th, td { text-align: left; padding: 7px 9px; }
+thead th { color: var(--ink-2); font-weight: 600; font-size: 12.5px;
+            border-bottom: 1px solid var(--line); vertical-align: bottom; }
+tbody th { font-weight: 500; color: var(--ink); white-space: nowrap; }
+.code { color: var(--ink-3); font: 500 11.5px ui-monospace, monospace;
+         margin-right: 7px; }
+.den { display: block; color: var(--ink-3); font-weight: 400; font-size: 11px; }
+.cell { text-align: center; font-variant-numeric: tabular-nums;
+         border: 2px solid var(--surface); border-radius: 5px; min-width: 62px; }
+.cell[data-unpiloted] span::after { content: "*"; opacity: .75; margin-left: 1px; }
+.cell.s0{background:var(--ramp-0);color:var(--ramp-ink-0);}.cell.s1{background:var(--ramp-1);color:var(--ramp-ink-1);}.cell.s2{background:var(--ramp-2);color:var(--ramp-ink-2);}.cell.s3{background:var(--ramp-3);color:var(--ramp-ink-3);}.cell.s4{background:var(--ramp-4);color:var(--ramp-ink-4);}.cell.s5{background:var(--ramp-5);color:var(--ramp-ink-5);}.cell.s6{background:var(--ramp-6);color:var(--ramp-ink-6);}
+.scale { display: flex; align-items: center; gap: 8px; margin-top: 12px;
+          color: var(--ink-3); font-size: 12px; }
+.scale i { width: 26px; height: 11px; border-radius: 3px; display: inline-block; }
+.scale i.s0{background:var(--ramp-0);}.scale i.s1{background:var(--ramp-1);}.scale i.s2{background:var(--ramp-2);}.scale i.s3{background:var(--ramp-3);}.scale i.s4{background:var(--ramp-4);}.scale i.s5{background:var(--ramp-5);}.scale i.s6{background:var(--ramp-6);}
+.bar-row { display: flex; align-items: center; gap: 14px; margin: 9px 0; }
+.bar-name { width: 148px; flex: none; font-size: 13.5px; }
+.bar { flex: 1; display: flex; height: 30px; border-radius: 5px; overflow: hidden;
+        gap: 2px; }
+.seg { display: flex; align-items: center; justify-content: center; min-width: 3px; }
+.seg:first-child { border-radius: 5px 0 0 5px; }
+.seg:last-child { border-radius: 0 5px 5px 0; }
+.seg-label { font-size: 11.5px; font-weight: 600; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 14px 0 0 162px;
+           color: var(--ink-2); font-size: 12.5px; }
+.lg { display: inline-flex; align-items: center; gap: 6px; }
+.lg i { width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
+details { margin-top: 16px; }
+summary { cursor: pointer; color: var(--ink-2); font-size: 13.5px; }
+.pct { color: var(--ink-3); margin-left: 6px; font-size: 12px; }
+.den-cell { color: var(--ink-3); }
+tbody tr:nth-child(even) td, tbody tr:nth-child(even) th { background: color-mix(in srgb, var(--line) 26%, transparent); }
+.method { background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+           padding: 16px 18px; margin-top: 40px; }
+.method h3 { margin: 0 0 8px; font-size: 15px; }
+.method ul { margin: 0; padding-left: 19px; color: var(--ink-2); font-size: 13.5px; }
+.method li { margin: 5px 0; }
+@media (max-width: 720px) {
+  .bar-name { width: 104px; } .legend { margin-left: 0; }
+}
+</style>
+
+<div class="wrap">
+<h1>Программы партий: о чём они пишут и как</h1>
+<p class="sub">Сплошная разметка семи предвыборных программ на выборы в Курултай
+2026 года. Измеряется <b>внимание</b> — сколько места партия отводит теме, — а не
+позиция по ней и не качество программы.</p>
+
+<div class="kpis">
+  <div class="kpi"><b>3247</b><span>единиц разметки</span></div>
+  <div class="kpi"><b>2833</b><span>в знаменателе</span></div>
+  <div class="kpi"><b>7</b><span>партий</span></div>
+  <div class="kpi"><b>0.83 / 0.85</b><span>α пилота: тема / тип</span></div>
+</div>
+<p class="note">Знаменатель — только содержательные единицы. Заголовки, лозунги,
+вводные фразы и фрагменты исключены, поэтому он меньше общего числа.</p>
+
+<h2>Темы</h2>
+<p class="sub">Доля содержательных единиц партии, отнесённых к теме. Читать по
+столбцу — профиль партии; по строке — кто уделяет теме больше места.</p>
+<div class="scroll">
+<table>
+<thead><tr><th scope="col">Тема</th><th scope="col">Әділет<span class="den">n=1219</span></th><th scope="col">Народная партия<span class="den">n=406</span></th><th scope="col">Байтақ<span class="den">n=354</span></th><th scope="col">Ак жол<span class="den">n=282</span></th><th scope="col">ОСДП<span class="den">n=222</span></th><th scope="col">Respublica<span class="den">n=206</span></th><th scope="col">Ауыл<span class="den">n=144</span></th></tr></thead>
+<tbody><tr><th scope="row"><span class="code">T04</span>бизнес, труд, доходы</th><td class="cell s4" title="Әділет · бизнес, труд, доходы: 179 из 1219 (14.7%)"><span>14.7</span></td><td class="cell s3" title="Народная партия · бизнес, труд, доходы: 49 из 406 (12.1%)"><span>12.1</span></td><td class="cell s1" title="Байтақ · бизнес, труд, доходы: 12 из 354 (3.4%)"><span>3.4</span></td><td class="cell s5" title="Ак жол · бизнес, труд, доходы: 48 из 282 (17.0%)"><span>17.0</span></td><td class="cell s3" title="ОСДП · бизнес, труд, доходы: 20 из 222 (9.0%)"><span>9.0</span></td><td class="cell s5" title="Respublica · бизнес, труд, доходы: 39 из 206 (18.9%)"><span>18.9</span></td><td class="cell s2" title="Ауыл · бизнес, труд, доходы: 6 из 144 (4.2%)"><span>4.2</span></td></tr><tr><th scope="row"><span class="code">T01</span>политические институты</th><td class="cell s2" title="Әділет · политические институты: 65 из 1219 (5.3%)"><span>5.3</span></td><td class="cell s3" title="Народная партия · политические институты: 45 из 406 (11.1%)"><span>11.1</span></td><td class="cell s1" title="Байтақ · политические институты: 14 из 354 (4.0%)"><span>4.0</span></td><td class="cell s6" title="Ак жол · политические институты: 62 из 282 (22.0%)"><span>22.0</span></td><td class="cell s6" title="ОСДП · политические институты: 50 из 222 (22.5%)"><span>22.5</span></td><td class="cell s3" title="Respublica · политические институты: 21 из 206 (10.2%)"><span>10.2</span></td><td class="cell s3" title="Ауыл · политические институты: 13 из 144 (9.0%)"><span>9.0</span></td></tr><tr><th scope="row"><span class="code">T08</span>инфраструктура, ЖКХ, жильё</th><td class="cell s3" title="Әділет · инфраструктура, ЖКХ, жильё: 102 из 1219 (8.4%)"><span>8.4</span></td><td class="cell s3" title="Народная партия · инфраструктура, ЖКХ, жильё: 38 из 406 (9.4%)"><span>9.4</span></td><td class="cell s6" title="Байтақ · инфраструктура, ЖКХ, жильё: 80 из 354 (22.6%)"><span>22.6</span></td><td class="cell s1" title="Ак жол · инфраструктура, ЖКХ, жильё: 8 из 282 (2.8%)"><span>2.8</span></td><td class="cell s2" title="ОСДП · инфраструктура, ЖКХ, жильё: 12 из 222 (5.4%)"><span>5.4</span></td><td class="cell s2" title="Respublica · инфраструктура, ЖКХ, жильё: 12 из 206 (5.8%)"><span>5.8</span></td><td class="cell s3" title="Ауыл · инфраструктура, ЖКХ, жильё: 13 из 144 (9.0%)"><span>9.0</span></td></tr><tr><th scope="row"><span class="code">T09</span>социальная защита и демография</th><td class="cell s2" title="Әділет · социальная защита и демография: 88 из 1219 (7.2%)"><span>7.2</span></td><td class="cell s4" title="Народная партия · социальная защита и демография: 51 из 406 (12.6%)"><span>12.6</span></td><td class="cell s2" title="Байтақ · социальная защита и демография: 23 из 354 (6.5%)"><span>6.5</span></td><td class="cell s3" title="Ак жол · социальная защита и демография: 23 из 282 (8.2%)"><span>8.2</span></td><td class="cell s2" title="ОСДП · социальная защита и демография: 12 из 222 (5.4%)"><span>5.4</span></td><td class="cell s2" title="Respublica · социальная защита и демография: 15 из 206 (7.3%)"><span>7.3</span></td><td class="cell s2" title="Ауыл · социальная защита и демография: 11 из 144 (7.6%)"><span>7.6</span></td></tr><tr><th scope="row"><span class="code">T11</span>образование, наука, молодёжь</th><td class="cell s3" title="Әділет · образование, наука, молодёжь: 139 из 1219 (11.4%)"><span>11.4</span></td><td class="cell s3" title="Народная партия · образование, наука, молодёжь: 36 из 406 (8.9%)"><span>8.9</span></td><td class="cell s1" title="Байтақ · образование, наука, молодёжь: 10 из 354 (2.8%)"><span>2.8</span></td><td class="cell s1" title="Ак жол · образование, наука, молодёжь: 2 из 282 (0.7%)"><span>0.7</span></td><td class="cell s2" title="ОСДП · образование, наука, молодёжь: 11 из 222 (5.0%)"><span>5.0</span></td><td class="cell s2" title="Respublica · образование, наука, молодёжь: 13 из 206 (6.3%)"><span>6.3</span></td><td class="cell s2" title="Ауыл · образование, наука, молодёжь: 8 из 144 (5.6%)"><span>5.6</span></td></tr><tr><th scope="row"><span class="code">T05</span>недра, промышленность, энергетика</th><td class="cell s3" title="Әділет · недра, промышленность, энергетика: 99 из 1219 (8.1%)"><span>8.1</span></td><td class="cell s1" title="Народная партия · недра, промышленность, энергетика: 13 из 406 (3.2%)"><span>3.2</span></td><td class="cell s3" title="Байтақ · недра, промышленность, энергетика: 31 из 354 (8.8%)"><span>8.8</span></td><td class="cell s3" title="Ак жол · недра, промышленность, энергетика: 23 из 282 (8.2%)"><span>8.2</span></td><td class="cell s1" title="ОСДП · недра, промышленность, энергетика: 3 из 222 (1.4%)"><span>1.4</span></td><td class="cell s1" title="Respublica · недра, промышленность, энергетика: 4 из 206 (1.9%)"><span>1.9</span></td><td class="cell s1" title="Ауыл · недра, промышленность, энергетика: 1 из 144 (0.7%)"><span>0.7</span></td></tr><tr><th scope="row"><span class="code">T03</span>макроэкономика, бюджет, налоги</th><td class="cell s2" title="Әділет · макроэкономика, бюджет, налоги: 69 из 1219 (5.7%)"><span>5.7</span></td><td class="cell s1" title="Народная партия · макроэкономика, бюджет, налоги: 10 из 406 (2.5%)"><span>2.5</span></td><td class="cell s1" title="Байтақ · макроэкономика, бюджет, налоги: 14 из 354 (4.0%)"><span>4.0</span></td><td class="cell s4" title="Ак жол · макроэкономика, бюджет, налоги: 41 из 282 (14.5%)"><span>14.5</span></td><td class="cell s2" title="ОСДП · макроэкономика, бюджет, налоги: 11 из 222 (5.0%)"><span>5.0</span></td><td class="cell s3" title="Respublica · макроэкономика, бюджет, налоги: 25 из 206 (12.1%)"><span>12.1</span></td><td class="cell s1" title="Ауыл · макроэкономика, бюджет, налоги: 3 из 144 (2.1%)"><span>2.1</span></td></tr><tr><th scope="row"><span class="code">T06</span>экология и климат</th><td class="cell s1" title="Әділет · экология и климат: 38 из 1219 (3.1%)"><span>3.1</span></td><td class="cell s1" title="Народная партия · экология и климат: 13 из 406 (3.2%)"><span>3.2</span></td><td class="cell s6" title="Байтақ · экология и климат: 80 из 354 (22.6%)"><span>22.6</span></td><td class="cell s1" title="Ак жол · экология и климат: 8 из 282 (2.8%)"><span>2.8</span></td><td class="cell s3" title="ОСДП · экология и климат: 18 из 222 (8.1%)"><span>8.1</span></td><td class="cell s1" title="Respublica · экология и климат: 8 из 206 (3.9%)"><span>3.9</span></td><td class="cell s2" title="Ауыл · экология и климат: 7 из 144 (4.9%)"><span>4.9</span></td></tr><tr><th scope="row"><span class="code">T10</span>здравоохранение</th><td class="cell s2" title="Әділет · здравоохранение: 70 из 1219 (5.7%)"><span>5.7</span></td><td class="cell s2" title="Народная партия · здравоохранение: 29 из 406 (7.1%)"><span>7.1</span></td><td class="cell s3" title="Байтақ · здравоохранение: 37 из 354 (10.5%)"><span>10.5</span></td><td class="cell s1" title="Ак жол · здравоохранение: 5 из 282 (1.8%)"><span>1.8</span></td><td class="cell s2" title="ОСДП · здравоохранение: 15 из 222 (6.8%)"><span>6.8</span></td><td class="cell s2" title="Respublica · здравоохранение: 9 из 206 (4.4%)"><span>4.4</span></td><td class="cell s1" title="Ауыл · здравоохранение: 2 из 144 (1.4%)"><span>1.4</span></td></tr><tr><th scope="row"><span class="code">T02</span>право и правопорядок</th><td class="cell s2" title="Әділет · право и правопорядок: 62 из 1219 (5.1%)"><span>5.1</span></td><td class="cell s2" title="Народная партия · право и правопорядок: 32 из 406 (7.9%)"><span>7.9</span></td><td class="cell s1" title="Байтақ · право и правопорядок: 7 из 354 (2.0%)"><span>2.0</span></td><td class="cell s4" title="Ак жол · право и правопорядок: 36 из 282 (12.8%)"><span>12.8</span></td><td class="cell s2" title="ОСДП · право и правопорядок: 17 из 222 (7.7%)"><span>7.7</span></td><td class="cell s1" title="Respublica · право и правопорядок: 5 из 206 (2.4%)"><span>2.4</span></td><td class="cell s2" title="Ауыл · право и правопорядок: 7 из 144 (4.9%)"><span>4.9</span></td></tr><tr><th scope="row"><span class="code">T07</span>село и продовольствие</th><td class="cell s2" title="Әділет · село и продовольствие: 87 из 1219 (7.1%)"><span>7.1</span></td><td class="cell s1" title="Народная партия · село и продовольствие: 5 из 406 (1.2%)"><span>1.2</span></td><td class="cell s1" title="Байтақ · село и продовольствие: 13 из 354 (3.7%)"><span>3.7</span></td><td class="cell s0" title="Ак жол · село и продовольствие: 0 из 282 (0.0%)"><span>0.0</span></td><td class="cell s1" title="ОСДП · село и продовольствие: 7 из 222 (3.2%)"><span>3.2</span></td><td class="cell s2" title="Respublica · село и продовольствие: 11 из 206 (5.3%)"><span>5.3</span></td><td class="cell s6" title="Ауыл · село и продовольствие: 35 из 144 (24.3%)"><span>24.3</span></td></tr><tr><th scope="row"><span class="code">T00</span>о самой партии и программе</th><td class="cell s2" title="Әділет · о самой партии и программе: 54 из 1219 (4.4%)"><span>4.4</span></td><td class="cell s2" title="Народная партия · о самой партии и программе: 27 из 406 (6.7%)"><span>6.7</span></td><td class="cell s2" title="Байтақ · о самой партии и программе: 28 из 354 (7.9%)"><span>7.9</span></td><td class="cell s1" title="Ак жол · о самой партии и программе: 10 из 282 (3.5%)"><span>3.5</span></td><td class="cell s1" title="ОСДП · о самой партии и программе: 8 из 222 (3.6%)"><span>3.6</span></td><td class="cell s1" title="Respublica · о самой партии и программе: 6 из 206 (2.9%)"><span>2.9</span></td><td class="cell s5" title="Ауыл · о самой партии и программе: 24 из 144 (16.7%)"><span>16.7</span></td></tr><tr><th scope="row"><span class="code">T14</span>цифровизация</th><td class="cell s2" title="Әділет · цифровизация: 82 из 1219 (6.7%)"><span>6.7</span></td><td class="cell s2" title="Народная партия · цифровизация: 18 из 406 (4.4%)"><span>4.4</span></td><td class="cell s0" title="Байтақ · цифровизация: 0 из 354 (0.0%)"><span>0.0</span></td><td class="cell s1" title="Ак жол · цифровизация: 1 из 282 (0.4%)"><span>0.4</span></td><td class="cell s3" title="ОСДП · цифровизация: 22 из 222 (9.9%)"><span>9.9</span></td><td class="cell s1" title="Respublica · цифровизация: 8 из 206 (3.9%)"><span>3.9</span></td><td class="cell s1" title="Ауыл · цифровизация: 5 из 144 (3.5%)"><span>3.5</span></td></tr><tr><th scope="row"><span class="code">T12</span>культура, язык, идентичность</th><td class="cell s2" title="Әділет · культура, язык, идентичность: 54 из 1219 (4.4%)"><span>4.4</span></td><td class="cell s2" title="Народная партия · культура, язык, идентичность: 17 из 406 (4.2%)"><span>4.2</span></td><td class="cell s0" title="Байтақ · культура, язык, идентичность: 0 из 354 (0.0%)"><span>0.0</span></td><td class="cell s1" title="Ак жол · культура, язык, идентичность: 4 из 282 (1.4%)"><span>1.4</span></td><td class="cell s1" title="ОСДП · культура, язык, идентичность: 7 из 222 (3.2%)"><span>3.2</span></td><td class="cell s2" title="Respublica · культура, язык, идентичность: 13 из 206 (6.3%)"><span>6.3</span></td><td class="cell s1" title="Ауыл · культура, язык, идентичность: 5 из 144 (3.5%)"><span>3.5</span></td></tr><tr><th scope="row"><span class="code">T13</span>внешняя политика и безопасность</th><td class="cell s1" title="Әділет · внешняя политика и безопасность: 27 из 1219 (2.2%)"><span>2.2</span></td><td class="cell s2" title="Народная партия · внешняя политика и безопасность: 22 из 406 (5.4%)"><span>5.4</span></td><td class="cell s1" title="Байтақ · внешняя политика и безопасность: 5 из 354 (1.4%)"><span>1.4</span></td><td class="cell s1" title="Ак жол · внешняя политика и безопасность: 11 из 282 (3.9%)"><span>3.9</span></td><td class="cell s1" title="ОСДП · внешняя политика и безопасность: 8 из 222 (3.6%)"><span>3.6</span></td><td class="cell s2" title="Respublica · внешняя политика и безопасность: 14 из 206 (6.8%)"><span>6.8</span></td><td class="cell s1" title="Ауыл · внешняя политика и безопасность: 3 из 144 (2.1%)"><span>2.1</span></td></tr><tr><th scope="row"><span class="code">T15</span>насилие в семье и гендерное насилие</th><td class="cell s1" data-unpiloted="1" title="Әділет · насилие в семье и гендерное насилие: 3 из 1219 (0.2%)"><span>0.2</span></td><td class="cell s1" data-unpiloted="1" title="Народная партия · насилие в семье и гендерное насилие: 1 из 406 (0.2%)"><span>0.2</span></td><td class="cell s0" data-unpiloted="1" title="Байтақ · насилие в семье и гендерное насилие: 0 из 354 (0.0%)"><span>0.0</span></td><td class="cell s0" data-unpiloted="1" title="Ак жол · насилие в семье и гендерное насилие: 0 из 282 (0.0%)"><span>0.0</span></td><td class="cell s0" data-unpiloted="1" title="ОСДП · насилие в семье и гендерное насилие: 0 из 222 (0.0%)"><span>0.0</span></td><td class="cell s1" data-unpiloted="1" title="Respublica · насилие в семье и гендерное насилие: 2 из 206 (1.0%)"><span>1.0</span></td><td class="cell s1" data-unpiloted="1" title="Ауыл · насилие в семье и гендерное насилие: 1 из 144 (0.7%)"><span>0.7</span></td></tr><tr><th scope="row"><span class="code">T16</span>защита животных</th><td class="cell s1" data-unpiloted="1" title="Әділет · защита животных: 1 из 1219 (0.1%)"><span>0.1</span></td><td class="cell s0" data-unpiloted="1" title="Народная партия · защита животных: 0 из 406 (0.0%)"><span>0.0</span></td><td class="cell s0" data-unpiloted="1" title="Байтақ · защита животных: 0 из 354 (0.0%)"><span>0.0</span></td><td class="cell s0" data-unpiloted="1" title="Ак жол · защита животных: 0 из 282 (0.0%)"><span>0.0</span></td><td class="cell s0" data-unpiloted="1" title="ОСДП · защита животных: 0 из 222 (0.0%)"><span>0.0</span></td><td class="cell s1" data-unpiloted="1" title="Respublica · защита животных: 1 из 206 (0.5%)"><span>0.5</span></td><td class="cell s0" data-unpiloted="1" title="Ауыл · защита животных: 0 из 144 (0.0%)"><span>0.0</span></td></tr><tr><th scope="row"><span class="code">T99</span>прочее</th><td class="cell s0" title="Әділет · прочее: 0 из 1219 (0.0%)"><span>0.0</span></td><td class="cell s0" title="Народная партия · прочее: 0 из 406 (0.0%)"><span>0.0</span></td><td class="cell s0" title="Байтақ · прочее: 0 из 354 (0.0%)"><span>0.0</span></td><td class="cell s0" title="Ак жол · прочее: 0 из 282 (0.0%)"><span>0.0</span></td><td class="cell s1" title="ОСДП · прочее: 1 из 222 (0.5%)"><span>0.5</span></td><td class="cell s0" title="Respublica · прочее: 0 из 206 (0.0%)"><span>0.0</span></td><td class="cell s0" title="Ауыл · прочее: 0 из 144 (0.0%)"><span>0.0</span></td></tr></tbody>
+</table>
+</div>
+<div class="scale"><span>0</span><i class="s0"></i><i class="s1"></i><i class="s2"></i><i class="s3"></i><i class="s4"></i><i class="s5"></i><i class="s6"></i><span>24% и выше</span></div>
+<p class="note">* T15 и T16 появились в кодбуке после пилота, согласие по ним не
+измерялось. Показаны как абсолютные величины, доли по ним публиковать нельзя.</p>
+
+<h2>Типы утверждений</h2>
+<p class="sub">Одна и та же тема может быть названа проблемой, целью, механизмом
+или обещанием. Это различие партии разделяет сильнее, чем сами темы.</p>
+<div class="bar-row"><div class="bar-name">Әділет<span class="den">n=1219</span></div><div class="bar"><div class="seg" style="flex:0.03445 0 0;background:var(--type-0)" title="Әділет · проблема: 42 из 1219 (3.4%)"></div><div class="seg" style="flex:0.26087 0 0;background:var(--type-1)" title="Әділет · цель: 318 из 1219 (26.1%)"><span class="seg-label">26%</span></div><div class="seg" style="flex:0.14438 0 0;background:var(--type-2)" title="Әділет · инструмент: 176 из 1219 (14.4%)"><span class="seg-label">14%</span></div><div class="seg" style="flex:0.46678 0 0;background:var(--type-3)" title="Әділет · обязательство: 569 из 1219 (46.7%)"><span class="seg-label">47%</span></div><div class="seg" style="flex:0.00574 0 0;background:var(--type-4)" title="Әділет · сделано: 7 из 1219 (0.6%)"></div><div class="seg" style="flex:0.08778 0 0;background:var(--type-5)" title="Әділет · описание: 107 из 1219 (8.8%)"></div></div></div><div class="bar-row"><div class="bar-name">Народная партия<span class="den">n=406</span></div><div class="bar"><div class="seg" style="flex:0.03448 0 0;background:var(--type-0)" title="Народная партия · проблема: 14 из 406 (3.4%)"></div><div class="seg" style="flex:0.24631 0 0;background:var(--type-1)" title="Народная партия · цель: 100 из 406 (24.6%)"><span class="seg-label">25%</span></div><div class="seg" style="flex:0.59113 0 0;background:var(--type-2)" title="Народная партия · инструмент: 240 из 406 (59.1%)"><span class="seg-label">59%</span></div><div class="seg" style="flex:0.00739 0 0;background:var(--type-3)" title="Народная партия · обязательство: 3 из 406 (0.7%)"></div><div class="seg" style="flex:0.01724 0 0;background:var(--type-4)" title="Народная партия · сделано: 7 из 406 (1.7%)"></div><div class="seg" style="flex:0.10345 0 0;background:var(--type-5)" title="Народная партия · описание: 42 из 406 (10.3%)"><span class="seg-label">10%</span></div></div></div><div class="bar-row"><div class="bar-name">Байтақ<span class="den">n=354</span></div><div class="bar"><div class="seg" style="flex:0.27684 0 0;background:var(--type-0)" title="Байтақ · проблема: 98 из 354 (27.7%)"><span class="seg-label">28%</span></div><div class="seg" style="flex:0.14407 0 0;background:var(--type-1)" title="Байтақ · цель: 51 из 354 (14.4%)"><span class="seg-label">14%</span></div><div class="seg" style="flex:0.23446 0 0;background:var(--type-2)" title="Байтақ · инструмент: 83 из 354 (23.4%)"><span class="seg-label">23%</span></div><div class="seg" style="flex:0.03955 0 0;background:var(--type-3)" title="Байтақ · обязательство: 14 из 354 (4.0%)"></div><div class="seg" style="flex:0.00565 0 0;background:var(--type-4)" title="Байтақ · сделано: 2 из 354 (0.6%)"></div><div class="seg" style="flex:0.29944 0 0;background:var(--type-5)" title="Байтақ · описание: 106 из 354 (29.9%)"><span class="seg-label">30%</span></div></div></div><div class="bar-row"><div class="bar-name">Ак жол<span class="den">n=282</span></div><div class="bar"><div class="seg" style="flex:0.11348 0 0;background:var(--type-0)" title="Ак жол · проблема: 32 из 282 (11.3%)"><span class="seg-label">11%</span></div><div class="seg" style="flex:0.31560 0 0;background:var(--type-1)" title="Ак жол · цель: 89 из 282 (31.6%)"><span class="seg-label">32%</span></div><div class="seg" style="flex:0.27660 0 0;background:var(--type-2)" title="Ак жол · инструмент: 78 из 282 (27.7%)"><span class="seg-label">28%</span></div><div class="seg" style="flex:0.01773 0 0;background:var(--type-3)" title="Ак жол · обязательство: 5 из 282 (1.8%)"></div><div class="seg" style="flex:0.03901 0 0;background:var(--type-4)" title="Ак жол · сделано: 11 из 282 (3.9%)"></div><div class="seg" style="flex:0.23759 0 0;background:var(--type-5)" title="Ак жол · описание: 67 из 282 (23.8%)"><span class="seg-label">24%</span></div></div></div><div class="bar-row"><div class="bar-name">ОСДП<span class="den">n=222</span></div><div class="bar"><div class="seg" style="flex:0.03153 0 0;background:var(--type-0)" title="ОСДП · проблема: 7 из 222 (3.2%)"></div><div class="seg" style="flex:0.53604 0 0;background:var(--type-1)" title="ОСДП · цель: 119 из 222 (53.6%)"><span class="seg-label">54%</span></div><div class="seg" style="flex:0.32883 0 0;background:var(--type-2)" title="ОСДП · инструмент: 73 из 222 (32.9%)"><span class="seg-label">33%</span></div><div class="seg" style="flex:0.00901 0 0;background:var(--type-3)" title="ОСДП · обязательство: 2 из 222 (0.9%)"></div><div class="seg" style="flex:0.00450 0 0;background:var(--type-4)" title="ОСДП · сделано: 1 из 222 (0.5%)"></div><div class="seg" style="flex:0.09009 0 0;background:var(--type-5)" title="ОСДП · описание: 20 из 222 (9.0%)"><span class="seg-label">9%</span></div></div></div><div class="bar-row"><div class="bar-name">Respublica<span class="den">n=206</span></div><div class="bar"><div class="seg" style="flex:0.01456 0 0;background:var(--type-0)" title="Respublica · проблема: 3 из 206 (1.5%)"></div><div class="seg" style="flex:0.25728 0 0;background:var(--type-1)" title="Respublica · цель: 53 из 206 (25.7%)"><span class="seg-label">26%</span></div><div class="seg" style="flex:0.59223 0 0;background:var(--type-2)" title="Respublica · инструмент: 122 из 206 (59.2%)"><span class="seg-label">59%</span></div><div class="seg" style="flex:0.03398 0 0;background:var(--type-3)" title="Respublica · обязательство: 7 из 206 (3.4%)"></div><div class="seg" style="flex:0.10194 0 0;background:var(--type-5)" title="Respublica · описание: 21 из 206 (10.2%)"><span class="seg-label">10%</span></div></div></div><div class="bar-row"><div class="bar-name">Ауыл<span class="den">n=144</span></div><div class="bar"><div class="seg" style="flex:0.00694 0 0;background:var(--type-0)" title="Ауыл · проблема: 1 из 144 (0.7%)"></div><div class="seg" style="flex:0.18056 0 0;background:var(--type-1)" title="Ауыл · цель: 26 из 144 (18.1%)"><span class="seg-label">18%</span></div><div class="seg" style="flex:0.45833 0 0;background:var(--type-2)" title="Ауыл · инструмент: 66 из 144 (45.8%)"><span class="seg-label">46%</span></div><div class="seg" style="flex:0.00694 0 0;background:var(--type-3)" title="Ауыл · обязательство: 1 из 144 (0.7%)"></div><div class="seg" style="flex:0.20139 0 0;background:var(--type-4)" title="Ауыл · сделано: 29 из 144 (20.1%)"><span class="seg-label">20%</span></div><div class="seg" style="flex:0.14583 0 0;background:var(--type-5)" title="Ауыл · описание: 21 из 144 (14.6%)"><span class="seg-label">15%</span></div></div></div>
+<div class="legend"><span class="lg"><i style="background:var(--type-0)"></i>проблема</span><span class="lg"><i style="background:var(--type-1)"></i>цель</span><span class="lg"><i style="background:var(--type-2)"></i>инструмент</span><span class="lg"><i style="background:var(--type-3)"></i>обязательство</span><span class="lg"><i style="background:var(--type-4)"></i>сделано</span><span class="lg"><i style="background:var(--type-5)"></i>описание</span></div>
+<details>
+<summary>Показать числами</summary>
+<div class="scroll">
+<table>
+<thead><tr><th scope="col">Партия</th><th scope="col">проблема</th><th scope="col">цель</th><th scope="col">инструмент</th><th scope="col">обязательство</th><th scope="col">сделано</th><th scope="col">описание</th><th scope="col">знаменатель</th></tr></thead>
+<tbody><tr><th scope="row">Әділет</th><td>42<span class="pct">3.4%</span></td><td>318<span class="pct">26.1%</span></td><td>176<span class="pct">14.4%</span></td><td>569<span class="pct">46.7%</span></td><td>7<span class="pct">0.6%</span></td><td>107<span class="pct">8.8%</span></td><td class="den-cell">1219</td></tr><tr><th scope="row">Народная партия</th><td>14<span class="pct">3.4%</span></td><td>100<span class="pct">24.6%</span></td><td>240<span class="pct">59.1%</span></td><td>3<span class="pct">0.7%</span></td><td>7<span class="pct">1.7%</span></td><td>42<span class="pct">10.3%</span></td><td class="den-cell">406</td></tr><tr><th scope="row">Байтақ</th><td>98<span class="pct">27.7%</span></td><td>51<span class="pct">14.4%</span></td><td>83<span class="pct">23.4%</span></td><td>14<span class="pct">4.0%</span></td><td>2<span class="pct">0.6%</span></td><td>106<span class="pct">29.9%</span></td><td class="den-cell">354</td></tr><tr><th scope="row">Ак жол</th><td>32<span class="pct">11.3%</span></td><td>89<span class="pct">31.6%</span></td><td>78<span class="pct">27.7%</span></td><td>5<span class="pct">1.8%</span></td><td>11<span class="pct">3.9%</span></td><td>67<span class="pct">23.8%</span></td><td class="den-cell">282</td></tr><tr><th scope="row">ОСДП</th><td>7<span class="pct">3.2%</span></td><td>119<span class="pct">53.6%</span></td><td>73<span class="pct">32.9%</span></td><td>2<span class="pct">0.9%</span></td><td>1<span class="pct">0.5%</span></td><td>20<span class="pct">9.0%</span></td><td class="den-cell">222</td></tr><tr><th scope="row">Respublica</th><td>3<span class="pct">1.5%</span></td><td>53<span class="pct">25.7%</span></td><td>122<span class="pct">59.2%</span></td><td>7<span class="pct">3.4%</span></td><td>0<span class="pct">0.0%</span></td><td>21<span class="pct">10.2%</span></td><td class="den-cell">206</td></tr><tr><th scope="row">Ауыл</th><td>1<span class="pct">0.7%</span></td><td>26<span class="pct">18.1%</span></td><td>66<span class="pct">45.8%</span></td><td>1<span class="pct">0.7%</span></td><td>29<span class="pct">20.1%</span></td><td>21<span class="pct">14.6%</span></td><td class="den-cell">144</td></tr></tbody>
+</table>
+</div>
+</details>
+
+<div class="method">
+<h3>Как это измерено и чего не показывает</h3>
+<ul>
+<li><b>Внимание, не позиция.</b> Доля T06 у партии говорит, сколько места она
+отвела экологии, а не что она предлагает делать.</li>
+<li><b>Надёжность.</b> Кодбук проверен двумя аннотаторами на выборке из 175
+единиц: α Криппендорфа 0.827 по теме и 0.852 по типу. Дальше корпус размечен
+одним аннотатором — обычная последовательность контент-анализа.</li>
+<li><b>Длина программы влияет.</b> У Әділет знаменатель втрое больше следующей
+партии, поэтому её доли механически ровнее. Широкий охват и расфокусированность
+по доле неразличимы.</li>
+<li><b>T13 неоднородна.</b> У Народной партии и Әділет в неё попала гражданская
+защита при ЧС, поэтому долю T13 нельзя читать как внимание к международным делам.</li>
+<li><b>Вторичные темы в доли не входят.</b> Каждая единица считается ровно один
+раз.</li>
+</ul>
+</div>
+</div>

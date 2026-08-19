@@ -1,0 +1,5 @@
+party_id	list_order	candidate_name	best_deputy_guess	match_score	match_margin	review_status	resolution
+adilet	40	Бекназаров Нурлан Кудиярович	Сәдібеков Ұласбек  	0.578	0.010	RESOLVED	Senate deputy, not Mazhilis; matched in senate_incumbent_profiles.tsv
+adilet	46	Больгерт Евгений Андреевич	ПОНОМАРЕВ Сергей Михайлович	0.394	0.024	RESOLVED	Senate deputy, not Mazhilis; matched in senate_incumbent_profiles.tsv
+adilet	94	Кожаев Марат Шадетханович	БАҚҚОЖАЕВ Анас Ахатұлы	0.629	0.019	RESOLVED	Senate deputy, not Mazhilis; matched in senate_incumbent_profiles.tsv
+adilet	126	Перепечина Ольга Валентиновна	КУЧИНСКАЯ Юлия Владимировна	0.458	0.030	RESOLVED	Senate deputy, not Mazhilis; matched in senate_incumbent_profiles.tsv

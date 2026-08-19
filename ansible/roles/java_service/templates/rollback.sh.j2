@@ -1,0 +1,78 @@
+#!/bin/bash
+
+# {{ ansible_managed }}
+
+# Configuration
+APP_DIR="{{ java_service_base_dir }}"
+BACKUP_DIR="${APP_DIR}/bak"
+CURRENT_JAR="${APP_DIR}/{{ java_service_jar_name }}"
+
+# Function to check if process is running
+is_running() {
+    local pid=$1
+    [ -n "$pid" ] && ps -p "$pid" > /dev/null 2>&1
+}
+
+# Function to stop the application
+stop_application() {
+    local PID=$(pgrep -f "java.*{{ java_service_jar_name }}")
+    
+    if [ -n "$PID" ]; then
+        echo "Stopping current application (PID: $PID)..."
+        kill -15 $PID
+        
+        # Wait for up to 30 seconds for graceful shutdown
+        for i in {1..30}; do
+            if ! is_running "$PID"; then
+                echo "Application stopped successfully"
+                return 0
+            fi
+            sleep 1
+        done
+        
+        # Force kill if still running
+        if is_running "$PID"; then
+            echo "Force killing application..."
+            kill -9 $PID
+            sleep 2
+        fi
+    fi
+}
+
+# Find the most recent backup
+LATEST_BACKUP=$(ls -t ${BACKUP_DIR}/*.jar 2>/dev/null | head -1)
+
+if [ -z "$LATEST_BACKUP" ]; then
+    echo "No backup files found in ${BACKUP_DIR}"
+    exit 1
+fi
+
+echo "Found backup file: ${LATEST_BACKUP}"
+
+# Stop the current application
+stop_application
+
+# Remove current version if it exists
+if [ -f "$CURRENT_JAR" ]; then
+    echo "Removing current version..."
+    rm -f "$CURRENT_JAR"
+fi
+
+# Perform the rollback
+echo "Rolling back to previous version..."
+cp "$LATEST_BACKUP" "$CURRENT_JAR"
+chown {{ java_service_user }}:{{ java_service_group }} "$CURRENT_JAR"
+chmod 644 "$CURRENT_JAR"
+
+echo "Starting application with rolled back version..."
+systemctl start {{ java_service_name }}
+
+# Wait for application to start
+sleep 5
+if pgrep -f "java.*{{ java_service_jar_name }}" > /dev/null; then
+    echo "Rollback completed successfully and application started"
+    exit 0
+else
+    echo "Rollback completed but application failed to start"
+    exit 1
+fi 

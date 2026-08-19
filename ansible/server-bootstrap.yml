@@ -1,0 +1,30 @@
+---
+- name: Configure secure server setup
+  hosts: all
+  become: yes
+  vars:
+    admin_users:
+      - username: "{{ lookup('env', 'ANSIBLE_USERNAME') }}"
+        password: "{{ lookup('env', 'ANSIBLE_USER_PASSWORD_HASH') }}"
+        is_ansible_user: true
+        ssh_public_key: "{{ lookup('env', 'APP_SERVER_PUBLIC_KEY') }}"
+
+  pre_tasks:
+    - name: Check if required environment variables are set
+      fail:
+        msg: "Environment variable {{ item }} is not set"
+      when: lookup('env', item) == ''
+      loop:
+        - ANSIBLE_USERNAME
+        - ANSIBLE_USER_PASSWORD_HASH
+        - APP_SERVER_PUBLIC_KEY
+        - TAILSCALE_AUTH_KEY
+
+  roles:
+    - timezone # Set system timezone
+    - user_management # Create sudo users
+    - tailscale # Install Tailscale and join the tailnet
+    - firewall # UFW (deny incoming, allow 22/80/443 + tailnet) + fail2ban
+  # NOTE: ssh_hardening runs separately via ssh-hardening.yml, AFTER you have
+  # verified you can log in as the deploy user (it disables root login).
+

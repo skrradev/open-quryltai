@@ -1,0 +1,181 @@
+unit_id	unit_kind_check	topic_primary	topic_secondary	statement_type	unclear	notes
+auyl-0001	structural				0	титул
+auyl-0002	rhetorical				0	лозунг на казахском
+auyl-0003	structural				0	оглавление
+auyl-0004	structural				0	оглавление
+auyl-0005	structural				0	оглавление
+auyl-0006	structural				0	оглавление
+auyl-0007	structural				0	оглавление
+auyl-0008	structural				0	оглавление
+auyl-0009	structural				0	оглавление
+auyl-0010	structural				0	оглавление
+auyl-0011	structural				0	оглавление
+auyl-0012	structural				0	оглавление
+auyl-0013	structural				0	оглавление
+auyl-0014	substantive	T00		description	0	
+auyl-0015	substantive	T00		description	0	
+auyl-0016	substantive	T00		description	0	подлежащее опущено, но восстановимо — не fragment по П-08
+auyl-0017	substantive	T00		description	0	
+auyl-0018	substantive	T00		description	0	
+auyl-0019	substantive	T00		description	0	П-14: утверждение о партии, переклассифицировано из rhetorical
+auyl-0020	substantive	T00		description	0	П-14
+auyl-0021	substantive	T00		description	0	П-14
+auyl-0022	substantive	T01	T12	goal	0	«сильные регионы — сильный центр»
+auyl-0023	substantive	T01	T12	goal	0	
+auyl-0024	substantive	T00		description	0	П-14
+auyl-0025	lead_in				0	
+auyl-0026	substantive	T01		goal	0	П-14: декларируемая ценность — желаемое состояние
+auyl-0027	substantive	T04		goal	0	П-14
+auyl-0028	substantive	T12		goal	0	П-14
+auyl-0029	substantive	T12		goal	0	П-14
+auyl-0030	structural				0	заголовок раздела 2
+auyl-0031	substantive	T00		description	0	о программе 2023 года
+auyl-0032	substantive	T00		achievement	0	
+auyl-0033	substantive	T00		achievement	0	
+auyl-0034	substantive	T00		description	0	П-14
+auyl-0035	substantive	T07		achievement	0	господдержка АПК в 11 раз
+auyl-0036	substantive	T03	T07	achievement	0	льгота по НДС 80%
+auyl-0037	substantive	T07		achievement	0	льготное кредитование ЛПХ под 2,5%
+auyl-0038	substantive	T07		achievement	0	товарное кредитование без залога
+auyl-0039	substantive	T07		achievement	0	
+auyl-0040	substantive	T07		achievement	0	
+auyl-0041	substantive	T07	T01	achievement	0	Министерство водных ресурсов
+auyl-0042	substantive	T07		achievement	0	орошаемые площади
+auyl-0043	substantive	T07		achievement	0	Водный кодекс, талая вода
+auyl-0044	substantive	T07		achievement	0	субсидирование водосбережения
+auyl-0045	substantive	T07		achievement	0	
+auyl-0046	substantive	T07		achievement	0	закон «О пастбищах»
+auyl-0047	substantive	T07		achievement	0	план развития животноводства
+auyl-0048	substantive	T07		achievement	0	
+auyl-0049	substantive	T09		achievement	0	
+auyl-0050	substantive	T09	T03	achievement	0	необлагаемый доход для инвалидов
+auyl-0051	substantive	T09		achievement	0	
+auyl-0052	substantive	T03	T14	achievement	0	добровольный запрет на микрокредиты
+auyl-0053	substantive	T03		achievement	0	
+auyl-0054	substantive	T02		achievement	0	закон об амнистии
+auyl-0055	substantive	T02		achievement	0	отклонён из переписи T15: «ненасильственные» — отрицание признака
+auyl-0056	substantive	T02		achievement	0	П-14: результат амнистии
+auyl-0057	substantive	T13	T03	achievement	0	питание военнослужащих
+auyl-0058	substantive	T13		achievement	0	паёк +40%
+auyl-0059	substantive	T00		achievement	0	награды активистам
+auyl-0060	substantive	T00		description	0	
+auyl-0061	substantive	T07	T00	achievement	0	почётное звание в АПК
+auyl-0062	substantive	T07		achievement	0	
+auyl-0063	structural				0	заголовок-лозунг
+auyl-0064	substantive	T00	T01	description	0	8 депутатов из 98
+auyl-0065	substantive	T00		problem	0	ограниченное представительство
+auyl-0066	substantive	T00		description	0	
+auyl-0067	substantive	T00		commitment	0	
+auyl-0068	substantive	T07		goal	0	Агробанк, закон о продбезопасности
+auyl-0069	structural				0	заголовок раздела 3
+auyl-0070	substantive	T07	T08	goal	0	
+auyl-0071	substantive	T07	T08	description	0	П-14: причинное утверждение
+auyl-0072	substantive	T08		description	0	П-14
+auyl-0073	substantive	T08		description	0	П-14
+auyl-0074	substantive	T00		description	0	
+auyl-0075	substantive	T01		goal	0	П-14
+auyl-0076	substantive	T00		goal	0	
+auyl-0077	lead_in				0	
+auyl-0078	structural				0	заголовок приоритета 1
+auyl-0079	substantive	T01		goal	0	
+auyl-0080	lead_in				0	
+auyl-0081	substantive	T02		instrument	0	профилактика правонарушений, защита детей
+auyl-0082	substantive	T01		instrument	0	местное самоуправление
+auyl-0083	substantive	T01	T03	instrument	0	налоги остаются в сельском округе
+auyl-0084	substantive	T01	T14	instrument	0	открытость местных бюджетов
+auyl-0085	substantive	T14		instrument	0	
+auyl-0086	substantive	T02	T01	instrument	0	выборность районных судей
+auyl-0087	substantive	T02	T01	instrument	0	выборность участковых
+auyl-0088	substantive	T01	T08	instrument	0	общественный контроль строек
+auyl-0089	substantive	T01		instrument	0	
+auyl-0090	substantive	T02		goal	0	
+auyl-0091	substantive	T01		instrument	0	ЦОН по принципу одного окна
+auyl-0092	substantive	T01	T09	instrument	0	центры «Ауыл көмегі»
+auyl-0093	substantive	T01	T09	goal	0	снижение вынужденной внутренней миграции
+auyl-0094	structural				0	заголовок приоритета 2
+auyl-0095	substantive	T07		goal	0	
+auyl-0096	substantive	T07		goal	0	
+auyl-0097	substantive	T07		goal	0	
+auyl-0098	lead_in				0	
+auyl-0099	substantive	T07		instrument	0	вовлечение 1,6 млн ЛПХ
+auyl-0100	substantive	T07		instrument	0	
+auyl-0101	substantive	T07		instrument	0	кооперация
+auyl-0102	substantive	T07	T04	instrument	0	кооперативные магазины в городах
+auyl-0103	substantive	T07		instrument	0	субсидирование аграриев
+auyl-0104	substantive	T04	T03	goal	0	
+auyl-0105	substantive	T07	T03	instrument	0	Агробанк
+auyl-0106	substantive	T07	T14	instrument	0	цифровая платформа АПК
+auyl-0107	substantive	T07		instrument	0	продовольственные пояса
+auyl-0108	substantive	T07	T08	instrument	0	агрологистика
+auyl-0109	substantive	T07	T08	instrument	0	городская агрокультура
+auyl-0110	structural				0	заголовок приоритета 3
+auyl-0111	substantive	T08		goal	0	
+auyl-0112	lead_in				0	
+auyl-0113	substantive	T08	T03	instrument	0	9 трлн трансфертов
+auyl-0114	substantive	T08	T04	instrument	0	приграничные районы
+auyl-0115	substantive	T08		instrument	0	малая авиация
+auyl-0116	substantive	T14	T08	instrument	0	интернет на селе
+auyl-0117	substantive	T14	T08	instrument	0	4G в 3807 пунктах
+auyl-0118	substantive	T14	T04	instrument	0	цифровые хабы, онлайн-занятость
+auyl-0119	substantive	T08		instrument	0	автодороги
+auyl-0120	substantive	T04	T07	instrument	0	агротуризм
+auyl-0121	structural				0	заголовок приоритета 4
+auyl-0122	substantive	T09		goal	0	
+auyl-0123	lead_in				0	
+auyl-0124	substantive	T09		instrument	0	пенсионная реформа
+auyl-0125	substantive	T09		instrument	0	индексация пособий
+auyl-0126	substantive	T09	T06	instrument	0	Семипалатинск и Арал — отклонён из переписи T15
+auyl-0127	substantive	T09		instrument	0	лица с инвалидностью
+auyl-0128	substantive	T10	T14	instrument	0	телемедицина на селе
+auyl-0129	substantive	T10	T09	instrument	0	
+auyl-0130	substantive	T04		instrument	0	
+auyl-0131	substantive	T09	T07	instrument	0	полуторный стаж на селе
+auyl-0132	substantive	T08	T09	instrument	0	сельская ипотека
+auyl-0133	substantive	T08		instrument	0	арендное жильё на селе
+auyl-0134	substantive	T08		instrument	0	ремонт домов, благоустройство
+auyl-0135	substantive	T08		instrument	0	питьевая вода и газ
+auyl-0136	substantive	T08	T01	instrument	0	тарифы ЖКХ, общественный контроль
+auyl-0137	substantive	T09	T08	instrument	0	«новые горожане» — второе упоминание внутренней миграции
+auyl-0138	structural				0	заголовок приоритета 5
+auyl-0139	substantive	T11		goal	0	
+auyl-0140	fragment				0	«Они формируют…» — читается только с 0139, П-08
+auyl-0141	substantive	T11	T04	instrument	0	профильные классы с работодателями
+auyl-0142	substantive	T11	T07	instrument	0	переподготовка, в т.ч. демобилизованных
+auyl-0143	substantive	T11	T07	instrument	0	обучение за рубежом
+auyl-0144	substantive	T11	T07	instrument	0	проект «Из аула за дипломом»
+auyl-0145	substantive	T11	T07	goal	0	
+auyl-0146	substantive	T11		description	0	охват 30 тыс студентов
+auyl-0147	substantive	T14	T09	instrument	0	цифровая грамотность пожилых
+auyl-0148	substantive	T07	T11	instrument	0	аграрная наука, зависимость от импорта семян
+auyl-0149	structural				0	заголовок приоритета 6
+auyl-0150	substantive	T09	T12	goal	0	
+auyl-0151	lead_in				0	
+auyl-0152	substantive	T12	T09	goal	0	
+auyl-0153	substantive	T15	T02	instrument	0	нулевая терпимость к насилию в семье — принято в перепись
+auyl-0154	substantive	T12		instrument	0	трудовые династии
+auyl-0155	substantive	T04	T09	instrument	0	женское предпринимательство
+auyl-0156	substantive	T11	T04	instrument	0	студенческие отряды
+auyl-0157	substantive	T04	T07	instrument	0	«Первое рабочее место на селе»
+auyl-0158	substantive	T07		instrument	0	возврат сельхозземель в оборот
+auyl-0159	substantive	T08	T09	instrument	0	жильё молодым семьям
+auyl-0160	substantive	T13		instrument	0	престиж службы в армии
+auyl-0161	substantive	T12	T08	instrument	0	спортивные и молодёжные пространства
+auyl-0162	structural				0	заголовок приоритета 7
+auyl-0163	substantive	T06		goal	0	
+auyl-0164	substantive	T06		goal	0	
+auyl-0165	lead_in				0	
+auyl-0166	substantive	T06	T07	instrument	0	деградация почв, лесополосы
+auyl-0167	substantive	T07	T06	instrument	0	орошение до 1,3 млн га — вода для орошения — T07 по §4
+auyl-0168	substantive	T06	T07	instrument	0	переброска вод Есиля в Торгай и Арал
+auyl-0169	substantive	T05	T06	instrument	0	ВИЭ на селе
+auyl-0170	substantive	T06	T08	instrument	0	ТБО на селе
+auyl-0171	substantive	T07	T13	instrument	0	возврат земель из-под военных полигонов
+auyl-0172	substantive	T06	T08	instrument	0	зелёная инфраструктура городов
+auyl-0173	substantive	T06	T01	instrument	0	экологический омбудсмен
+auyl-0174	substantive	T00		description	0	П-14
+auyl-0175	structural				0	заголовок раздела 4
+auyl-0176	substantive	T00		description	0	
+auyl-0177	substantive	T00		goal	0	П-14
+auyl-0178	rhetorical				0	П-09: призыв поддержать, без содержания
+auyl-0179	rhetorical				0	
+auyl-0180	rhetorical				0	лозунг на казахском, повтор 0002

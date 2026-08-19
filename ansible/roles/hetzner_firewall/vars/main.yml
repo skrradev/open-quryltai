@@ -1,0 +1,7 @@
+---
+# Where the updater script is installed on the server
+hetzner_script_path: /opt/hetzner-firewall
+
+# Hetzner Cloud API token + the ID of the firewall attached to this server
+hetzner_api_token: "{{ lookup('env', 'HETZNER_API_TOKEN') }}"
+hetzner_firewall_id: "{{ lookup('env', 'HETZNER_FIREWALL_ID') }}"

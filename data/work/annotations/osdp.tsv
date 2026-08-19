@@ -1,0 +1,274 @@
+unit_id	unit_kind_check	topic_primary	topic_secondary	statement_type	unclear	notes
+osdp-0001	structural				0	титул
+osdp-0002	structural				0	продолжение титула
+osdp-0003	structural				0	название программы
+osdp-0004	structural				0	П-01: именная группа без сказуемого, эпиграф
+osdp-0005	substantive	T99		description	0	общее утверждение о стране, ни одна тема не подходит
+osdp-0006	substantive	T01		description	0	
+osdp-0007	substantive	T01		description	0	конституционная реформа
+osdp-0008	rhetorical				0	П-14: призыв без пропозиции
+osdp-0009	substantive	T01	T04	goal	0	
+osdp-0010	substantive	T01		goal	0	
+osdp-0011	substantive	T04	T02	problem	0	государство как участник рынка
+osdp-0012	substantive	T00		description	0	опыт работы в VIII созыве
+osdp-0013	substantive	T04	T01	goal	0	против монополизма и лоббизма
+osdp-0014	substantive	T01	T09	goal	0	
+osdp-0015	substantive	T00		description	0	
+osdp-0016	substantive	T00		description	0	
+osdp-0017	substantive	T01		goal	0	П-14: цель без механизма — не лозунг
+osdp-0018	fragment				0	«Именно такой путь» — отсылка к 0017
+osdp-0019	rhetorical				0	
+osdp-0020	structural				0	заголовок раздела I
+osdp-0021	structural				0	заголовок 1
+osdp-0022	substantive	T04		problem	0	концентрация рынка
+osdp-0023	substantive	T04		problem	0	
+osdp-0024	fragment				0	«В таких условиях» — отсылка к 0023
+osdp-0025	substantive	T04		goal	0	
+osdp-0026	substantive	T04		commitment	0	обязательство без содержания, но пропозиция есть — П-14
+osdp-0027	substantive	T04		goal	0	
+osdp-0028	substantive	T04	T03	goal	0	
+osdp-0029	substantive	T03	T04	instrument	0	прогрессивная шкала, налог на роскошь
+osdp-0030	substantive	T03		goal	0	
+osdp-0031	structural				0	заголовок 2
+osdp-0032	substantive	T02		problem	0	
+osdp-0033	substantive	T02		description	0	международные индексы
+osdp-0034	substantive	T02		goal	0	
+osdp-0035	substantive	T14	T02	instrument	0	
+osdp-0036	substantive	T01	T03	instrument	0	открытый бюджет
+osdp-0037	substantive	T02	T03	instrument	0	госзакупки
+osdp-0038	substantive	T02		instrument	0	декларации должностных лиц
+osdp-0039	substantive	T02	T01	instrument	0	защита информаторов
+osdp-0040	substantive	T02		description	0	
+osdp-0041	substantive	T02		goal	0	
+osdp-0042	structural				0	заголовок 3
+osdp-0043	substantive	T01		goal	0	
+osdp-0044	substantive	T01		problem	0	
+osdp-0045	substantive	T01	T02	goal	0	свобода слова, объединений, собраний
+osdp-0046	fragment				0	«Эти права» — отсылка к 0045
+osdp-0047	substantive	T01		goal	0	защита оппозиции
+osdp-0048	substantive	T01	T02	goal	0	
+osdp-0049	structural				0	заголовок 4, разорван вёрсткой
+osdp-0050	structural				0	продолжение заголовка 4
+osdp-0051	substantive	T01		goal	0	
+osdp-0052	fragment				0	«Это» — отсылка к 0051
+osdp-0053	substantive	T01		goal	0	
+osdp-0054	substantive	T01		goal	0	
+osdp-0055	substantive	T01	T12	instrument	0	доступ партий к медиаплощадкам
+osdp-0056	fragment				0	ДЕФЕКТ ВЁРСТКИ: подлежащее предложения, сказуемое в 0057
+osdp-0057	substantive	T01	T12	goal	0	сказуемое к 0056; обязанности госмедиа
+osdp-0058	substantive	T01	T12	instrument	0	
+osdp-0059	substantive	T01		goal	0	
+osdp-0060	substantive	T01		instrument	0	доступ к первичным протоколам
+osdp-0061	substantive	T01		goal	0	
+osdp-0062	substantive	T01		goal	0	политический плюрализм
+osdp-0063	substantive	T01		goal	0	условия регистрации партий
+osdp-0064	substantive	T01		goal	0	малые и новые партии
+osdp-0065	lead_in				0	
+osdp-0066	substantive	T01		instrument	0	процедурные права фракций
+osdp-0067	substantive	T01		goal	0	
+osdp-0068	fragment				0	«эти меры» — отсылка
+osdp-0069	substantive	T01		description	0	
+osdp-0070	structural				0	заголовок 5
+osdp-0071	substantive	T01		goal	0	президентско-парламентская форма правления
+osdp-0072	substantive	T01		instrument	0	регулирование лоббирования
+osdp-0073	substantive	T01		goal	0	
+osdp-0074	substantive	T00		achievement	0	
+osdp-0075	substantive	T01	T00	goal	0	
+osdp-0076	substantive	T01		goal	0	
+osdp-0077	substantive	T01		goal	0	
+osdp-0078	substantive	T01		goal	0	повтор 0071
+osdp-0079	substantive	T01		goal	0	ответственность депутата перед избирателем
+osdp-0080	substantive	T01		goal	0	
+osdp-0081	substantive	T01	T12	description	0	
+osdp-0082	substantive	T12		description	0	исторический курултай
+osdp-0083	substantive	T01		goal	0	
+osdp-0084	substantive	T01		instrument	0	общественная оценка законопроектов
+osdp-0085	substantive	T01		goal	0	
+osdp-0086	substantive	T01		goal	0	П-14: общее, но пропозиция есть
+osdp-0087	substantive	T01		goal	0	
+osdp-0088	substantive	T01		goal	0	
+osdp-0089	substantive	T01		goal	0	
+osdp-0090	structural				0	заголовок 6
+osdp-0091	substantive	T01		goal	0	
+osdp-0092	substantive	T01		instrument	0	полномочия акиматов
+osdp-0093	structural				0	П-01: подзаголовок, содержание в 0094
+osdp-0094	substantive	T01	T03	instrument	0	налоги за местными бюджетами
+osdp-0095	substantive	T01	T14	instrument	0	публичность местных бюджетов
+osdp-0096	substantive	T01		instrument	0	публичные слушания, платформы обратной связи
+osdp-0097	substantive	T01		goal	0	
+osdp-0098	structural				0	заголовок 7
+osdp-0099	substantive	T02		goal	0	независимость суда
+osdp-0100	substantive	T02		goal	0	
+osdp-0101	substantive	T02		goal	0	
+osdp-0102	substantive	T02		instrument	0	адвокатура, состязательность
+osdp-0103	substantive	T02		instrument	0	отбор и подготовка судей
+osdp-0104	substantive	T02		goal	0	
+osdp-0105	substantive	T02		description	0	
+osdp-0106	substantive	T02		goal	0	
+osdp-0107	substantive	T02		goal	0	
+osdp-0108	structural				0	заголовок раздела II
+osdp-0109	structural				0	заголовок 8
+osdp-0110	substantive	T03	T05	goal	0	П-07: раздел о недрах, но утверждение о распределении ренты
+osdp-0111	substantive	T03		description	0	
+osdp-0112	substantive	T03	T09	goal	0	
+osdp-0113	substantive	T03		instrument	0	налогообложение высоких доходов и состояний
+osdp-0114	substantive	T05	T03	goal	0	
+osdp-0115	structural				0	заголовок 9
+osdp-0116	substantive	T03		commitment	0	
+osdp-0117	fragment				0	продолжение 0116
+osdp-0118	substantive	T03	T04	goal	0	
+osdp-0119	substantive	T03	T09	goal	0	
+osdp-0120	substantive	T04		goal	0	
+osdp-0121	substantive	T04	T05	instrument	0	возврат активов, национализация стратегических предприятий
+osdp-0122	substantive	T04		goal	0	
+osdp-0123	substantive	T04		instrument	0	запрет монополий
+osdp-0124	substantive	T03	T14	goal	0	постиндустриальная экономика
+osdp-0125	substantive	T05	T14	instrument	0	роботизация, цифровизация промышленности
+osdp-0126	substantive	T05		instrument	0	локализация не менее 50%
+osdp-0127	substantive	T04		goal	0	
+osdp-0128	substantive	T03	T05	goal	0	
+osdp-0129	structural				0	заголовок 10
+osdp-0130	substantive	T04		goal	0	
+osdp-0131	substantive	T04	T13	instrument	0	конвенции МОТ, Трудовой кодекс
+osdp-0132	substantive	T04		goal	0	
+osdp-0133	substantive	T04		goal	0	запрет дискриминации в труде
+osdp-0134	substantive	T04		goal	0	независимые профсоюзы
+osdp-0135	substantive	T04		instrument	0	4-дневная рабочая неделя
+osdp-0136	substantive	T04		goal	0	
+osdp-0137	structural				0	заголовок 11
+osdp-0138	substantive	T07		goal	0	
+osdp-0139	substantive	T07		instrument	0	ревизия земель, УЗД, латифундисты
+osdp-0140	substantive	T07		goal	0	права пайщиков
+osdp-0141	substantive	T07		goal	0	земля в госсобственности
+osdp-0142	substantive	T07		goal	0	
+osdp-0143	substantive	T07	T08	goal	0	сельская инфраструктура и социальная сфера
+osdp-0144	substantive	T07		goal	0	
+osdp-0145	structural				0	заголовок раздела III
+osdp-0146	structural				0	заголовок 12, разорван вёрсткой
+osdp-0147	structural				0	продолжение заголовка 12
+osdp-0148	substantive	T10		goal	0	
+osdp-0149	substantive	T10		goal	0	
+osdp-0150	substantive	T10	T03	instrument	0	финансирование не менее 5% ВВП
+osdp-0151	substantive	T10		goal	0	
+osdp-0152	substantive	T10		goal	0	ПМСП
+osdp-0153	substantive	T10		goal	0	
+osdp-0154	substantive	T10		instrument	0	расширение ГОБМП
+osdp-0155	substantive	T10		goal	0	
+osdp-0156	substantive	T10		goal	0	лекарственное обеспечение
+osdp-0157	substantive	T10		goal	0	ОСМС
+osdp-0158	substantive	T10		goal	0	
+osdp-0159	substantive	T10	T04	goal	0	
+osdp-0160	substantive	T10	T04	instrument	0	зарплаты медработников
+osdp-0161	substantive	T10		description	0	
+osdp-0162	substantive	T10		goal	0	
+osdp-0163	structural				0	заголовок 13
+osdp-0164	substantive	T11	T14	problem	0	
+osdp-0165	substantive	T11		goal	0	
+osdp-0166	substantive	T11		instrument	0	бесплатное высшее образование
+osdp-0167	substantive	T11	T03	goal	0	экономика знаний
+osdp-0168	substantive	T11	T04	instrument	0	зарплаты учителей
+osdp-0169	substantive	T11		instrument	0	ТиПО
+osdp-0170	substantive	T11		instrument	0	грантовое финансирование науки
+osdp-0171	substantive	T11	T05	goal	0	
+osdp-0172	substantive	T11		instrument	0	научные кадры, мобильность
+osdp-0173	substantive	T11		goal	0	
+osdp-0174	substantive	T11	T03	instrument	0	наука не менее 2% ВВП
+osdp-0175	structural				0	заголовок 14, разорван вёрсткой
+osdp-0176	structural				0	продолжение заголовка 14
+osdp-0177	substantive	T09		goal	0	
+osdp-0178	substantive	T09		goal	0	
+osdp-0179	lead_in				0	
+osdp-0180	substantive	T09	T08	instrument	0	безбарьерная среда
+osdp-0181	substantive	T09	T11	instrument	0	инклюзивное образование
+osdp-0182	substantive	T09	T04	instrument	0	занятость людей с инвалидностью
+osdp-0183	substantive	T09	T14	instrument	0	
+osdp-0184	substantive	T09		goal	0	
+osdp-0185	lead_in				0	
+osdp-0186	substantive	T09		instrument	0	реформа ЕНПФ, солидарная система
+osdp-0187	substantive	T09		instrument	0	снижение пенсионного возраста
+osdp-0188	substantive	T09		instrument	0	стандарт качества жизни
+osdp-0189	substantive	T09		instrument	0	индексация пенсий
+osdp-0190	substantive	T09		goal	0	
+osdp-0191	structural				0	заголовок 15
+osdp-0192	substantive	T08		goal	0	
+osdp-0193	substantive	T08		goal	0	
+osdp-0194	substantive	T08		instrument	0	арендное жильё с выкупом
+osdp-0195	substantive	T08		instrument	0	
+osdp-0196	substantive	T08		instrument	0	защита дольщиков
+osdp-0197	substantive	T08	T09	instrument	0	первое жильё молодым семьям
+osdp-0198	substantive	T08		instrument	0	
+osdp-0199	substantive	T08		instrument	0	ОСИ
+osdp-0200	substantive	T08		instrument	0	городская среда
+osdp-0201	substantive	T08	T06	instrument	0	
+osdp-0202	substantive	T08		goal	0	
+osdp-0203	structural				0	заголовок 16
+osdp-0204	substantive	T06		goal	0	
+osdp-0205	substantive	T06		goal	0	против передачи экополномочий частникам
+osdp-0206	substantive	T06		goal	0	единые экологические стандарты
+osdp-0207	substantive	T06		problem	0	опустынивание, дефицит воды, зоны бедствия
+osdp-0208	substantive	T06	T05	goal	0	грамматически незакончено, но пропозиция полная
+osdp-0209	substantive	T06		goal	0	
+osdp-0210	substantive	T06		instrument	0	штрафы не должны быть «ценой нарушения»
+osdp-0211	substantive	T06		goal	0	
+osdp-0212	substantive	T06		goal	0	
+osdp-0213	substantive	T06	T10	goal	0	
+osdp-0214	substantive	T08	T06	goal	0	П-05: питьевая вода как сеть — T08
+osdp-0215	substantive	T06		instrument	0	Экологический кодекс, углеродная нейтральность
+osdp-0216	substantive	T06	T05	instrument	0	
+osdp-0217	substantive	T06	T13	instrument	0	бассейновый подход, трансграничные реки — §4
+osdp-0218	substantive	T06		instrument	0	нацпарки и заповедники
+osdp-0219	substantive	T06		instrument	0	запрет ввоза ядерных отходов
+osdp-0220	substantive	T06		instrument	0	«загрязнитель платит», экострахование
+osdp-0221	substantive	T06	T13	instrument	0	Арал, Каспий
+osdp-0222	substantive	T06	T11	instrument	0	
+osdp-0223	structural				0	заголовок раздела IV
+osdp-0224	structural				0	заголовок 17
+osdp-0225	substantive	T14	T02	goal	0	цифровые права
+osdp-0226	substantive	T14	T02	goal	0	
+osdp-0227	substantive	T14		instrument	0	Цифровой кодекс
+osdp-0228	substantive	T14		instrument	0	цифровое согласие, контроль над данными
+osdp-0229	substantive	T14	T02	instrument	0	цифровой омбудсмен
+osdp-0230	substantive	T14		goal	0	
+osdp-0231	substantive	T14	T02	instrument	0	кибермошенничество
+osdp-0232	substantive	T14		instrument	0	регулирование алгоритмов
+osdp-0233	substantive	T14	T11	instrument	0	медиаграмотность
+osdp-0234	substantive	T14		goal	0	
+osdp-0235	structural				0	заголовок 18, разорван вёрсткой
+osdp-0236	structural				0	продолжение заголовка 18
+osdp-0237	substantive	T14		goal	0	
+osdp-0238	substantive	T14	T04	description	0	автоматизация трети задач
+osdp-0239	substantive	T14	T04	goal	0	
+osdp-0240	substantive	T14	T04	goal	0	
+osdp-0241	lead_in				0	
+osdp-0242	substantive	T14		goal	0	
+osdp-0243	substantive	T14	T04	instrument	0	переподготовка при автоматизации
+osdp-0244	substantive	T14		instrument	0	государственный ИИ в социальной сфере
+osdp-0245	substantive	T14		instrument	0	прозрачность решений ИИ
+osdp-0246	substantive	T14		goal	0	цифровое равенство регионов
+osdp-0247	substantive	T14		description	0	
+osdp-0248	substantive	T14		goal	0	
+osdp-0249	structural				0	заголовок 19
+osdp-0250	rhetorical				0	
+osdp-0251	substantive	T12		goal	0	
+osdp-0252	substantive	T12		instrument	0	
+osdp-0253	substantive	T12	T09	goal	0	брак как союз мужчины и женщины
+osdp-0254	substantive	T12		instrument	0	гранты творцам
+osdp-0255	substantive	T12		instrument	0	
+osdp-0256	substantive	T12		instrument	0	меценатство
+osdp-0257	fragment				0	«Это» — отсылка к перечню 0252–0256
+osdp-0258	structural				0	заголовок 20, разорван вёрсткой
+osdp-0259	structural				0	продолжение заголовка 20
+osdp-0260	substantive	T13		goal	0	многовекторность
+osdp-0261	substantive	T13		goal	0	
+osdp-0262	substantive	T13		goal	0	роль средней державы
+osdp-0263	substantive	T13	T00	goal	0	
+osdp-0264	substantive	T13		goal	0	
+osdp-0265	substantive	T13		goal	0	
+osdp-0266	substantive	T13	T00	description	0	Социалистический Интернационал
+osdp-0267	substantive	T13		description	0	
+osdp-0268	substantive	T00		description	0	
+osdp-0269	substantive	T00		description	0	
+osdp-0270	substantive	T00		goal	0	
+osdp-0271	substantive	T00		goal	0	
+osdp-0272	structural				0	призыв голосовать, разорван вёрсткой
+osdp-0273	rhetorical				0	

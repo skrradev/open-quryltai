@@ -1,0 +1,11 @@
+---
+# Install and configure nginx as the HTTPS origin (443) that Cloudflare fronts.
+# Requires DOMAIN, CF_SSL_CERT_FILE, CF_SSL_KEY_FILE in the environment.
+# Run as the deploy user (root login is disabled post-hardening):
+#     ansible-playbook -i inventories/prod/inventory-server-bootstrap.ini \
+#       nginx.yml -u "$ANSIBLE_USERNAME" --become --ask-become-pass
+- name: Install and configure Nginx
+  hosts: all
+  become: yes
+  roles:
+    - nginx

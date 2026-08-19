@@ -1,0 +1,457 @@
+unit_id	unit_kind_check	topic_primary	topic_secondary	statement_type	unclear	notes
+npk-0001	structural				0	оглавление, склеено в один блок
+npk-0002	structural				0	оглавление
+npk-0003	structural				0	оглавление
+npk-0004	structural				0	оглавление
+npk-0005	structural				0	оглавление
+npk-0006	structural				0	оглавление; сегментатор дал substantive
+npk-0007	structural				0	оглавление
+npk-0008	structural				0	оглавление
+npk-0009	structural				0	оглавление
+npk-0010	structural				0	оглавление
+npk-0011	structural				0	оглавление
+npk-0012	structural				0	оглавление
+npk-0013	structural				0	оглавление
+npk-0014	structural				0	оглавление
+npk-0015	structural				0	оглавление
+npk-0016	structural				0	оглавление
+npk-0017	structural				0	оглавление
+npk-0018	structural				0	оглавление
+npk-0019	structural				0	оглавление
+npk-0020	structural				0	заголовок раздела 1 с прилипшим номером страницы
+npk-0021	rhetorical				0	обращение
+npk-0022	substantive	T01		description	0	
+npk-0023	substantive	T01		description	0	Новая Конституция
+npk-0024	substantive	T01		goal	0	
+npk-0025	substantive	T05	T08	goal	0	энергетика, ЖКХ, водная безопасность
+npk-0026	substantive	T11		description	0	
+npk-0027	substantive	T11		description	0	главный дефицит — люди и компетентность
+npk-0028	lead_in				0	
+npk-0029	substantive	T09	T04	goal	0	«честный договор»
+npk-0030	substantive	T00		description	0	казахстанский социализм
+npk-0031	substantive	T00	T09	goal	0	
+npk-0032	substantive	T13	T03	description	0	ДЕФЕКТ: номер страницы «2» прилип к началу предложения
+npk-0033	substantive	T01	T03	goal	0	
+npk-0034	substantive	T09		goal	0	
+npk-0035	substantive	T09		goal	0	
+npk-0036	lead_in				0	
+npk-0037	substantive	T04		problem	0	
+npk-0038	substantive	T09		problem	0	
+npk-0039	substantive	T08		problem	0	
+npk-0040	substantive	T04	T11	problem	0	
+npk-0041	substantive	T09		problem	0	
+npk-0042	substantive	T09	T03	description	0	цитата Послания 2024
+npk-0043	substantive	T00		description	0	
+npk-0044	substantive	T09		description	0	ДЕФЕКТ: номер страницы «3» прилип; цитата Адама Смита
+npk-0045	substantive	T09		description	0	цитата Рузвельта
+npk-0046	substantive	T09	T03	goal	0	
+npk-0047	substantive	T00		description	0	
+npk-0048	substantive	T00		description	0	
+npk-0049	structural				0	заголовок раздела 2 с прилипшим номером страницы
+npk-0050	substantive	T00		description	0	
+npk-0051	lead_in				0	
+npk-0052	substantive	T00	T01	achievement	0	7 законов, 2 подписаны
+npk-0053	substantive	T00	T01	achievement	0	30 законопроектов
+npk-0054	substantive	T00		achievement	0	155 депутатских запросов
+npk-0055	substantive	T00		achievement	0	3217 поправок
+npk-0056	substantive	T00		achievement	0	38 круглых столов
+npk-0057	substantive	T00	T02	achievement	0	Правительственный час о судебных исполнителях
+npk-0058	substantive	T00		achievement	0	700 встреч в регионах
+npk-0059	substantive	T00		goal	0	
+npk-0060	substantive	T00		description	0	ДЕФЕКТ: заголовок «Наша цель» слился с текстом, П-11
+npk-0061	substantive	T00		goal	0	
+npk-0062	substantive	T00		description	0	
+npk-0063	substantive	T12		goal	0	межэтническое согласие
+npk-0064	substantive	T01		goal	0	государство доверия
+npk-0065	substantive	T02		goal	0	
+npk-0066	substantive	T11	T10	goal	0	человеческий капитал
+npk-0067	substantive	T03		goal	0	
+npk-0068	substantive	T14	T03	goal	0	экономика знаний и ИИ
+npk-0069	substantive	T11		goal	0	
+npk-0070	substantive	T11		goal	0	
+npk-0071	substantive	T00		description	0	
+npk-0072	substantive	T11		goal	0	
+npk-0073	substantive	T00		description	0	
+npk-0074	substantive	T00		description	0	
+npk-0075	substantive	T00		description	0	
+npk-0076	substantive	T00		goal	0	
+npk-0077	structural				0	заголовок 1
+npk-0078	substantive	T04		goal	0	
+npk-0079	substantive	T04	T13	goal	0	ДЕФЕКТ: два предложения склеены через «\»; ссылка на МОТ
+npk-0080	substantive	T04		goal	0	
+npk-0081	substantive	T04		instrument	0	МЗП = прожиточный минимум
+npk-0082	substantive	T04	T13	instrument	0	стандарты МОТ
+npk-0083	substantive	T04	T09	instrument	0	оценка работающей бедности
+npk-0084	substantive	T04		instrument	0	
+npk-0085	substantive	T04		instrument	0	условия доступа к господдержке
+npk-0086	substantive	T09	T04	instrument	0	
+npk-0087	substantive	T04	T13	instrument	0	
+npk-0088	substantive	T04		instrument	0	сверхурочные и ночные смены
+npk-0089	structural				0	заголовок 2
+npk-0090	substantive	T04		goal	0	
+npk-0091	substantive	T04		problem	0	
+npk-0092	substantive	T04		goal	0	
+npk-0093	substantive	T04		description	0	Год рабочих профессий
+npk-0094	substantive	T04		description	0	
+npk-0095	substantive	T04		instrument	0	трудовые инспекции
+npk-0096	substantive	T04		instrument	0	запрет «заёмного» труда
+npk-0097	substantive	T04		instrument	0	раскрытие данных о травматизме
+npk-0098	substantive	T04	T11	instrument	0	
+npk-0099	substantive	T04		instrument	0	права работников при приватизации
+npk-0100	substantive	T04	T03	instrument	0	теневая занятость
+npk-0101	substantive	T04		instrument	0	
+npk-0102	substantive	T04	T14	instrument	0	цифровые профсоюзы платформенных работников
+npk-0103	substantive	T04		goal	0	
+npk-0104	substantive	T09	T11	instrument	0	«Серебряные университеты»
+npk-0105	substantive	T04	T14	instrument	0	пенсионные отчисления платформ
+npk-0106	substantive	T04		goal	0	независимые профсоюзы
+npk-0107	structural				0	заголовок 3
+npk-0108	substantive	T09	T04	goal	0	равные возможности для женщин
+npk-0109	substantive	T09		description	0	
+npk-0110	substantive	T09	T04	goal	0	
+npk-0111	substantive	T04	T09	instrument	0	равная оплата за равный труд
+npk-0112	substantive	T09	T11	instrument	0	детские сады
+npk-0113	substantive	T04	T09	instrument	0	женское предпринимательство
+npk-0114	substantive	T11	T09	instrument	0	
+npk-0115	substantive	T01	T09	instrument	0	квоты женщин в маслихатах
+npk-0116	structural				0	заголовок 4
+npk-0117	substantive	T09		goal	0	
+npk-0118	substantive	T09		goal	0	
+npk-0119	substantive	T09	T03	instrument	0	
+npk-0120	substantive	T09		instrument	0	индексация пенсий
+npk-0121	substantive	T10		instrument	0	
+npk-0122	substantive	T09		instrument	0	дневные центры для пожилых
+npk-0123	substantive	T09	T02	instrument	0	
+npk-0124	substantive	T09	T14	instrument	0	
+npk-0125	substantive	T09	T04	instrument	0	
+npk-0126	substantive	T09		instrument	0	досрочная пенсия по здоровью
+npk-0127	substantive	T09		instrument	0	пенсии самозанятых
+npk-0128	substantive	T09	T04	instrument	0	
+npk-0129	substantive	T09		instrument	0	клубы активного долголетия
+npk-0130	structural				0	заголовок 5
+npk-0131	substantive	T09		goal	0	инклюзия
+npk-0132	substantive	T09		goal	0	
+npk-0133	substantive	T10	T09	instrument	0	скрининг матери и ребёнка
+npk-0134	substantive	T09	T10	instrument	0	центры раннего вмешательства
+npk-0135	substantive	T09	T11	instrument	0	институт тьюторов
+npk-0136	substantive	T09	T11	instrument	0	тьютор за счёт бюджета
+npk-0137	substantive	T09	T11	instrument	0	кабинеты поддержки инклюзии
+npk-0138	substantive	T09		instrument	0	статус соцработника родителям
+npk-0139	substantive	T09	T10	instrument	0	поддержка родителей от выгорания
+npk-0140	substantive	T09		instrument	0	пособие по инвалидности
+npk-0141	substantive	T09		instrument	0	бессрочный статус без переосвидетельствования
+npk-0142	substantive	T09	T11	instrument	0	стандарты доступности зданий
+npk-0143	substantive	T09		instrument	0	штрафы за недоступность
+npk-0144	substantive	T09	T08	instrument	0	адаптация транспорта
+npk-0145	substantive	T09	T08	instrument	0	инватакси
+npk-0146	substantive	T09	T04	instrument	0	квотирование рабочих мест
+npk-0147	substantive	T09	T04	instrument	0	штрафы за игнорирование квот
+npk-0148	substantive	T09	T04	instrument	0	льготы за адаптированные места
+npk-0149	substantive	T09	T04	instrument	0	гранты на бизнес
+npk-0150	substantive	T09	T04	instrument	0	бизнес-инкубаторы
+npk-0151	structural				0	заголовок 6
+npk-0152	substantive	T10		goal	0	
+npk-0153	substantive	T10		description	0	
+npk-0154	substantive	T10	T09	description	0	
+npk-0155	substantive	T10		problem	0	
+npk-0156	substantive	T10		goal	0	
+npk-0157	substantive	T10		goal	0	
+npk-0158	substantive	T10	T14	instrument	0	контроль качества медуслуг с ИИ
+npk-0159	substantive	T10	T14	instrument	0	цифровой кабинет пациента
+npk-0160	substantive	T10		instrument	0	«деньги следуют за качеством»
+npk-0161	substantive	T10		goal	0	
+npk-0162	substantive	T10	T07	instrument	0	мобильная диагностика на селе
+npk-0163	substantive	T10		instrument	0	расширение ГОБМП
+npk-0164	substantive	T10	T04	instrument	0	зарплаты сельских врачей
+npk-0165	substantive	T10	T08	instrument	0	жильё и ипотека медработникам
+npk-0166	substantive	T10	T11	instrument	0	целевая подготовка кадров
+npk-0167	substantive	T10	T05	instrument	0	фармпромышленность
+npk-0168	substantive	T10	T04	instrument	0	приоритет казахстанских производителей
+npk-0169	substantive	T10		instrument	0	резерв лекарств
+npk-0170	substantive	T10	T04	instrument	0	контроль цен на препараты
+npk-0171	substantive	T10		instrument	0	
+npk-0172	substantive	T10	T14	instrument	0	
+npk-0173	substantive	T10		instrument	0	центры восстановительного лечения
+npk-0174	substantive	T10	T14	instrument	0	
+npk-0175	substantive	T10	T14	instrument	0	
+npk-0176	substantive	T10	T14	instrument	0	прозрачность расходов ФСМС
+npk-0177	substantive	T11	T10	instrument	0	гранты по профилям и контроль трудоустройства
+npk-0178	substantive	T10		instrument	0	
+npk-0179	structural				0	заголовок 7
+npk-0180	substantive	T11		goal	0	
+npk-0181	substantive	T11		goal	0	школа как социальный лифт
+npk-0182	substantive	T11		goal	0	
+npk-0183	substantive	T11		goal	0	
+npk-0184	substantive	T11		instrument	0	малокомплектные школы
+npk-0185	substantive	T11		instrument	0	
+npk-0186	substantive	T11	T14	instrument	0	
+npk-0187	substantive	T11		instrument	0	PISA как показатель
+npk-0188	substantive	T11		instrument	0	оценка детских садов
+npk-0189	substantive	T11	T14	instrument	0	«Цифровая сельская школа»
+npk-0190	substantive	T11		instrument	0	кураторство педвузов
+npk-0191	substantive	T11		instrument	0	выбор профиля старшеклассниками
+npk-0192	substantive	T11		goal	0	учебная нагрузка
+npk-0193	substantive	T11		instrument	0	Академия Алтынсарина
+npk-0194	substantive	T11		instrument	0	стипендии колледжей
+npk-0195	substantive	T11	T04	instrument	0	колледжи в управление предприятиям
+npk-0196	substantive	T11	T04	instrument	0	госзаказ по прогнозу рынка труда
+npk-0197	substantive	T11		instrument	0	отработка по грантам два года
+npk-0198	substantive	T11		instrument	0	региональные ВУЗы
+npk-0199	substantive	T11		instrument	0	бесплатная репетиторская помощь
+npk-0200	structural				0	заголовок 8
+npk-0201	substantive	T11	T04	instrument	0	программа «Первый шанс»
+npk-0202	substantive	T11	T04	goal	0	
+npk-0203	substantive	T11		goal	0	
+npk-0204	substantive	T11		description	0	
+npk-0205	substantive	T04	T11	instrument	0	оплачиваемые стажировки
+npk-0206	substantive	T04	T11	instrument	0	наставничество
+npk-0207	substantive	T11		instrument	0	гранты на рабочие профессии
+npk-0208	substantive	T11	T07	instrument	0	молодые специалисты на селе
+npk-0209	substantive	T11	T08	instrument	0	дворцы школьников, технопарки
+npk-0210	substantive	T04	T11	instrument	0	дуальное образование, стартапы
+npk-0211	substantive	T01	T11	instrument	0	молодёжные позиции в госорганах
+npk-0212	structural				0	заголовок 9
+npk-0213	substantive	T13	T12	description	0	
+npk-0214	substantive	T13		description	0	
+npk-0215	substantive	T13		goal	0	
+npk-0216	substantive	T13		problem	0	рост конфликтности в мире
+npk-0217	substantive	T12		goal	0	модель согласия
+npk-0218	substantive	T12		goal	0	
+npk-0219	substantive	T12		instrument	0	поддержка государственного языка
+npk-0220	substantive	T12		instrument	0	государство как заказчик контента на казахском
+npk-0221	substantive	T12		instrument	0	другие языки народа Казахстана
+npk-0222	substantive	T12	T13	instrument	0	реестры ЮНЕСКО
+npk-0223	substantive	T12	T06	instrument	0	Национальный парк «Бозок»
+npk-0224	substantive	T12	T14	instrument	0	оцифровка наследия
+npk-0225	substantive	T12		instrument	0	
+npk-0226	substantive	T12		instrument	0	
+npk-0227	substantive	T12		instrument	0	фонд современного искусства
+npk-0228	substantive	T12	T14	instrument	0	мониторинг кинопроката
+npk-0229	substantive	T12		instrument	0	дубляж на казахский
+npk-0230	substantive	T12		instrument	0	реставрация памятников
+npk-0231	substantive	T12	T04	instrument	0	наследие в туристической инфраструктуре
+npk-0232	structural				0	заголовок 10 с прилипшим номером страницы
+npk-0233	substantive	T02		goal	0	
+npk-0234	substantive	T02		goal	0	
+npk-0235	substantive	T02		goal	0	
+npk-0236	substantive	T02		goal	0	
+npk-0237	substantive	T02		instrument	0	единообразная судебная практика
+npk-0238	substantive	T02	T14	instrument	0	ИИ в судопроизводстве
+npk-0239	substantive	T02		instrument	0	ревизия КоАП
+npk-0240	substantive	T02		instrument	0	ответственность за посягательства на личность
+npk-0241	substantive	T02		instrument	0	
+npk-0242	substantive	T02		instrument	0	бесплатная юридическая помощь
+npk-0243	substantive	T02		instrument	0	суд присяжных
+npk-0244	substantive	T02	T08	instrument	0	контроль за изъятием жилья
+npk-0245	substantive	T02		instrument	0	
+npk-0246	substantive	T02	T03	instrument	0	взыскание долгов
+npk-0247	substantive	T02	T01	instrument	0	бенефициары в госзакупках
+npk-0248	substantive	T02		instrument	0	вознаграждение информаторам
+npk-0249	substantive	T02		instrument	0	отчётность по возврату активов
+npk-0250	structural				0	заголовок 11
+npk-0251	substantive	T02		goal	0	профилактика преступности
+npk-0252	substantive	T02		description	0	
+npk-0253	substantive	T02		goal	0	
+npk-0254	substantive	T02		commitment	0	
+npk-0255	substantive	T02		instrument	0	участковые инспекторы
+npk-0256	substantive	T02	T11	instrument	0	подростковая преступность
+npk-0257	substantive	T15	T02	instrument	0	кризисные центры — принято в перепись T15
+npk-0258	substantive	T02	T14	instrument	0	интернет-мошенничество
+npk-0259	substantive	T14	T13	instrument	0	Национальная платформа киберзащиты
+npk-0260	substantive	T14	T13	instrument	0	хранение госданных внутри страны
+npk-0261	substantive	T14		instrument	0	аудит информационной безопасности
+npk-0262	substantive	T14	T02	instrument	0	ответственность за утечки данных
+npk-0263	substantive	T02	T14	instrument	0	система видеонаблюдения
+npk-0264	substantive	T02		instrument	0	частные охранные компании
+npk-0265	substantive	T02	T14	instrument	0	прогнозирование преступности с ИИ
+npk-0266	substantive	T02	T14	instrument	0	
+npk-0267	substantive	T02	T11	instrument	0	школы и ЦОУ МВД
+npk-0268	substantive	T02	T08	instrument	0	освещение дворов
+npk-0269	structural				0	заголовок 12
+npk-0270	substantive	T13	T06	goal	0	П-15: от реагирования к предупреждению ЧС
+npk-0271	substantive	T13	T06	problem	0	П-15
+npk-0272	substantive	T06	T13	goal	0	
+npk-0273	substantive	T06		goal	0	
+npk-0274	substantive	T13	T06	instrument	0	П-15: карты рисков
+npk-0275	substantive	T08	T13	instrument	0	проверки дамб и мостов
+npk-0276	substantive	T13	T07	instrument	0	П-15: пожарная безопасность на селе
+npk-0277	substantive	T13		instrument	0	П-15: резерв техники и топлива
+npk-0278	substantive	T13		instrument	0	П-15: территориальная оборона
+npk-0279	substantive	T13	T08	instrument	0	защита критической инфраструктуры
+npk-0280	substantive	T13	T11	instrument	0	П-15: обучение действиям при ЧС
+npk-0281	substantive	T06	T05	instrument	0	перевод ТЭЦ на газ
+npk-0282	substantive	T06	T14	instrument	0	мониторинг качества воздуха
+npk-0283	substantive	T06		instrument	0	посты Казгидромета
+npk-0284	substantive	T06	T14	instrument	0	управление водными ресурсами с ИИ
+npk-0285	substantive	T06	T14	instrument	0	цифровизация водохозяйства
+npk-0286	substantive	T06	T08	instrument	0	аудит водоёмов и дамб
+npk-0287	substantive	T06		instrument	0	экологическая отчётность предприятий
+npk-0288	substantive	T07	T06	instrument	0	бетонирование оросительных каналов — §4, орошение
+npk-0289	substantive	T06		instrument	0	приток воды в Балхаш
+npk-0290	substantive	T07	T06	instrument	0	артезианские скважины, вода селам
+npk-0291	substantive	T07	T06	instrument	0	стандарт водопользования в АПК
+npk-0292	substantive	T06		instrument	0	реабилитация рек
+npk-0293	substantive	T06		instrument	0	
+npk-0294	structural				0	заголовок 13
+npk-0295	substantive	T08	T09	instrument	0	региональный стандарт качества жизни
+npk-0296	substantive	T08		goal	0	
+npk-0297	substantive	T08		goal	0	
+npk-0298	substantive	T08		goal	0	
+npk-0299	substantive	T08	T09	instrument	0	отставание по доходам семей, не только ВРП
+npk-0300	substantive	T08	T14	instrument	0	карта базовой инфраструктуры
+npk-0301	substantive	T08	T09	instrument	0	
+npk-0302	substantive	T01	T03	instrument	0	налоги на местном уровне
+npk-0303	substantive	T08		instrument	0	
+npk-0304	substantive	T04	T08	instrument	0	региональные коэффициенты зарплат
+npk-0305	substantive	T08	T07	instrument	0	перевод крупных сёл в города
+npk-0306	substantive	T14	T08	instrument	0	интернет как базовая потребность
+npk-0307	substantive	T08		instrument	0	приграничные районы
+npk-0308	structural				0	заголовок 14
+npk-0309	substantive	T08		instrument	0	открытый учёт коммунальной инфраструктуры
+npk-0310	substantive	T08	T01	goal	0	
+npk-0311	substantive	T08	T05	problem	0	монополисты в энергетике и ЖКХ
+npk-0312	substantive	T08		commitment	0	
+npk-0313	substantive	T08		goal	0	тарифы и обязательства
+npk-0314	substantive	T08		goal	0	
+npk-0315	substantive	T08	T05	commitment	0	модернизация ТЭЦ и сетей
+npk-0316	substantive	T08	T01	instrument	0	парламентский контроль нацпроекта
+npk-0317	substantive	T08	T14	instrument	0	карта износа сетей
+npk-0318	substantive	T08		instrument	0	открытые сметы
+npk-0319	substantive	T08		instrument	0	отчётность по тарифным инвестициям
+npk-0320	substantive	T05	T06	instrument	0	чистая угольная генерация, ВИЭ
+npk-0321	substantive	T05		instrument	0	атомная энергетика
+npk-0322	substantive	T05	T04	instrument	0	посредники на энергорынке
+npk-0323	substantive	T08	T05	instrument	0	энергоэффективность домов
+npk-0324	substantive	T08		instrument	0	LRT и метро
+npk-0325	substantive	T08		instrument	0	безопасность на трассах
+npk-0326	substantive	T08		instrument	0	гарантии на инфраструктуру
+npk-0327	substantive	T08	T09	instrument	0	социальный жилищный фонд
+npk-0328	substantive	T08		instrument	0	арендное жильё с выкупом
+npk-0329	substantive	T08	T02	instrument	0	ответственность застройщиков
+npk-0330	substantive	T08	T02	instrument	0	выкуп по рыночной стоимости
+npk-0331	substantive	T08		instrument	0	гарантии при реновации
+npk-0332	substantive	T08	T11	instrument	0	микрорайонный принцип
+npk-0333	substantive	T08	T06	instrument	0	благоустройство дворов
+npk-0334	structural				0	заголовок 15
+npk-0335	substantive	T01		problem	0	чрезмерная централизация
+npk-0336	substantive	T01		description	0	
+npk-0337	substantive	T01		description	0	
+npk-0338	substantive	T01		problem	0	
+npk-0339	substantive	T01		goal	0	
+npk-0340	substantive	T01	T08	goal	0	
+npk-0341	substantive	T01		goal	0	
+npk-0342	substantive	T01		goal	0	
+npk-0343	substantive	T01	T08	goal	0	
+npk-0344	substantive	T01		description	0	
+npk-0345	substantive	T01		instrument	0	ОСИ как единицы МСУ
+npk-0346	substantive	T01	T03	instrument	0	бюджетная формула выравнивания
+npk-0347	substantive	T01		instrument	0	инициативные бюджеты
+npk-0348	substantive	T09	T01	instrument	0	социальные услуги через НПО
+npk-0349	substantive	T01	T08	instrument	0	
+npk-0350	substantive	T07	T01	instrument	0	
+npk-0351	substantive	T01		instrument	0	бюджеты четвёртого уровня
+npk-0352	structural				0	заголовок 16
+npk-0353	substantive	T03		problem	0	цитата Послания 2023
+npk-0354	substantive	T01		instrument	0	правило публичного результата
+npk-0355	substantive	T01	T03	instrument	0	
+npk-0356	substantive	T03		goal	0	
+npk-0357	substantive	T01		problem	0	ручное управление
+npk-0358	substantive	T01		description	0	
+npk-0359	substantive	T01		description	0	
+npk-0360	substantive	T01		goal	0	
+npk-0361	substantive	T01		goal	0	меритократия
+npk-0362	substantive	T01		goal	0	
+npk-0363	substantive	T01	T02	instrument	0	
+npk-0364	substantive	T01		instrument	0	оценка регуляторного воздействия
+npk-0365	substantive	T01		instrument	0	анализ правоприменения через год
+npk-0366	substantive	T04		instrument	0	
+npk-0367	substantive	T03	T14	instrument	0	фонд цифровых активов
+npk-0368	substantive	T03	T04	instrument	0	дивиденды квазигоссектора
+npk-0369	substantive	T01	T04	instrument	0	«гильотина» процедур
+npk-0370	substantive	T01		instrument	0	
+npk-0371	substantive	T01		instrument	0	
+npk-0372	substantive	T01	T14	instrument	0	
+npk-0373	substantive	T01		instrument	0	отчётность акиматов
+npk-0374	substantive	T01		instrument	0	оценка чиновников по результатам
+npk-0375	substantive	T14	T01	instrument	0	
+npk-0376	substantive	T01		instrument	0	публичные слушания
+npk-0377	substantive	T01	T14	instrument	0	порог подписей для петиций
+npk-0378	substantive	T01		instrument	0	
+npk-0379	structural				0	заголовок 17
+npk-0380	substantive	T03		goal	0	не только ВВП
+npk-0381	substantive	T03	T09	description	0	
+npk-0382	substantive	T03		goal	0	
+npk-0383	substantive	T01		goal	0	
+npk-0384	substantive	T04		goal	0	
+npk-0385	substantive	T03		goal	0	
+npk-0386	substantive	T04	T09	description	0	средний класс
+npk-0387	substantive	T04		description	0	
+npk-0388	substantive	T04		instrument	0	кооперативная и акционерная собственность
+npk-0389	substantive	T04	T03	instrument	0	медианная зарплата как ориентир
+npk-0390	substantive	T04		instrument	0	
+npk-0391	substantive	T04		instrument	0	злоупотребление доминирующим положением
+npk-0392	substantive	T04	T07	instrument	0	запреты на экспорт
+npk-0393	substantive	T04		instrument	0	
+npk-0394	substantive	T05		instrument	0	техногенные минеральные образования
+npk-0395	substantive	T05		instrument	0	секретность геологических данных
+npk-0396	substantive	T05	T04	instrument	0	квоты на экспорт ГМК
+npk-0397	substantive	T06	T05	instrument	0	пересмотр климатической повестки
+npk-0398	substantive	T05		instrument	0	либерализация рынка газа
+npk-0399	substantive	T05		instrument	0	нацпроекты по нефтегазу и ГМК
+npk-0400	substantive	T05		instrument	0	геологоразведка
+npk-0401	substantive	T05	T04	instrument	0	промышленные зоны
+npk-0402	substantive	T07		instrument	0	сельхозкооперация
+npk-0403	substantive	T04	T05	instrument	0	оффтейк-контракты
+npk-0404	substantive	T03		instrument	0	предельная ставка по кредитам
+npk-0405	structural				0	заголовок 18
+npk-0406	substantive	T14		description	0	
+npk-0407	substantive	T14		description	0	
+npk-0408	substantive	T14		description	0	
+npk-0409	substantive	T14		goal	0	
+npk-0410	substantive	T14		instrument	0	«Долина центров обработки данных»
+npk-0411	substantive	T14		instrument	0	дата-центры
+npk-0412	substantive	T14	T12	instrument	0	лингвистический корпус для ИИ
+npk-0413	substantive	T14		instrument	0	датасет изображений для ИИ
+npk-0414	substantive	T14		instrument	0	машиночитаемая статистика
+npk-0415	substantive	T14		instrument	0	отечественные нейросети
+npk-0416	structural				0	заголовок 19
+npk-0417	substantive	T13		goal	0	многовекторность
+npk-0418	substantive	T13		description	0	
+npk-0419	substantive	T13		goal	0	Россия, Китай, Центральная Азия
+npk-0420	substantive	T13	T08	goal	0	
+npk-0421	substantive	T13		goal	0	США, ЕС, Азия
+npk-0422	substantive	T13	T08	instrument	0	Транскаспийский маршрут
+npk-0423	substantive	T08	T13	instrument	0	транзитная железная дорога
+npk-0424	substantive	T08	T13	instrument	0	пограничные переходы
+npk-0425	substantive	T14	T13	instrument	0	
+npk-0426	substantive	T13	T14	instrument	0	консульские услуги онлайн
+npk-0427	substantive	T13	T14	instrument	0	поддержка граждан за рубежом
+npk-0428	substantive	T12	T13	instrument	0	диаспора и культурные центры
+npk-0429	substantive	T13	T02	instrument	0	противодействие терроризму
+npk-0430	fragment				0	продолжение перечня 0429
+npk-0431	substantive	T09		goal	0	
+npk-0432	substantive	T00		description	0	казахстанский социализм
+npk-0433	lead_in				0	
+npk-0434	substantive	T04		goal	0	
+npk-0435	substantive	T09		goal	0	
+npk-0436	substantive	T01		goal	0	
+npk-0437	substantive	T04		goal	0	
+npk-0438	substantive	T05	T09	goal	0	
+npk-0439	substantive	T04		goal	0	
+npk-0440	lead_in				0	
+npk-0441	substantive	T08	T09	goal	0	
+npk-0442	substantive	T09		goal	0	
+npk-0443	substantive	T04		goal	0	
+npk-0444	substantive	T08		goal	0	
+npk-0445	substantive	T10	T11	goal	0	
+npk-0446	substantive	T02		goal	0	
+npk-0447	substantive	T05		goal	0	
+npk-0448	substantive	T00		goal	0	
+npk-0449	substantive	T00		goal	0	
+npk-0450	substantive	T00		description	0	
+npk-0451	substantive	T00		goal	0	
+npk-0452	lead_in				0	
+npk-0453	substantive	T11	T09	goal	0	
+npk-0454	substantive	T09		goal	0	
+npk-0455	rhetorical				0	
+npk-0456	rhetorical				0	

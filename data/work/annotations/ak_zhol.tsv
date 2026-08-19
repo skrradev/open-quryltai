@@ -1,0 +1,329 @@
+unit_id	unit_kind_check	topic_primary	topic_secondary	statement_type	unclear	notes
+ak_zhol-0001	structural				0	титул
+ak_zhol-0002	structural				0	название программы
+ak_zhol-0003	lead_in				0	
+ak_zhol-0004	substantive	T01	T12	description	0	базовые ценности Конституции 2026
+ak_zhol-0005	substantive	T01		description	0	
+ak_zhol-0006	substantive	T01		description	0	
+ak_zhol-0007	lead_in				0	
+ak_zhol-0008	substantive	T13	T12	goal	0	
+ak_zhol-0009	substantive	T02		goal	0	
+ak_zhol-0010	substantive	T04	T09	goal	0	средний класс, сокращение разрыва
+ak_zhol-0011	substantive	T05	T03	goal	0	«ресурсный национализм»
+ak_zhol-0012	substantive	T03	T14	goal	0	
+ak_zhol-0013	substantive	T04		goal	0	квазигосударственный сектор
+ak_zhol-0014	substantive	T04	T11	goal	0	
+ak_zhol-0015	substantive	T04		goal	0	
+ak_zhol-0016	lead_in				0	П-03: строка на «:», содержание в 0017
+ak_zhol-0017	substantive	T09	T04	goal	0	инклюзивная экономика
+ak_zhol-0018	substantive	T01		goal	0	Курултай и Халық Кеңесі
+ak_zhol-0019	substantive	T01		goal	0	формула на местный уровень
+ak_zhol-0020	substantive	T01		goal	0	парламентаризм как приоритет
+ak_zhol-0021	substantive	T00		description	0	
+ak_zhol-0022	substantive	T00		description	0	
+ak_zhol-0023	structural				0	заголовок раздела I, разорван вёрсткой
+ak_zhol-0024	structural				0	продолжение заголовка I
+ak_zhol-0025	substantive	T13		goal	0	
+ak_zhol-0026	substantive	T13		goal	0	
+ak_zhol-0027	substantive	T12	T13	description	0	государственный язык, многоэтничность
+ak_zhol-0028	fragment				0	«Это» — отсылка к 0027
+ak_zhol-0029	substantive	T12		description	0	уважение к языкам и культуре этносов
+ak_zhol-0030	substantive	T12		instrument	0	отсчёт государственности от древних корней
+ak_zhol-0031	substantive	T12	T13	goal	0	светский характер государства
+ak_zhol-0032	substantive	T13		goal	0	
+ak_zhol-0033	substantive	T00	T01	goal	0	перечень базовых принципов партии
+ak_zhol-0034	structural				0	заголовок раздела II, разорван вёрсткой
+ak_zhol-0035	structural				0	продолжение заголовка II
+ak_zhol-0036	substantive	T00	T01	description	0	
+ak_zhol-0037	substantive	T01		description	0	
+ak_zhol-0038	substantive	T01		description	0	
+ak_zhol-0039	substantive	T01		description	0	П-14: коротко, но пропозиция есть
+ak_zhol-0040	fragment				0	ДЕФЕКТ ВЁРСТКИ: сказуемое в 0041
+ak_zhol-0041	substantive	T01		goal	0	сказуемое к 0040
+ak_zhol-0042	substantive	T13	T01	goal	0	
+ak_zhol-0043	substantive	T01		goal	0	
+ak_zhol-0044	substantive	T01		goal	0	правительство национального доверия
+ak_zhol-0045	substantive	T01		description	0	
+ak_zhol-0046	substantive	T01		description	0	
+ak_zhol-0047	substantive	T01		instrument	0	представительство партий в Правительстве
+ak_zhol-0048	substantive	T01		description	0	продолжение в 0049
+ak_zhol-0049	fragment				0	продолжение 0048
+ak_zhol-0050	fragment				0	«Это» — отсылка к 0048–0049
+ak_zhol-0051	substantive	T01		instrument	0	беспартийность акимов
+ak_zhol-0052	substantive	T01		goal	0	
+ak_zhol-0053	substantive	T01		goal	0	
+ak_zhol-0054	substantive	T01		instrument	0	парламентские расследования
+ak_zhol-0055	substantive	T01		description	0	обрыв предложения в источнике
+ak_zhol-0056	fragment				0	продолжение 0055
+ak_zhol-0057	substantive	T01		goal	0	
+ak_zhol-0058	substantive	T01	T03	goal	0	парламентский контроль бюджета
+ak_zhol-0059	substantive	T03		description	0	
+ak_zhol-0060	substantive	T03	T01	problem	0	квазигоссектор вне парламентских процедур
+ak_zhol-0061	substantive	T01	T03	goal	0	
+ak_zhol-0062	substantive	T01		problem	0	
+ak_zhol-0063	fragment				0	обрыв, продолжение 0062
+ak_zhol-0064	substantive	T01		goal	0	
+ak_zhol-0065	substantive	T01		description	0	
+ak_zhol-0066	substantive	T01		description	0	
+ak_zhol-0067	substantive	T01		instrument	0	отчёт Правительства перед Курултаем
+ak_zhol-0068	substantive	T01		goal	0	
+ak_zhol-0069	structural				0	П-01: объявление темы без сказуемого
+ak_zhol-0070	fragment				0	«Речь не только о…» — отсылка
+ak_zhol-0071	substantive	T03		problem	0	обязательные платежи как скрытые налоги
+ak_zhol-0072	substantive	T01	T09	instrument	0	контроль над ОСМС и ЕНПФ
+ak_zhol-0073	substantive	T03		description	0	
+ak_zhol-0074	substantive	T01		description	0	бюджетные комитеты у оппозиции
+ak_zhol-0075	substantive	T01		description	0	
+ak_zhol-0076	substantive	T01	T00	achievement	0	закон «О парламентской оппозиции» 2020
+ak_zhol-0077	substantive	T01	T00	achievement	0	
+ak_zhol-0078	substantive	T01		goal	0	парламентская многопартийность
+ak_zhol-0079	substantive	T01		description	0	Слышащее государство
+ak_zhol-0080	substantive	T01		description	0	
+ak_zhol-0081	substantive	T01	T03	goal	0	депутатский лимит на нужды избирателей
+ak_zhol-0082	substantive	T03	T01	problem	0	резервы Правительства и акимов
+ak_zhol-0083	substantive	T01		problem	0	
+ak_zhol-0084	substantive	T01	T03	instrument	0	лимит бюджета Курултаю
+ak_zhol-0085	substantive	T01		instrument	0	
+ak_zhol-0086	substantive	T08	T03	description	0	
+ak_zhol-0087	substantive	T01		instrument	0	реагирование на обращения граждан
+ak_zhol-0088	substantive	T01		goal	0	
+ak_zhol-0089	substantive	T01		problem	0	защита от фальсификаций
+ak_zhol-0090	substantive	T01	T14	instrument	0	видеомониторинг участков
+ak_zhol-0091	substantive	T01		description	0	
+ak_zhol-0092	substantive	T01	T14	instrument	0	распознавание лиц против «каруселей»
+ak_zhol-0093	fragment				0	продолжение 0092
+ak_zhol-0094	substantive	T01		description	0	
+ak_zhol-0095	substantive	T01	T14	instrument	0	пересчёт по видеозаписи
+ak_zhol-0096	substantive	T01		description	0	
+ak_zhol-0097	substantive	T01		description	0	
+ak_zhol-0098	substantive	T01		description	0	
+ak_zhol-0099	substantive	T01	T14	description	0	
+ak_zhol-0100	lead_in				0	
+ak_zhol-0101	substantive	T01	T14	instrument	0	сканеры удостоверений
+ak_zhol-0102	substantive	T01		description	0	
+ak_zhol-0103	substantive	T01	T14	instrument	0	электронный сбор подписей
+ak_zhol-0104	substantive	T01	T14	instrument	0	электронное голосование
+ak_zhol-0105	substantive	T01		problem	0	
+ak_zhol-0106	substantive	T01	T14	description	0	
+ak_zhol-0107	substantive	T14	T01	problem	0	идентификация и защищённость каналов
+ak_zhol-0108	substantive	T02		goal	0	независимый суд
+ak_zhol-0109	substantive	T02		goal	0	
+ak_zhol-0110	substantive	T02		goal	0	состязательность, презумпция невиновности
+ak_zhol-0111	substantive	T02		description	0	Административный суд
+ak_zhol-0112	substantive	T13	T00	goal	0	европейский путь развития
+ak_zhol-0113	structural				0	заголовок раздела III, разорван вёрсткой
+ak_zhol-0114	structural				0	продолжение заголовка III
+ak_zhol-0115	substantive	T02	T00	goal	0	
+ak_zhol-0116	substantive	T00		achievement	0	
+ak_zhol-0117	substantive	T02	T00	achievement	0	запросы по Кипру, Швейцарии, «панамскому списку»
+ak_zhol-0118	substantive	T02	T13	achievement	0	де-офшоризация на международных площадках
+ak_zhol-0119	substantive	T02		problem	0	
+ak_zhol-0120	substantive	T04	T02	problem	0	
+ak_zhol-0121	substantive	T02		description	0	
+ak_zhol-0122	substantive	T02	T03	description	0	принципы FATF
+ak_zhol-0123	substantive	T02		description	0	
+ak_zhol-0124	substantive	T02		description	0	
+ak_zhol-0125	substantive	T02		commitment	0	
+ak_zhol-0126	substantive	T02		goal	0	
+ak_zhol-0127	substantive	T02		goal	0	
+ak_zhol-0128	substantive	T02		goal	0	
+ak_zhol-0129	substantive	T02		instrument	0	ограничение выезда для коррупционеров
+ak_zhol-0130	substantive	T02		instrument	0	запрет выезда на 10 лет
+ak_zhol-0131	substantive	T02	T03	description	0	
+ak_zhol-0132	substantive	T03		goal	0	
+ak_zhol-0133	substantive	T02		instrument	0	запрет на проживание в крупных городах
+ak_zhol-0134	substantive	T02	T08	goal	0	
+ak_zhol-0135	substantive	T02	T08	goal	0	
+ak_zhol-0136	substantive	T02	T03	instrument	0	запрет сделок с офшорами
+ak_zhol-0137	substantive	T02	T01	goal	0	
+ak_zhol-0138	substantive	T01	T03	instrument	0	отчётность квазигосструктур
+ak_zhol-0139	substantive	T02		goal	0	возврат активов
+ak_zhol-0140	substantive	T02		description	0	закон 2023 года
+ak_zhol-0141	substantive	T02	T13	instrument	0	партийная дипломатия
+ak_zhol-0142	substantive	T02	T13	description	0	
+ak_zhol-0143	substantive	T00	T13	commitment	0	
+ak_zhol-0144	substantive	T00		description	0	
+ak_zhol-0145	structural				0	заголовок раздела IV
+ak_zhol-0146	substantive	T09		problem	0	социальный разрыв
+ak_zhol-0147	substantive	T09		problem	0	
+ak_zhol-0148	fragment				0	«это касается» — отсылка к 0147
+ak_zhol-0149	substantive	T09		description	0	
+ak_zhol-0150	substantive	T09	T02	problem	0	
+ak_zhol-0151	substantive	T09		goal	0	
+ak_zhol-0152	substantive	T09		goal	0	
+ak_zhol-0153	substantive	T09	T10	goal	0	
+ak_zhol-0154	lead_in				0	
+ak_zhol-0155	substantive	T09		instrument	0	«Социальный кошелёк»
+ak_zhol-0156	substantive	T09		instrument	0	прозрачность ЕНПФ и ФСМС
+ak_zhol-0157	substantive	T09	T01	instrument	0	
+ak_zhol-0158	substantive	T10	T09	instrument	0	привязка ФСМС к вкладчикам
+ak_zhol-0159	substantive	T10		instrument	0	персональный счёт в ФСМС
+ak_zhol-0160	substantive	T10		description	0	
+ak_zhol-0161	substantive	T10		description	0	
+ak_zhol-0162	fragment				0	«Это и есть…» — отсылка к 0159–0161
+ak_zhol-0163	substantive	T09	T04	goal	0	равные права всех форм собственности в социальной сфере
+ak_zhol-0164	substantive	T08	T09	instrument	0	жильё для сельской молодёжи в городах
+ak_zhol-0165	substantive	T08		goal	0	
+ak_zhol-0166	substantive	T09	T08	instrument	0	субсидирование ипотеки за рождение ребёнка
+ak_zhol-0167	substantive	T09	T08	instrument	0	
+ak_zhol-0168	substantive	T09		description	0	
+ak_zhol-0169	substantive	T09		problem	0	
+ak_zhol-0170	substantive	T09		goal	0	
+ak_zhol-0171	substantive	T09		instrument	0	прожиточный минимум вместо МРП
+ak_zhol-0172	substantive	T09	T12	description	0	
+ak_zhol-0173	substantive	T08	T09	instrument	0	мониторинг очереди на жильё
+ak_zhol-0174	substantive	T08	T09	instrument	0	изъятие перепроданного соцжилья
+ak_zhol-0175	substantive	T03	T00	achievement	0	закон о банкротстве физлиц 2022
+ak_zhol-0176	substantive	T08	T02	problem	0	
+ak_zhol-0177	substantive	T08	T02	description	0	
+ak_zhol-0178	substantive	T08	T02	instrument	0	запрет выселения из единственного жилья
+ak_zhol-0179	substantive	T04	T11	goal	0	зарплаты врачей и педагогов
+ak_zhol-0180	substantive	T10	T11	goal	0	равенство частных и государственных учреждений
+ak_zhol-0181	substantive	T11	T13	instrument	0	против «утечки мозгов»
+ak_zhol-0182	substantive	T11		goal	0	
+ak_zhol-0183	substantive	T09	T02	instrument	0	законы против дискриминации, гендерное равенство
+ak_zhol-0184	substantive	T09	T13	instrument	0	
+ak_zhol-0185	substantive	T03	T02	goal	0	защита от нелегальных кредиторов
+ak_zhol-0186	substantive	T03	T02	problem	0	коллекторы, кабальные займы
+ak_zhol-0187	substantive	T03	T02	instrument	0	
+ak_zhol-0188	substantive	T03	T14	instrument	0	выявление финансовых пирамид
+ak_zhol-0189	substantive	T03		goal	0	
+ak_zhol-0190	structural				0	заголовок раздела V, разорван вёрсткой
+ak_zhol-0191	structural				0	продолжение заголовка V
+ak_zhol-0192	substantive	T04	T00	goal	0	
+ak_zhol-0193	substantive	T04		commitment	0	
+ak_zhol-0194	substantive	T04		problem	0	
+ak_zhol-0195	substantive	T04		instrument	0	Реестр обязательных требований
+ak_zhol-0196	substantive	T04	T02	goal	0	
+ak_zhol-0197	substantive	T04		description	0	цитата Послания
+ak_zhol-0198	fragment				0	окончание цитаты 0197
+ak_zhol-0199	substantive	T04		description	0	
+ak_zhol-0200	substantive	T04		goal	0	
+ak_zhol-0201	substantive	T04		goal	0	против «ручного управления»
+ak_zhol-0202	substantive	T04		problem	0	
+ak_zhol-0203	substantive	T04		goal	0	
+ak_zhol-0204	substantive	T04		goal	0	либерализация, разгосударствление
+ak_zhol-0205	substantive	T04	T09	description	0	
+ak_zhol-0206	substantive	T04		description	0	
+ak_zhol-0207	substantive	T09	T04	goal	0	адресная помощь вместо давления на бизнес
+ak_zhol-0208	substantive	T03	T07	goal	0	инфляция и отечественное производство
+ak_zhol-0209	substantive	T01	T04	goal	0	сокращение числа чиновников
+ak_zhol-0210	substantive	T04	T09	description	0	
+ak_zhol-0211	substantive	T04	T01	goal	0	
+ak_zhol-0212	substantive	T04		description	0	
+ak_zhol-0213	substantive	T00	T04	description	0	
+ak_zhol-0214	substantive	T04		description	0	
+ak_zhol-0215	substantive	T00	T01	goal	0	фракции в маслихатах
+ak_zhol-0216	substantive	T04	T09	goal	0	молодёжное, женское, социальное предпринимательство
+ak_zhol-0217	structural				0	заголовок V.1
+ak_zhol-0218	substantive	T04		goal	0	от контроля к координации
+ak_zhol-0219	substantive	T09	T04	instrument	0	целевые субсидии нуждающимся
+ak_zhol-0220	substantive	T04		goal	0	
+ak_zhol-0221	substantive	T04	T09	instrument	0	отказ от регулирования цен на СЗПТ
+ak_zhol-0222	substantive	T04		instrument	0	сервисная модель предупреждения
+ak_zhol-0223	substantive	T04		instrument	0	
+ak_zhol-0224	substantive	T02	T04	instrument	0	декриминализация экономических нарушений
+ak_zhol-0225	substantive	T02	T04	instrument	0	
+ak_zhol-0226	substantive	T02	T04	instrument	0	
+ak_zhol-0227	substantive	T02		instrument	0	залог вместо ареста
+ak_zhol-0228	substantive	T02	T00	achievement	0	поправка в УК об ОПГ, 2025
+ak_zhol-0229	substantive	T02		description	0	
+ak_zhol-0230	substantive	T02		problem	0	
+ak_zhol-0231	structural				0	заголовок V.2
+ak_zhol-0232	lead_in				0	П-03: обрыв на «требуется», вводит перечень
+ak_zhol-0233	substantive	T05	T00	achievement	0	внутристрановая ценность в Кодексе о недрах
+ak_zhol-0234	substantive	T05		problem	0	
+ak_zhol-0235	substantive	T05		instrument	0	ответственность недропользователей
+ak_zhol-0236	substantive	T05		problem	0	стоимость лицензий и техдокументации
+ak_zhol-0237	substantive	T05		instrument	0	субсидирование лицензий
+ak_zhol-0238	substantive	T04	T05	instrument	0	защита внутреннего рынка
+ak_zhol-0239	fragment				0	продолжение 0238
+ak_zhol-0240	substantive	T05		instrument	0	
+ak_zhol-0241	substantive	T05	T04	instrument	0	ночной тариф на электроэнергию
+ak_zhol-0242	substantive	T05		problem	0	
+ak_zhol-0243	substantive	T03	T05	description	0	
+ak_zhol-0244	substantive	T03	T05	instrument	0	снижение ввозных пошлин
+ak_zhol-0245	substantive	T05		goal	0	возврат стратегических активов ГМК
+ak_zhol-0246	substantive	T05		description	0	недра принадлежат народу
+ak_zhol-0247	substantive	T05		instrument	0	лаборатория контроля экспорта руд
+ak_zhol-0248	substantive	T05	T00	achievement	0	
+ak_zhol-0249	substantive	T05		description	0	
+ak_zhol-0250	substantive	T05		goal	0	
+ak_zhol-0251	substantive	T05	T04	instrument	0	преференции за местное содержание
+ak_zhol-0252	substantive	T06	T03	goal	0	климатическая повестка
+ak_zhol-0253	substantive	T06	T03	description	0	
+ak_zhol-0254	substantive	T06	T13	description	0	
+ak_zhol-0255	substantive	T06		problem	0	ледники, засухи, паводки, пожары
+ak_zhol-0256	substantive	T06	T03	problem	0	
+ak_zhol-0257	substantive	T06	T04	goal	0	
+ak_zhol-0258	substantive	T06	T04	goal	0	
+ak_zhol-0259	substantive	T06	T03	description	0	климатическое финансирование
+ak_zhol-0260	fragment				0	«Наконец, это…» — отсылка
+ak_zhol-0261	substantive	T05		description	0	
+ak_zhol-0262	substantive	T05	T06	goal	0	чистая угольная энергетика, накопители
+ak_zhol-0263	structural				0	заголовок V.3
+ak_zhol-0264	substantive	T03	T00	achievement	0	дифференцированные ставки в НК
+ak_zhol-0265	substantive	T03		problem	0	продолжение в 0266
+ak_zhol-0266	fragment				0	продолжение 0265
+ak_zhol-0267	substantive	T03		instrument	0	налог на сверхприбыли банков и сырьевиков
+ak_zhol-0268	substantive	T03		instrument	0	дифференцированный НДС
+ak_zhol-0269	fragment				0	продолжение 0268
+ak_zhol-0270	substantive	T03	T14	instrument	0	города опережающего развития, крипторынок
+ak_zhol-0271	substantive	T03	T14	instrument	0	
+ak_zhol-0272	substantive	T04	T11	description	0	
+ak_zhol-0273	substantive	T03	T04	instrument	0	ОКЭД для СНР, сделки B2B
+ak_zhol-0274	substantive	T04		description	0	ПОГРАНИЧНЫЙ. Похоже на риторику, но содержит утверждение о предпринимателях
+ak_zhol-0275	structural				0	заголовок V.4
+ak_zhol-0276	substantive	T03		goal	0	
+ak_zhol-0277	substantive	T03		instrument	0	пруденциальные нормы БВУ
+ak_zhol-0278	substantive	T03		instrument	0	
+ak_zhol-0279	substantive	T03		problem	0	фондовый рынок
+ak_zhol-0280	substantive	T03	T14	goal	0	крипторынок
+ak_zhol-0281	substantive	T03	T14	instrument	0	токены предприятий
+ak_zhol-0282	substantive	T03	T14	instrument	0	
+ak_zhol-0283	substantive	T03	T05	instrument	0	возврат до 50% инвестиций зачётом
+ak_zhol-0284	substantive	T03		goal	0	Инвестиционный штаб
+ak_zhol-0285	substantive	T03		problem	0	
+ak_zhol-0286	substantive	T03		problem	0	неэффективность СЭЗ
+ak_zhol-0287	substantive	T03		goal	0	
+ak_zhol-0288	substantive	T03		instrument	0	ответственность за отказ в преференциях
+ak_zhol-0289	fragment				0	«такие сигналы» — отсылка к 0288
+ak_zhol-0290	substantive	T03		description	0	
+ak_zhol-0291	substantive	T03	T04	instrument	0	освобождение от КПН реинвестируемой прибыли
+ak_zhol-0292	structural				0	заголовок V.5
+ak_zhol-0293	substantive	T04		goal	0	
+ak_zhol-0294	substantive	T03	T04	goal	0	мандат институтов развития
+ak_zhol-0295	substantive	T03		instrument	0	мандат «Байтерек»
+ak_zhol-0296	substantive	T03		instrument	0	возврат неосвоенных средств
+ak_zhol-0297	fragment				0	продолжение 0296
+ak_zhol-0298	fragment				0	объявление темы, сказуемое в 0299
+ak_zhol-0299	substantive	T04	T05	instrument	0	сокращение «дочек» нацкомпаний
+ak_zhol-0300	fragment				0	продолжение 0299
+ak_zhol-0301	substantive	T04		instrument	0	приватизация остальных структур
+ak_zhol-0302	substantive	T04		instrument	0	соотношение топ-менеджеров и производства
+ak_zhol-0303	substantive	T04		problem	0	СПК как барьер конкуренции
+ak_zhol-0304	substantive	T04		problem	0	
+ak_zhol-0305	substantive	T04	T07	instrument	0	преобразование СПК в стабфонды
+ak_zhol-0306	substantive	T04		description	0	
+ak_zhol-0307	substantive	T04	T00	achievement	0	запрет квазигоскомпаниям в закупках, 2025
+ak_zhol-0308	substantive	T04		problem	0	норма нивелирована приказом Минфина
+ak_zhol-0309	substantive	T04		commitment	0	
+ak_zhol-0310	substantive	T04		instrument	0	
+ak_zhol-0311	structural				0	заголовок V.6
+ak_zhol-0312	substantive	T05	T03	instrument	0	НДС на нефтегазовое оборудование
+ak_zhol-0313	substantive	T05		problem	0	
+ak_zhol-0314	substantive	T05		instrument	0	
+ak_zhol-0315	substantive	T04		goal	0	импортозамещение не самоцель
+ak_zhol-0316	substantive	T04		goal	0	
+ak_zhol-0317	substantive	T04		instrument	0	техническое регулирование
+ak_zhol-0318	substantive	T05	T13	goal	0	переговоры по контрактам и СРП
+ak_zhol-0319	substantive	T05	T01	instrument	0	информирование общества о результатах
+ak_zhol-0320	structural				0	заголовок раздела VI, разорван вёрсткой
+ak_zhol-0321	structural				0	продолжение заголовка VI
+ak_zhol-0322	substantive	T13		goal	0	многовекторность
+ak_zhol-0323	substantive	T13		goal	0	
+ak_zhol-0324	substantive	T13		goal	0	продолжение в 0325
+ak_zhol-0325	fragment				0	продолжение 0324
+ak_zhol-0326	substantive	T13		goal	0	международное право, отказ от военных методов
+ak_zhol-0327	substantive	T13		goal	0	обороноспособность
+ak_zhol-0328	substantive	T00	T01	commitment	0	

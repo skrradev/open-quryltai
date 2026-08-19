@@ -1,0 +1,245 @@
+unit_id	unit_kind_check	topic_primary	topic_secondary	statement_type	unclear	notes
+respublica-0001	structural				0	титул
+respublica-0002	structural				0	продолжение титула
+respublica-0003	substantive	T12		description	0	ценностная рамка «кто строит страну»; не о партии, поэтому не T00
+respublica-0004	substantive	T00		description	0	
+respublica-0005	substantive	T00		description	0	самопозиционирование партии
+respublica-0006	substantive	T01	T00	goal	0	защита Конституции
+respublica-0007	lead_in				0	
+respublica-0008	rhetorical				0	формула из четырёх слов без содержания
+respublica-0009	substantive	T00		description	0	описание устройства программы
+respublica-0010	structural				0	заголовок раздела I
+respublica-0011	substantive	T09		goal	0	
+respublica-0012	substantive	T03		goal	0	
+respublica-0013	substantive	T04		commitment	0	
+respublica-0014	structural				0	заголовок 1.1
+respublica-0015	lead_in				0	
+respublica-0016	substantive	T04		goal	0	читается только с lead
+respublica-0017	substantive	T04		goal	0	
+respublica-0018	structural				0	ПОГРАНИЧНЫЙ. Сегментатор дал substantive; «Экономический патриотизм.» — подзаголовок абзаца
+respublica-0019	substantive	T04		goal	0	
+respublica-0020	substantive	T04	T05	commitment	0	
+respublica-0021	substantive	T03		description	0	обоснование через зависимость от импорта
+respublica-0022	substantive	T03	T04	instrument	0	налоговые льготы
+respublica-0023	substantive	T04		instrument	0	
+respublica-0024	substantive	T04		instrument	0	
+respublica-0025	substantive	T05		instrument	0	индустриальные кластеры, глубокая переработка
+respublica-0026	substantive	T04		instrument	0	антидемпинг: торговая защита, не внешняя политика
+respublica-0027	substantive	T03		instrument	0	
+respublica-0028	substantive	T04		goal	0	
+respublica-0029	substantive	T04		instrument	0	
+respublica-0030	substantive	T04		instrument	0	
+respublica-0031	substantive	T03		instrument	0	единый платёж с ФОТ 25%
+respublica-0032	substantive	T04		instrument	0	
+respublica-0033	substantive	T04		goal	0	границы участия госкомпаний
+respublica-0034	structural				0	подзаголовок абзаца
+respublica-0035	substantive	T04		goal	0	
+respublica-0036	lead_in				0	
+respublica-0037	substantive	T04	T11	instrument	0	
+respublica-0038	substantive	T03		instrument	0	
+respublica-0039	substantive	T09		instrument	0	социальный контракт, адресность
+respublica-0040	substantive	T04	T12	instrument	0	креативный сектор
+respublica-0041	structural				0	заголовок 1.2
+respublica-0042	substantive	T03		goal	0	
+respublica-0043	substantive	T04		description	0	
+respublica-0044	substantive	T04		goal	0	
+respublica-0045	substantive	T03		description	0	честный импорт: бюджет и конкуренция
+respublica-0046	lead_in				0	
+respublica-0047	substantive	T05		instrument	0	
+respublica-0048	substantive	T04		instrument	0	антимонопольная политика
+respublica-0049	substantive	T04		instrument	0	
+respublica-0050	substantive	T07	T03	instrument	0	
+respublica-0051	substantive	T03	T14	instrument	0	серый импорт, прослеживание
+respublica-0052	substantive	T04		instrument	0	
+respublica-0053	structural				0	заголовок 1.3
+respublica-0054	substantive	T03		description	0	
+respublica-0055	substantive	T03		goal	0	
+respublica-0056	substantive	T03		instrument	0	
+respublica-0057	substantive	T03	T02	instrument	0	гарантии прав собственности
+respublica-0058	lead_in				0	ПОГРАНИЧНЫЙ. Сегментатор дал substantive; строка на «:» вводит 0059
+respublica-0059	substantive	T09	T11	instrument	0	частные школы, больницы, детсады
+respublica-0060	substantive	T03		instrument	0	
+respublica-0061	substantive	T03		goal	0	
+respublica-0062	substantive	T03	T14	instrument	0	антифрод-центр
+respublica-0063	substantive	T03		instrument	0	необанки
+respublica-0064	substantive	T03	T14	instrument	0	платёжная система «Сункар»
+respublica-0065	substantive	T03		instrument	0	страхование профответственности
+respublica-0066	substantive	T07		instrument	0	агрострахование
+respublica-0067	substantive	T03		instrument	0	
+respublica-0068	substantive	T09		instrument	0	пенсионный фонд
+respublica-0069	structural				0	заголовок 1.4
+respublica-0070	substantive	T11		goal	0	
+respublica-0071	substantive	T11		goal	0	
+respublica-0072	substantive	T11		goal	0	
+respublica-0073	lead_in				0	
+respublica-0074	substantive	T11		instrument	0	подушевое финансирование
+respublica-0075	substantive	T11		instrument	0	
+respublica-0076	substantive	T11	T14	instrument	0	ИИ в школах
+respublica-0077	substantive	T11		instrument	0	
+respublica-0078	substantive	T11		instrument	0	академическая свобода
+respublica-0079	substantive	T11	T14	instrument	0	экспорт образования
+respublica-0080	substantive	T11		instrument	0	аккредитация вузов
+respublica-0081	structural				0	заголовок 1.5
+respublica-0082	substantive	T10		goal	0	
+respublica-0083	substantive	T10		goal	0	ОСМС
+respublica-0084	substantive	T04	T10	instrument	0	ПОГРАНИЧНЫЙ. Лежит в разделе здравоохранения, но по содержанию — предельные наценки на товары
+respublica-0085	substantive	T10		instrument	0	
+respublica-0086	substantive	T10	T14	instrument	0	цифровизация ОСМС
+respublica-0087	substantive	T10		instrument	0	ОСМС в частных клиниках
+respublica-0088	substantive	T10		instrument	0	медицинский туризм
+respublica-0089	substantive	T10		instrument	0	
+respublica-0090	structural				0	заголовок 1.6
+respublica-0091	substantive	T09		goal	0	
+respublica-0092	substantive	T09		goal	0	доступность для людей с инвалидностью
+respublica-0093	substantive	T09		goal	0	
+respublica-0094	substantive	T09	T14	instrument	0	социальная модель инвалидности
+respublica-0095	substantive	T09		instrument	0	
+respublica-0096	substantive	T09	T08	instrument	0	аудит доступности среды
+respublica-0097	substantive	T09		instrument	0	уход за людьми с инвалидностью, досрочная пенсия
+respublica-0098	substantive	T09	T01	instrument	0	
+respublica-0099	substantive	T04	T09	instrument	0	производственный травматизм
+respublica-0100	structural				0	заголовок раздела II
+respublica-0101	substantive	T01		goal	0	
+respublica-0102	substantive	T01		description	0	
+respublica-0103	substantive	T01		description	0	П-14: пропозиция есть — переклассифицировано из rhetorical
+respublica-0104	substantive	T01		goal	0	
+respublica-0105	substantive	T01		description	0	
+respublica-0106	structural				0	заголовок 2.1
+respublica-0107	substantive	T01		goal	0	
+respublica-0108	substantive	T01	T02	goal	0	
+respublica-0109	substantive	T14		instrument	0	
+respublica-0110	substantive	T04	T14	commitment	0	снижение отчётности
+respublica-0111	substantive	T01	T03	instrument	0	открытые бюджеты и данные
+respublica-0112	substantive	T01		goal	0	
+respublica-0113	substantive	T02		instrument	0	защита от рейдерства
+respublica-0114	substantive	T02		instrument	0	досудебная медиация
+respublica-0115	substantive	T01		instrument	0	портал «Открытые НПА»
+respublica-0116	substantive	T04		instrument	0	профилактические нормы вместо штрафов
+respublica-0117	structural				0	заголовок 2.2
+respublica-0118	substantive	T04		description	0	
+respublica-0119	substantive	T04		goal	0	
+respublica-0120	substantive	T04		commitment	0	
+respublica-0121	substantive	T04		problem	0	монополизация
+respublica-0122	substantive	T04	T08	instrument	0	
+respublica-0123	substantive	T04		instrument	0	
+respublica-0124	substantive	T06		goal	0	
+respublica-0125	substantive	T04	T11	instrument	0	
+respublica-0126	substantive	T11	T04	instrument	0	НИОКР
+respublica-0127	substantive	T03		goal	0	
+respublica-0128	substantive	T03		commitment	0	
+respublica-0129	structural				0	заголовок 2.3
+respublica-0130	substantive	T09		description	0	
+respublica-0131	substantive	T09		goal	0	
+respublica-0132	substantive	T09		goal	0	
+respublica-0133	substantive	T11		instrument	0	
+respublica-0134	substantive	T11		instrument	0	
+respublica-0135	substantive	T12		instrument	0	массовый спорт, параспорт
+respublica-0136	substantive	T12	T14	instrument	0	киберспорт
+respublica-0137	substantive	T02		goal	0	
+respublica-0138	substantive	T06		description	0	ДЕФЕКТ СЕГМЕНТАЦИИ: заголовок 2.4 слился с предложением, поэтому 2.4 отсутствует в нумерации
+respublica-0139	substantive	T06		goal	0	животные названы, но утверждение о природе в целом — см. перепись T16
+respublica-0140	substantive	T06		instrument	0	мониторинг воздуха и воды
+respublica-0141	substantive	T06	T08	instrument	0	раздельный сбор мусора
+respublica-0142	substantive	T06	T03	instrument	0	НДС для сортировщиков ТБО
+respublica-0143	substantive	T06	T02	instrument	0	
+respublica-0144	substantive	T06		instrument	0	частные леса, восстановление после пожаров
+respublica-0145	substantive	T08	T06	instrument	0	сбор и очистка дождевой воды
+respublica-0146	substantive	T16	T09	instrument	0	приюты для животных — принято в перепись T16
+respublica-0147	structural				0	заголовок 2.5
+respublica-0148	substantive	T12		goal	0	
+respublica-0149	substantive	T12		description	0	
+respublica-0150	substantive	T12	T00	goal	0	
+respublica-0151	substantive	T01	T12	goal	0	перечень государственных принципов
+respublica-0152	substantive	T12		goal	0	культурное наследие этносов
+respublica-0153	lead_in				0	
+respublica-0154	substantive	T12	T04	instrument	0	ПОГРАНИЧНЫЙ. Строка на «:», но несёт самостоятельное предложение; примеры вынесены в 0155
+respublica-0155	fragment				0	перечень примеров к 0154, отдельного смысла нет
+respublica-0156	substantive	T12	T13	instrument	0	соотечественники за рубежом
+respublica-0157	substantive	T03	T12	instrument	0	
+respublica-0158	substantive	T12	T04	instrument	0	ремёсла и туризм
+respublica-0159	substantive	T12	T03	instrument	0	запрет на импортные сувениры в госзакупе
+respublica-0160	substantive	T12		instrument	0	
+respublica-0161	substantive	T12	T11	instrument	0	
+respublica-0162	structural				0	заголовок раздела III
+respublica-0163	substantive	T01		goal	0	
+respublica-0164	substantive	T01	T04	goal	0	
+respublica-0165	substantive	T01		commitment	0	сервисное государство
+respublica-0166	structural				0	заголовок 3.1
+respublica-0167	substantive	T04		goal	0	
+respublica-0168	substantive	T04		goal	0	приватизация непрофильных активов
+respublica-0169	substantive	T04	T03	instrument	0	
+respublica-0170	substantive	T04		instrument	0	лицензирование и проверки
+respublica-0171	substantive	T04	T01	instrument	0	
+respublica-0172	substantive	T04		instrument	0	СРО
+respublica-0173	substantive	T01	T14	instrument	0	численность госслужащих
+respublica-0174	substantive	T03		instrument	0	принцип «1 к 1»
+respublica-0175	structural				0	заголовок 3.2
+respublica-0176	substantive	T08		goal	0	
+respublica-0177	substantive	T08		problem	0	региональная диспропорция
+respublica-0178	fragment				0	«Мы намерены устранить её» — читается только с 0177
+respublica-0179	substantive	T01	T08	instrument	0	регулятор естественных монополий
+respublica-0180	substantive	T08		instrument	0	ПОГРАНИЧНЫЙ. Строка на «:» с самостоятельным содержанием; детали в 0181
+respublica-0181	fragment				0	детализация к 0180
+respublica-0182	substantive	T08	T03	instrument	0	инфраструктурные облигации
+respublica-0183	substantive	T08	T14	instrument	0	
+respublica-0184	substantive	T08		instrument	0	логистика, авто и ЖД
+respublica-0185	substantive	T08	T05	instrument	0	электроэнергетика, газификация, интернет
+respublica-0186	structural				0	заголовок 3.3
+respublica-0187	substantive	T01		description	0	
+respublica-0188	substantive	T01		goal	0	П-14: переклассифицировано из rhetorical
+respublica-0189	substantive	T14		instrument	0	
+respublica-0190	substantive	T03		instrument	0	
+respublica-0191	substantive	T01		instrument	0	лонгитюдные исследования
+respublica-0192	substantive	T01	T14	instrument	0	ePetition
+respublica-0193	substantive	T02		instrument	0	антикоррупционные меры
+respublica-0194	structural				0	заголовок 3.4
+respublica-0195	substantive	T14		description	0	П-14: переклассифицировано из rhetorical
+respublica-0196	substantive	T14		goal	0	
+respublica-0197	substantive	T14		instrument	0	пилоты: беспилотное такси, дроны, криптоактивы
+respublica-0198	substantive	T14	T04	instrument	0	адаптация работников
+respublica-0199	substantive	T14		instrument	0	запрет при существенных рисках
+respublica-0200	structural				0	заголовок раздела IV
+respublica-0201	substantive	T13		goal	0	
+respublica-0202	substantive	T13		description	0	расширенное понятие безопасности
+respublica-0203	substantive	T13		goal	0	
+respublica-0204	structural				0	заголовок 4.1
+respublica-0205	substantive	T13		problem	0	
+respublica-0206	substantive	T13		goal	0	
+respublica-0207	substantive	T13		instrument	0	контрактная служба
+respublica-0208	substantive	T13	T09	instrument	0	лудомания среди военнослужащих
+respublica-0209	substantive	T13		instrument	0	мобилизационный резерв
+respublica-0210	substantive	T13	T02	instrument	0	
+respublica-0211	substantive	T13		instrument	0	
+respublica-0212	substantive	T13	T14	instrument	0	киберподразделения
+respublica-0213	substantive	T13	T14	instrument	0	технологии двойного назначения
+respublica-0214	substantive	T13		instrument	0	
+respublica-0215	structural				0	заголовок 4.2
+respublica-0216	substantive	T02		goal	0	
+respublica-0217	substantive	T08	T02	commitment	0	безопасные дороги и дворы
+respublica-0218	substantive	T15	T02	goal	0	НЕ ПОЙМАН НЕВОДОМ ПЕРЕПИСИ: сталкинг, похищение с целью брака, вред женщинам — без корня «насил». §4.2 правило приоритета T15 над T02
+respublica-0219	substantive	T15	T02	instrument	0	бытовое насилие и буллинг — принято в перепись
+respublica-0220	substantive	T13		description	0	ДЕФЕКТ СЕГМЕНТАЦИИ: заголовок слился с предложением, как в 0138
+respublica-0221	substantive	T07	T05	goal	0	смешанное: продовольствие, вода, энергетика
+respublica-0222	lead_in				0	
+respublica-0223	substantive	T07		instrument	0	
+respublica-0224	substantive	T07	T11	instrument	0	аграрная наука
+respublica-0225	substantive	T07	T09	instrument	0	молодые специалисты на село
+respublica-0226	substantive	T07		goal	0	
+respublica-0227	substantive	T07	T08	instrument	0	хранение и переработка
+respublica-0228	substantive	T07	T14	instrument	0	беспилотная сельхозтехника
+respublica-0229	structural				0	подзаголовок «Фармацевтическая безопасность»
+respublica-0230	substantive	T10	T05	instrument	0	локализация фармсубстанций
+respublica-0231	substantive	T10		instrument	0	клинические исследования
+respublica-0232	substantive	T08	T14	instrument	0	водоотведение и водопотребление — ЖКХ
+respublica-0233	substantive	T07	T06	instrument	0	ПРОБЕЛ КОДБУКА: правило по воде разводит орошение/качество/трансграничные, но не распределение квот
+respublica-0234	substantive	T07	T06	instrument	0	водосбережение в сельском хозяйстве
+respublica-0235	substantive	T08	T06	instrument	0	почти дословный повтор 0145
+respublica-0236	lead_in				0	
+respublica-0237	substantive	T05		instrument	0	атомная, водородная, ВИЭ
+respublica-0238	substantive	T08	T05	instrument	0	
+respublica-0239	substantive	T05	T08	instrument	0	энергоэффективность
+respublica-0240	substantive	T14	T13	instrument	0	киберучения
+respublica-0241	substantive	T00		description	0	
+respublica-0242	substantive	T00		goal	0	
+respublica-0243	substantive	T00		description	0	
+respublica-0244	substantive	T04		goal	0	

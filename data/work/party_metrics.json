@@ -1,0 +1,654 @@
+{
+ "generated_from": "V3__create_candidate.sql (CEC decision appendices)",
+ "election_year": 2026,
+ "method": {
+  "youth_max_age": 35,
+  "republican_cities": [
+   "astana",
+   "almaty",
+   "shymkent"
+  ],
+  "state_employers": [
+   "STATE_BODY",
+   "QUASI_GOVERNMENTAL"
+  ],
+  "position_buckets": [
+   "1-10",
+   "11-30",
+   "31-60",
+   "61+"
+  ],
+  "note": "Every value is a count or share of an official registry field. No axis scores a party."
+ },
+ "totals": {
+  "candidates": 545,
+  "parties": 7,
+  "women_share": 0.3155963302752294,
+  "capital_share": 0.5981651376146789,
+  "distinct_places": 48,
+  "duplicate_names": []
+ },
+ "sectors": [
+  "AGRICULTURE",
+  "BUSINESS",
+  "CIVIL_SOCIETY",
+  "CULTURE",
+  "EDUCATION_AND_SCIENCE",
+  "GOVERNMENT",
+  "HEALTHCARE",
+  "LAW",
+  "LEGISLATOR",
+  "MEDIA",
+  "OTHER_OR_UNCLEAR",
+  "PARTY_APPARATUS",
+  "SPORT"
+ ],
+ "parties": [
+  "adilet",
+  "respublica",
+  "npk",
+  "auyl",
+  "ak_zhol",
+  "baitaq",
+  "osdp"
+ ],
+ "per_party": {
+  "adilet": {
+   "candidates": 186,
+   "women": 72,
+   "women_share": 0.3870967741935484,
+   "women_top10": 3,
+   "top10_size": 10,
+   "median_age": 45,
+   "mean_age": 45.70967741935484,
+   "youth_share": 0.12903225806451613,
+   "incumbent_share": 0.11827956989247312,
+   "insider_share": 0.07526881720430108,
+   "state_share": 0.543010752688172,
+   "top_executive_share": 0.553763440860215,
+   "capital_share": 0.5752688172043011,
+   "places": 29,
+   "sector_hhi": 0.14643311365475778,
+   "sector_shares": {
+    "AGRICULTURE": 0.010752688172043012,
+    "BUSINESS": 0.20430107526881722,
+    "CIVIL_SOCIETY": 0.15053763440860216,
+    "CULTURE": 0.005376344086021506,
+    "EDUCATION_AND_SCIENCE": 0.08602150537634409,
+    "GOVERNMENT": 0.1827956989247312,
+    "HEALTHCARE": 0.026881720430107527,
+    "LAW": 0.005376344086021506,
+    "LEGISLATOR": 0.1774193548387097,
+    "MEDIA": 0.053763440860215055,
+    "OTHER_OR_UNCLEAR": 0.005376344086021506,
+    "PARTY_APPARATUS": 0.07526881720430108,
+    "SPORT": 0.016129032258064516
+   },
+   "median_position_chars": 52,
+   "photos_found": 35,
+   "by_position": {
+    "1-10": {
+     "size": 10,
+     "women_share": 0.3,
+     "youth_share": 0.0
+    },
+    "11-30": {
+     "size": 20,
+     "women_share": 0.3,
+     "youth_share": 0.15
+    },
+    "31-60": {
+     "size": 30,
+     "women_share": 0.2,
+     "youth_share": 0.13333333333333333
+    },
+    "61+": {
+     "size": 126,
+     "women_share": 0.4523809523809524,
+     "youth_share": 0.1349206349206349
+    }
+   }
+  },
+  "respublica": {
+   "candidates": 75,
+   "women": 31,
+   "women_share": 0.41333333333333333,
+   "women_top10": 4,
+   "top10_size": 10,
+   "median_age": 41,
+   "mean_age": 41.6,
+   "youth_share": 0.09333333333333334,
+   "incumbent_share": 0.06666666666666667,
+   "insider_share": 0.2,
+   "state_share": 0.28,
+   "top_executive_share": 0.4666666666666667,
+   "capital_share": 0.6666666666666666,
+   "places": 20,
+   "sector_hhi": 0.24088888888888893,
+   "sector_shares": {
+    "AGRICULTURE": 0.013333333333333334,
+    "BUSINESS": 0.4266666666666667,
+    "CIVIL_SOCIETY": 0.013333333333333334,
+    "CULTURE": 0.02666666666666667,
+    "EDUCATION_AND_SCIENCE": 0.05333333333333334,
+    "GOVERNMENT": 0.06666666666666667,
+    "HEALTHCARE": 0.04,
+    "LAW": 0.0,
+    "LEGISLATOR": 0.06666666666666667,
+    "MEDIA": 0.04,
+    "OTHER_OR_UNCLEAR": 0.0,
+    "PARTY_APPARATUS": 0.2,
+    "SPORT": 0.05333333333333334
+   },
+   "median_position_chars": 49,
+   "photos_found": 9,
+   "by_position": {
+    "1-10": {
+     "size": 10,
+     "women_share": 0.4,
+     "youth_share": 0.0
+    },
+    "11-30": {
+     "size": 20,
+     "women_share": 0.4,
+     "youth_share": 0.1
+    },
+    "31-60": {
+     "size": 30,
+     "women_share": 0.4666666666666667,
+     "youth_share": 0.13333333333333333
+    },
+    "61+": {
+     "size": 15,
+     "women_share": 0.3333333333333333,
+     "youth_share": 0.06666666666666667
+    }
+   }
+  },
+  "npk": {
+   "candidates": 72,
+   "women": 18,
+   "women_share": 0.25,
+   "women_top10": 3,
+   "top10_size": 10,
+   "median_age": 44,
+   "mean_age": 46.72222222222222,
+   "youth_share": 0.125,
+   "incumbent_share": 0.05555555555555555,
+   "insider_share": 0.3194444444444444,
+   "state_share": 0.2916666666666667,
+   "top_executive_share": 0.4861111111111111,
+   "capital_share": 0.75,
+   "places": 18,
+   "sector_hhi": 0.1905864197530864,
+   "sector_shares": {
+    "AGRICULTURE": 0.0,
+    "BUSINESS": 0.2222222222222222,
+    "CIVIL_SOCIETY": 0.09722222222222222,
+    "CULTURE": 0.05555555555555555,
+    "EDUCATION_AND_SCIENCE": 0.1111111111111111,
+    "GOVERNMENT": 0.09722222222222222,
+    "HEALTHCARE": 0.0,
+    "LAW": 0.041666666666666664,
+    "LEGISLATOR": 0.05555555555555555,
+    "MEDIA": 0.0,
+    "OTHER_OR_UNCLEAR": 0.0,
+    "PARTY_APPARATUS": 0.3194444444444444,
+    "SPORT": 0.0
+   },
+   "median_position_chars": 65,
+   "photos_found": 9,
+   "by_position": {
+    "1-10": {
+     "size": 10,
+     "women_share": 0.3,
+     "youth_share": 0.1
+    },
+    "11-30": {
+     "size": 20,
+     "women_share": 0.4,
+     "youth_share": 0.2
+    },
+    "31-60": {
+     "size": 30,
+     "women_share": 0.1,
+     "youth_share": 0.06666666666666667
+    },
+    "61+": {
+     "size": 12,
+     "women_share": 0.3333333333333333,
+     "youth_share": 0.16666666666666666
+    }
+   }
+  },
+  "auyl": {
+   "candidates": 69,
+   "women": 20,
+   "women_share": 0.2898550724637681,
+   "women_top10": 2,
+   "top10_size": 10,
+   "median_age": 48,
+   "mean_age": 48.6231884057971,
+   "youth_share": 0.10144927536231885,
+   "incumbent_share": 0.0,
+   "insider_share": 0.3333333333333333,
+   "state_share": 0.3188405797101449,
+   "top_executive_share": 0.4782608695652174,
+   "capital_share": 0.5362318840579711,
+   "places": 24,
+   "sector_hhi": 0.20772946859903382,
+   "sector_shares": {
+    "AGRICULTURE": 0.057971014492753624,
+    "BUSINESS": 0.21739130434782608,
+    "CIVIL_SOCIETY": 0.043478260869565216,
+    "CULTURE": 0.0,
+    "EDUCATION_AND_SCIENCE": 0.17391304347826086,
+    "GOVERNMENT": 0.10144927536231885,
+    "HEALTHCARE": 0.0,
+    "LAW": 0.0,
+    "LEGISLATOR": 0.057971014492753624,
+    "MEDIA": 0.014492753623188406,
+    "OTHER_OR_UNCLEAR": 0.0,
+    "PARTY_APPARATUS": 0.3333333333333333,
+    "SPORT": 0.0
+   },
+   "median_position_chars": 68,
+   "photos_found": 5,
+   "by_position": {
+    "1-10": {
+     "size": 10,
+     "women_share": 0.2,
+     "youth_share": 0.0
+    },
+    "11-30": {
+     "size": 20,
+     "women_share": 0.1,
+     "youth_share": 0.1
+    },
+    "31-60": {
+     "size": 30,
+     "women_share": 0.26666666666666666,
+     "youth_share": 0.13333333333333333
+    },
+    "61+": {
+     "size": 9,
+     "women_share": 0.8888888888888888,
+     "youth_share": 0.1111111111111111
+    }
+   }
+  },
+  "ak_zhol": {
+   "candidates": 63,
+   "women": 10,
+   "women_share": 0.15873015873015872,
+   "women_top10": 1,
+   "top10_size": 10,
+   "median_age": 46,
+   "mean_age": 46.65079365079365,
+   "youth_share": 0.15873015873015872,
+   "incumbent_share": 0.09523809523809523,
+   "insider_share": 0.2857142857142857,
+   "state_share": 0.15873015873015872,
+   "top_executive_share": 0.5396825396825397,
+   "capital_share": 0.5079365079365079,
+   "places": 23,
+   "sector_hhi": 0.3076341647770219,
+   "sector_shares": {
+    "AGRICULTURE": 0.0,
+    "BUSINESS": 0.4603174603174603,
+    "CIVIL_SOCIETY": 0.06349206349206349,
+    "CULTURE": 0.0,
+    "EDUCATION_AND_SCIENCE": 0.047619047619047616,
+    "GOVERNMENT": 0.031746031746031744,
+    "HEALTHCARE": 0.0,
+    "LAW": 0.015873015873015872,
+    "LEGISLATOR": 0.07936507936507936,
+    "MEDIA": 0.015873015873015872,
+    "OTHER_OR_UNCLEAR": 0.0,
+    "PARTY_APPARATUS": 0.2857142857142857,
+    "SPORT": 0.0
+   },
+   "median_position_chars": 64,
+   "photos_found": 63,
+   "by_position": {
+    "1-10": {
+     "size": 10,
+     "women_share": 0.1,
+     "youth_share": 0.4
+    },
+    "11-30": {
+     "size": 20,
+     "women_share": 0.25,
+     "youth_share": 0.2
+    },
+    "31-60": {
+     "size": 30,
+     "women_share": 0.1,
+     "youth_share": 0.06666666666666667
+    },
+    "61+": {
+     "size": 3,
+     "women_share": 0.3333333333333333,
+     "youth_share": 0.0
+    }
+   }
+  },
+  "baitaq": {
+   "candidates": 47,
+   "women": 11,
+   "women_share": 0.23404255319148937,
+   "women_top10": 2,
+   "top10_size": 10,
+   "median_age": 46,
+   "mean_age": 46.148936170212764,
+   "youth_share": 0.0851063829787234,
+   "incumbent_share": 0.0,
+   "insider_share": 0.1702127659574468,
+   "state_share": 0.1702127659574468,
+   "top_executive_share": 0.44680851063829785,
+   "capital_share": 0.6595744680851063,
+   "places": 15,
+   "sector_hhi": 0.3725667722951562,
+   "sector_shares": {
+    "AGRICULTURE": 0.0,
+    "BUSINESS": 0.574468085106383,
+    "CIVIL_SOCIETY": 0.02127659574468085,
+    "CULTURE": 0.0,
+    "EDUCATION_AND_SCIENCE": 0.0851063829787234,
+    "GOVERNMENT": 0.0425531914893617,
+    "HEALTHCARE": 0.0425531914893617,
+    "LAW": 0.0425531914893617,
+    "LEGISLATOR": 0.02127659574468085,
+    "MEDIA": 0.0,
+    "OTHER_OR_UNCLEAR": 0.0,
+    "PARTY_APPARATUS": 0.1702127659574468,
+    "SPORT": 0.0
+   },
+   "median_position_chars": 43,
+   "photos_found": 47,
+   "by_position": {
+    "1-10": {
+     "size": 10,
+     "women_share": 0.2,
+     "youth_share": 0.0
+    },
+    "11-30": {
+     "size": 20,
+     "women_share": 0.3,
+     "youth_share": 0.05
+    },
+    "31-60": {
+     "size": 17,
+     "women_share": 0.17647058823529413,
+     "youth_share": 0.17647058823529413
+    },
+    "61+": {
+     "size": 0,
+     "women_share": null,
+     "youth_share": null
+    }
+   }
+  },
+  "osdp": {
+   "candidates": 33,
+   "women": 10,
+   "women_share": 0.30303030303030304,
+   "women_top10": 4,
+   "top10_size": 10,
+   "median_age": 47,
+   "mean_age": 45.90909090909091,
+   "youth_share": 0.18181818181818182,
+   "incumbent_share": 0.12121212121212122,
+   "insider_share": 0.8787878787878788,
+   "state_share": 0.06060606060606061,
+   "top_executive_share": 0.5757575757575758,
+   "capital_share": 0.45454545454545453,
+   "places": 16,
+   "sector_hhi": 0.775941230486685,
+   "sector_shares": {
+    "AGRICULTURE": 0.0,
+    "BUSINESS": 0.0,
+    "CIVIL_SOCIETY": 0.030303030303030304,
+    "CULTURE": 0.0,
+    "EDUCATION_AND_SCIENCE": 0.0,
+    "GOVERNMENT": 0.030303030303030304,
+    "HEALTHCARE": 0.0,
+    "LAW": 0.030303030303030304,
+    "LEGISLATOR": 0.030303030303030304,
+    "MEDIA": 0.0,
+    "OTHER_OR_UNCLEAR": 0.0,
+    "PARTY_APPARATUS": 0.8787878787878788,
+    "SPORT": 0.0
+   },
+   "median_position_chars": 53,
+   "photos_found": 6,
+   "by_position": {
+    "1-10": {
+     "size": 10,
+     "women_share": 0.4,
+     "youth_share": 0.3
+    },
+    "11-30": {
+     "size": 20,
+     "women_share": 0.3,
+     "youth_share": 0.15
+    },
+    "31-60": {
+     "size": 3,
+     "women_share": 0.0,
+     "youth_share": 0.0
+    },
+    "61+": {
+     "size": 0,
+     "women_share": null,
+     "youth_share": null
+    }
+   }
+  }
+ },
+ "by_position_overall": {
+  "1-10": {
+   "size": 70,
+   "women_share": 0.2714285714285714,
+   "youth_share": 0.11428571428571428,
+   "parties": [
+    "adilet",
+    "ak_zhol",
+    "auyl",
+    "baitaq",
+    "npk",
+    "osdp",
+    "respublica"
+   ]
+  },
+  "11-30": {
+   "size": 140,
+   "women_share": 0.29285714285714287,
+   "youth_share": 0.1357142857142857,
+   "parties": [
+    "adilet",
+    "ak_zhol",
+    "auyl",
+    "baitaq",
+    "npk",
+    "osdp",
+    "respublica"
+   ]
+  },
+  "31-60": {
+   "size": 170,
+   "women_share": 0.21764705882352942,
+   "youth_share": 0.11176470588235295,
+   "parties": [
+    "adilet",
+    "ak_zhol",
+    "auyl",
+    "baitaq",
+    "npk",
+    "osdp",
+    "respublica"
+   ]
+  },
+  "61+": {
+   "size": 165,
+   "women_share": 0.45454545454545453,
+   "youth_share": 0.12727272727272726,
+   "parties": [
+    "adilet",
+    "ak_zhol",
+    "auyl",
+    "npk",
+    "respublica"
+   ]
+  }
+ },
+ "similarity": [
+  {
+   "a": "respublica",
+   "b": "ak_zhol",
+   "cosine": 0.973367517727038
+  },
+  {
+   "a": "respublica",
+   "b": "baitaq",
+   "cosine": 0.9677904463040937
+  },
+  {
+   "a": "npk",
+   "b": "auyl",
+   "cosine": 0.9620638560010578
+  },
+  {
+   "a": "ak_zhol",
+   "b": "baitaq",
+   "cosine": 0.9516793045170789
+  },
+  {
+   "a": "npk",
+   "b": "ak_zhol",
+   "cosine": 0.8804205477666991
+  },
+  {
+   "a": "auyl",
+   "b": "ak_zhol",
+   "cosine": 0.8481251358797168
+  },
+  {
+   "a": "respublica",
+   "b": "npk",
+   "cosine": 0.8288395900938469
+  },
+  {
+   "a": "respublica",
+   "b": "auyl",
+   "cosine": 0.8102798610973572
+  },
+  {
+   "a": "npk",
+   "b": "baitaq",
+   "cosine": 0.7529937723606913
+  },
+  {
+   "a": "npk",
+   "b": "osdp",
+   "cosine": 0.7529768279585323
+  },
+  {
+   "a": "auyl",
+   "b": "osdp",
+   "cosine": 0.7449388285218125
+  },
+  {
+   "a": "adilet",
+   "b": "respublica",
+   "cosine": 0.7305327547958527
+  },
+  {
+   "a": "auyl",
+   "b": "baitaq",
+   "cosine": 0.7293363012036908
+  },
+  {
+   "a": "adilet",
+   "b": "npk",
+   "cosine": 0.7290257964419832
+  },
+  {
+   "a": "adilet",
+   "b": "ak_zhol",
+   "cosine": 0.7068519265774739
+  },
+  {
+   "a": "adilet",
+   "b": "auyl",
+   "cosine": 0.695150523457014
+  },
+  {
+   "a": "adilet",
+   "b": "baitaq",
+   "cosine": 0.6577237168125335
+  },
+  {
+   "a": "ak_zhol",
+   "b": "osdp",
+   "cosine": 0.5257206916348404
+  },
+  {
+   "a": "respublica",
+   "b": "osdp",
+   "cosine": 0.4168087779952785
+  },
+  {
+   "a": "baitaq",
+   "b": "osdp",
+   "cosine": 0.2853965277287799
+  },
+  {
+   "a": "adilet",
+   "b": "osdp",
+   "cosine": 0.242629034456705
+  }
+ ],
+ "top_places": [
+  [
+   "astana",
+   223
+  ],
+  [
+   "almaty",
+   79
+  ],
+  [
+   "shymkent",
+   24
+  ],
+  [
+   "karagandy",
+   17
+  ],
+  [
+   "atyrau",
+   14
+  ],
+  [
+   "taraz",
+   13
+  ],
+  [
+   "oral",
+   13
+  ],
+  [
+   "petropavl",
+   12
+  ],
+  [
+   "aktau",
+   12
+  ],
+  [
+   "aktobe",
+   12
+  ]
+ ]
+}

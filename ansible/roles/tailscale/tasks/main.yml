@@ -1,0 +1,34 @@
+---
+- name: Add Tailscale apt signing key
+  get_url:
+    url: "https://pkgs.tailscale.com/stable/ubuntu/{{ ansible_distribution_release }}.noarmor.gpg"
+    dest: /usr/share/keyrings/tailscale-archive-keyring.gpg
+    mode: "0644"
+
+- name: Add Tailscale apt repository
+  get_url:
+    url: "https://pkgs.tailscale.com/stable/ubuntu/{{ ansible_distribution_release }}.tailscale-keyring.list"
+    dest: /etc/apt/sources.list.d/tailscale.list
+    mode: "0644"
+
+- name: Install Tailscale
+  apt:
+    name: tailscale
+    state: present
+    update_cache: true
+
+- name: Ensure tailscaled is running and enabled
+  service:
+    name: tailscaled
+    state: started
+    enabled: true
+
+- name: Bring Tailscale up and join the tailnet
+  command: >-
+    tailscale up
+    --authkey {{ lookup('env', 'TAILSCALE_AUTH_KEY') }}
+    --hostname {{ inventory_hostname }}
+    --ssh
+  register: tailscale_up
+  changed_when: "'Success' in tailscale_up.stdout or tailscale_up.rc == 0"
+  # Idempotent: if already connected, `tailscale up` is a no-op.

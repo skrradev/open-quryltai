@@ -1,0 +1,137 @@
+---
+- name: Check required environment variables
+  assert:
+    that:
+      - item is defined and item != ''
+    fail_msg: "Required environment variable {{ item }} must be set"
+  loop:
+    - "{{ pg_root_user_pass }}"
+    - "{{ pg_app_user_pass }}"
+  no_log: true
+
+- name: Install prerequisites
+  apt:
+    name:
+      - curl
+      - ca-certificates
+    state: present
+    update_cache: yes
+    cache_valid_time: 3600
+
+- name: Create PostgreSQL GPG directory
+  file:
+    path: /usr/share/postgresql-common/pgdg
+    state: directory
+    mode: "0755"
+
+- name: Download PostgreSQL repository signing key
+  get_url:
+    url: https://www.postgresql.org/media/keys/ACCC4CF8.asc
+    dest: /usr/share/postgresql-common/pgdg/apt.postgresql.org.asc
+    mode: "0644"
+
+- name: Add PostgreSQL repository
+  apt_repository:
+    repo: "deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt {{ ansible_distribution_release }}-pgdg main"
+    state: present
+    filename: pgdg
+
+- name: Install PostgreSQL 16
+  apt:
+    name: postgresql-16
+    state: present
+    update_cache: yes
+
+- name: Ensure PostgreSQL is started and enabled
+  service:
+    name: postgresql
+    state: started
+    enabled: yes
+
+- name: Install Python PostgreSQL dependencies
+  apt:
+    name:
+      - python3-psycopg2
+      - acl
+    state: present
+
+- name: Wait for PostgreSQL to accept connections
+  postgresql_ping:
+    db: postgres
+  become: yes
+  become_user: postgres
+  register: pg_ready
+  until: pg_ready is success
+  retries: 10
+  delay: 3
+
+- name: Set postgres superuser password
+  postgresql_user:
+    user: postgres
+    password: "{{ pg_root_user_pass }}"
+  become: yes
+  become_user: postgres
+
+- name: Create application user
+  postgresql_user:
+    name: "{{ pg_app_user }}"
+    password: "{{ pg_app_user_pass }}"
+    state: present
+  become: yes
+  become_user: postgres
+
+- name: Create application database owned by the app user
+  postgresql_db:
+    name: "{{ pg_app_db_name }}"
+    owner: "{{ pg_app_user }}"
+    encoding: UTF-8
+    state: present
+  become: yes
+  become_user: postgres
+
+# The app user runs Flyway (DDL) and app DML, so it owns the public schema.
+- name: Make the app user own the public schema
+  postgresql_query:
+    db: "{{ pg_app_db_name }}"
+    query: "ALTER SCHEMA public OWNER TO {{ pg_app_user }};"
+  become: yes
+  become_user: postgres
+
+- name: Apply PostgreSQL performance settings
+  lineinfile:
+    path: /etc/postgresql/16/main/postgresql.conf
+    regexp: "^#?{{ item.param }}\\s*=.*"
+    line: "{{ item.param }} = {{ item.value }}"
+    state: present
+  loop:
+    - { param: "shared_buffers", value: "{{ pg_shared_buffers }}" }
+    - { param: "effective_cache_size", value: "{{ pg_effective_cache_size }}" }
+    - { param: "work_mem", value: "{{ pg_work_mem }}" }
+    - { param: "maintenance_work_mem", value: "{{ pg_maintenance_work_mem }}" }
+    - { param: "max_connections", value: "{{ pg_max_connections }}" }
+    - { param: "random_page_cost", value: "{{ pg_random_page_cost }}" }
+    - { param: "checkpoint_completion_target", value: "{{ pg_checkpoint_completion_target }}" }
+    - { param: "wal_buffers", value: "{{ pg_wal_buffers }}" }
+    - { param: "max_parallel_workers_per_gather", value: "{{ pg_max_parallel_workers_per_gather }}" }
+    - { param: "max_worker_processes", value: "{{ pg_max_worker_processes }}" }
+    - { param: "autovacuum_vacuum_scale_factor", value: "{{ pg_autovacuum_vacuum_scale_factor }}" }
+    - { param: "autovacuum_analyze_scale_factor", value: "{{ pg_autovacuum_analyze_scale_factor }}" }
+  notify: restart postgresql
+
+# Postgres stays bound to localhost (default). The backend connects on
+# 127.0.0.1:5432, so no listen_addresses or pg_hba changes are needed.
+
+- name: Force notified handlers to run now
+  meta: flush_handlers
+
+- name: Verify the application database is reachable
+  postgresql_query:
+    db: "{{ pg_app_db_name }}"
+    query: "SELECT 1;"
+  become: yes
+  become_user: postgres
+  register: db_check
+  until: db_check is success
+  retries: 3
+  delay: 5
+  changed_when: false

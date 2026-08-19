@@ -1,0 +1,12 @@
+---
+# Bind to loopback only — the backend connects locally; nothing external.
+redis_bind_addresses:
+  - "127.0.0.1"
+  - "::1"
+
+# Memory: small cache for rate-limit counters (server also runs Postgres + JVM).
+redis_max_memory: "512mb"
+redis_max_memory_policy: "allkeys-lru"
+
+redis_protected_mode: "yes"
+redis_supervised_mode: "systemd"
